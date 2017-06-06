@@ -1,0 +1,2 @@
+cmake ../cppjieba-master/
+make 

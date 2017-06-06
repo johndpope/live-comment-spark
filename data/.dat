@@ -1,0 +1,11 @@
+#! /bin/sh
+for eachfile in `ls ./20161114 -B`
+do
+ filename_new=`echo ${eachfile%.dat} | awk '{print substr(,1,16)}'`
+  #filename=${eachfile%.dat}
+   #filehead=`echo $filename | awk -F _ '{print $1 }'`
+    #filelast=`awk -F '.' 'gsub(/\n/,"",$1) {print $0}'`
+ mv ${eachfile%.dat} ${filename_new}.dat
+ cat ${filename_new}.dat | sort | uniq > ./${filename_new}/comment.dat
+done
+      

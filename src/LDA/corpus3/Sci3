@@ -1,0 +1,26 @@
+
+
+A group of computer scientists at the University of Washington has developed a way to make electronic messages “self destruct” after a certain period of time, like messages in sand lost to the surf. The researchers said they think the new software, called Vanish, which requires encrypting messages, will be needed more and more as personal and business information is stored not on personal computers, but on centralized machines, or servers. In the term of the moment this is called cloud computing, and the cloud consists of the data — including e-mail and Web-based documents and calendars — stored on numerous servers.
+Skip to next paragraph
+RSS Feed
+
+    * Get Science News From The New York Times »
+
+The idea of developing technology to make digital data disappear after a specified period of time is not new. A number of services that perform this function exist on the World Wide Web, and some electronic devices like FLASH memory chips have added this capability for protecting stored data by automatically erasing it after a specified period of time.
+
+But the researchers said they had struck upon a unique approach that relies on “shattering” an encryption key that is held by neither party in an e-mail exchange but is widely scattered across a peer-to-peer file sharing system.
+
+Public key cryptography makes it possible for two parties who have never physically met to share a digital secret and as a result engage in a secure electronic conversation sheltered from potential eavesdroppers. The technology is at the heart of most modern electronic commerce systems.
+
+Vanish uses a key-based encryption system in a different way, making it possible for a decrypted message to be automatically re-encrypted at a specified point in the future without fear that a third party will be able to gain access to the key needed to read the message.
+
+The pieces of the key, small numbers, tend to “erode” over time as they gradually fall out of use. To make keys erode, or timeout, Vanish takes advantage of the structure of a peer-to-peer file system. Such networks are based on millions of personal computers whose Internet addresses change as they come and go from the network. This would make it exceedingly difficult for an eavesdropper or spy to reassemble the pieces of the key because the key is never held in a single location. The Vanish technology is applicable to more than just e-mail or other electronic messages. Tadayoshi Kohno, a University of Washington assistant professor who is one of Vanish’s designers, said Vanish makes it possible to control the “lifetime” of any type of data stored in the cloud, including information on Facebook, Google documents or blogs.
+
+The potential value of such technology was brought into stark relief last week when a computer hacker stole data belonging to the social media company Twitter and e-mailed it to Web publishing companies in the United States and France.
+
+The significance of the advance is that the Vanish “trust model” does not depend on the integrity of third parties, as other systems do. The researchers cite an incident in which a commercial provider of encrypted e-mail services revealed the contents of digital communication when served with a subpoena by a Canadian law enforcement agency.
+
+The researchers acknowledged that there are unexplored legal issues surrounding the use of their technology. For example, certain laws require that corporations archive e-mails and make them accessible.
+
+The researchers have developed a prototype of the Vanish system based on a plug-in module for the Mozilla Firefox Web browser. Using the system requires that both parties of the communication have a copy of the module, which is one of the limits of the technology. Mr. Kohno said that he did not envision Vanish being used for all communications, but only for sensitive ones.
+
