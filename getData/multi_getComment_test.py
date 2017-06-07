@@ -26,6 +26,8 @@ def getUrl(url):
   return res
 
 def getComments(scid):
+  scid='hEnjWcxiHORcVNM2'
+  print(scid)
   ts = 0
 #  f2 = open('./data/20161114/' + scid + '.dat','w')             #评论内容文件
   while 1:
@@ -36,8 +38,8 @@ def getComments(scid):
       break
     elif res['data']['list']:
       for x in res['data']['list']:
-#        print x['content']
-        f2.write(x['content']+"\n")
+        print x['content']
+#        f2.write(x['content']+"\n")
     else:
       break
     ts = int(ts)+4000
@@ -52,6 +54,7 @@ def getComments(scid):
 if len(sys.argv)==1:
   print "need argv: [in_url_file]"
 #scid = sys.argv[1]             # 返回一个文件对象
+'''
 f = open(sys.argv[1])             # 返回一个文件对象
 lines = f.readlines()
 f.close()
@@ -59,8 +62,10 @@ for scid in lines:
     scid = scid.strip('\n');
     global f2
     f2 = open('./tmp/' + scid + '.dat','w')             #评论内容文件
-    getComments(scid)
-    f2.close()
+'''
+scid = 'hEnjWcxiHORcVNM2'
+getComments(scid)
+###    f2.close()
 
 #pool = Pool()
 #pool.map(getComments,lines)

@@ -6,31 +6,31 @@
 
 #IncludeRegexTransform: 
 
-/home/yqk/live_comment_new/src/cppjieba-master/deps/gtest/include/gtest/gtest-death-test.h
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/deps/gtest/include/gtest/gtest-death-test.h
 gtest/internal/gtest-death-test-internal.h
-/home/yqk/live_comment_new/src/cppjieba-master/deps/gtest/include/gtest/gtest/internal/gtest-death-test-internal.h
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/deps/gtest/include/gtest/gtest/internal/gtest-death-test-internal.h
 
-/home/yqk/live_comment_new/src/cppjieba-master/deps/gtest/include/gtest/gtest-message.h
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/deps/gtest/include/gtest/gtest-message.h
 limits
 -
 gtest/internal/gtest-string.h
-/home/yqk/live_comment_new/src/cppjieba-master/deps/gtest/include/gtest/gtest/internal/gtest-string.h
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/deps/gtest/include/gtest/gtest/internal/gtest-string.h
 gtest/internal/gtest-internal.h
-/home/yqk/live_comment_new/src/cppjieba-master/deps/gtest/include/gtest/gtest/internal/gtest-internal.h
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/deps/gtest/include/gtest/gtest/internal/gtest-internal.h
 
-/home/yqk/live_comment_new/src/cppjieba-master/deps/gtest/include/gtest/gtest-param-test.h
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/deps/gtest/include/gtest/gtest-param-test.h
 gtest/internal/gtest-port.h
-/home/yqk/live_comment_new/src/cppjieba-master/deps/gtest/include/gtest/gtest/internal/gtest-port.h
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/deps/gtest/include/gtest/gtest/internal/gtest-port.h
 utility
 -
 gtest/internal/gtest-internal.h
-/home/yqk/live_comment_new/src/cppjieba-master/deps/gtest/include/gtest/gtest/internal/gtest-internal.h
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/deps/gtest/include/gtest/gtest/internal/gtest-internal.h
 gtest/internal/gtest-param-util.h
-/home/yqk/live_comment_new/src/cppjieba-master/deps/gtest/include/gtest/gtest/internal/gtest-param-util.h
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/deps/gtest/include/gtest/gtest/internal/gtest-param-util.h
 gtest/internal/gtest-param-util-generated.h
-/home/yqk/live_comment_new/src/cppjieba-master/deps/gtest/include/gtest/gtest/internal/gtest-param-util-generated.h
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/deps/gtest/include/gtest/gtest/internal/gtest-param-util-generated.h
 
-/home/yqk/live_comment_new/src/cppjieba-master/deps/gtest/include/gtest/gtest-printers.h
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/deps/gtest/include/gtest/gtest-printers.h
 ostream
 -
 sstream
@@ -42,69 +42,69 @@ utility
 vector
 -
 gtest/internal/gtest-port.h
-/home/yqk/live_comment_new/src/cppjieba-master/deps/gtest/include/gtest/gtest/internal/gtest-port.h
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/deps/gtest/include/gtest/gtest/internal/gtest-port.h
 gtest/internal/gtest-internal.h
-/home/yqk/live_comment_new/src/cppjieba-master/deps/gtest/include/gtest/gtest/internal/gtest-internal.h
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/deps/gtest/include/gtest/gtest/internal/gtest-internal.h
 
-/home/yqk/live_comment_new/src/cppjieba-master/deps/gtest/include/gtest/gtest-test-part.h
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/deps/gtest/include/gtest/gtest-test-part.h
 iosfwd
 -
 vector
 -
 gtest/internal/gtest-internal.h
-/home/yqk/live_comment_new/src/cppjieba-master/deps/gtest/include/gtest/gtest/internal/gtest-internal.h
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/deps/gtest/include/gtest/gtest/internal/gtest-internal.h
 gtest/internal/gtest-string.h
-/home/yqk/live_comment_new/src/cppjieba-master/deps/gtest/include/gtest/gtest/internal/gtest-string.h
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/deps/gtest/include/gtest/gtest/internal/gtest-string.h
 
-/home/yqk/live_comment_new/src/cppjieba-master/deps/gtest/include/gtest/gtest-typed-test.h
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/deps/gtest/include/gtest/gtest-typed-test.h
 gtest/internal/gtest-port.h
-/home/yqk/live_comment_new/src/cppjieba-master/deps/gtest/include/gtest/gtest/internal/gtest-port.h
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/deps/gtest/include/gtest/gtest/internal/gtest-port.h
 gtest/internal/gtest-type-util.h
-/home/yqk/live_comment_new/src/cppjieba-master/deps/gtest/include/gtest/gtest/internal/gtest-type-util.h
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/deps/gtest/include/gtest/gtest/internal/gtest-type-util.h
 
-/home/yqk/live_comment_new/src/cppjieba-master/deps/gtest/include/gtest/gtest.h
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/deps/gtest/include/gtest/gtest.h
 limits
 -
 vector
 -
 gtest/internal/gtest-internal.h
-/home/yqk/live_comment_new/src/cppjieba-master/deps/gtest/include/gtest/gtest/internal/gtest-internal.h
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/deps/gtest/include/gtest/gtest/internal/gtest-internal.h
 gtest/internal/gtest-string.h
-/home/yqk/live_comment_new/src/cppjieba-master/deps/gtest/include/gtest/gtest/internal/gtest-string.h
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/deps/gtest/include/gtest/gtest/internal/gtest-string.h
 gtest/gtest-death-test.h
-/home/yqk/live_comment_new/src/cppjieba-master/deps/gtest/include/gtest/gtest/gtest-death-test.h
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/deps/gtest/include/gtest/gtest/gtest-death-test.h
 gtest/gtest-message.h
-/home/yqk/live_comment_new/src/cppjieba-master/deps/gtest/include/gtest/gtest/gtest-message.h
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/deps/gtest/include/gtest/gtest/gtest-message.h
 gtest/gtest-param-test.h
-/home/yqk/live_comment_new/src/cppjieba-master/deps/gtest/include/gtest/gtest/gtest-param-test.h
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/deps/gtest/include/gtest/gtest/gtest-param-test.h
 gtest/gtest-printers.h
-/home/yqk/live_comment_new/src/cppjieba-master/deps/gtest/include/gtest/gtest/gtest-printers.h
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/deps/gtest/include/gtest/gtest/gtest-printers.h
 gtest/gtest_prod.h
-/home/yqk/live_comment_new/src/cppjieba-master/deps/gtest/include/gtest/gtest/gtest_prod.h
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/deps/gtest/include/gtest/gtest/gtest_prod.h
 gtest/gtest-test-part.h
-/home/yqk/live_comment_new/src/cppjieba-master/deps/gtest/include/gtest/gtest/gtest-test-part.h
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/deps/gtest/include/gtest/gtest/gtest-test-part.h
 gtest/gtest-typed-test.h
-/home/yqk/live_comment_new/src/cppjieba-master/deps/gtest/include/gtest/gtest/gtest-typed-test.h
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/deps/gtest/include/gtest/gtest/gtest-typed-test.h
 gtest/gtest_pred_impl.h
-/home/yqk/live_comment_new/src/cppjieba-master/deps/gtest/include/gtest/gtest/gtest_pred_impl.h
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/deps/gtest/include/gtest/gtest/gtest_pred_impl.h
 
-/home/yqk/live_comment_new/src/cppjieba-master/deps/gtest/include/gtest/gtest_pred_impl.h
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/deps/gtest/include/gtest/gtest_pred_impl.h
 
-/home/yqk/live_comment_new/src/cppjieba-master/deps/gtest/include/gtest/gtest_prod.h
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/deps/gtest/include/gtest/gtest_prod.h
 
-/home/yqk/live_comment_new/src/cppjieba-master/deps/gtest/include/gtest/internal/gtest-death-test-internal.h
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/deps/gtest/include/gtest/internal/gtest-death-test-internal.h
 gtest/internal/gtest-internal.h
-/home/yqk/live_comment_new/src/cppjieba-master/deps/gtest/include/gtest/internal/gtest/internal/gtest-internal.h
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/deps/gtest/include/gtest/internal/gtest/internal/gtest-internal.h
 stdio.h
 -
 
-/home/yqk/live_comment_new/src/cppjieba-master/deps/gtest/include/gtest/internal/gtest-filepath.h
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/deps/gtest/include/gtest/internal/gtest-filepath.h
 gtest/internal/gtest-string.h
-/home/yqk/live_comment_new/src/cppjieba-master/deps/gtest/include/gtest/internal/gtest/internal/gtest-string.h
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/deps/gtest/include/gtest/internal/gtest/internal/gtest-string.h
 
-/home/yqk/live_comment_new/src/cppjieba-master/deps/gtest/include/gtest/internal/gtest-internal.h
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/deps/gtest/include/gtest/internal/gtest-internal.h
 gtest/internal/gtest-port.h
-/home/yqk/live_comment_new/src/cppjieba-master/deps/gtest/include/gtest/internal/gtest/internal/gtest-port.h
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/deps/gtest/include/gtest/internal/gtest/internal/gtest-port.h
 stdlib.h
 -
 sys/types.h
@@ -124,27 +124,27 @@ limits
 set
 -
 gtest/internal/gtest-string.h
-/home/yqk/live_comment_new/src/cppjieba-master/deps/gtest/include/gtest/internal/gtest/internal/gtest-string.h
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/deps/gtest/include/gtest/internal/gtest/internal/gtest-string.h
 gtest/internal/gtest-filepath.h
-/home/yqk/live_comment_new/src/cppjieba-master/deps/gtest/include/gtest/internal/gtest/internal/gtest-filepath.h
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/deps/gtest/include/gtest/internal/gtest/internal/gtest-filepath.h
 gtest/internal/gtest-type-util.h
-/home/yqk/live_comment_new/src/cppjieba-master/deps/gtest/include/gtest/internal/gtest/internal/gtest-type-util.h
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/deps/gtest/include/gtest/internal/gtest/internal/gtest-type-util.h
 
-/home/yqk/live_comment_new/src/cppjieba-master/deps/gtest/include/gtest/internal/gtest-linked_ptr.h
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/deps/gtest/include/gtest/internal/gtest-linked_ptr.h
 stdlib.h
 -
 assert.h
 -
 gtest/internal/gtest-port.h
-/home/yqk/live_comment_new/src/cppjieba-master/deps/gtest/include/gtest/internal/gtest/internal/gtest-port.h
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/deps/gtest/include/gtest/internal/gtest/internal/gtest-port.h
 
-/home/yqk/live_comment_new/src/cppjieba-master/deps/gtest/include/gtest/internal/gtest-param-util-generated.h
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/deps/gtest/include/gtest/internal/gtest-param-util-generated.h
 gtest/internal/gtest-param-util.h
-/home/yqk/live_comment_new/src/cppjieba-master/deps/gtest/include/gtest/internal/gtest/internal/gtest-param-util.h
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/deps/gtest/include/gtest/internal/gtest/internal/gtest-param-util.h
 gtest/internal/gtest-port.h
-/home/yqk/live_comment_new/src/cppjieba-master/deps/gtest/include/gtest/internal/gtest/internal/gtest-port.h
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/deps/gtest/include/gtest/internal/gtest/internal/gtest-port.h
 
-/home/yqk/live_comment_new/src/cppjieba-master/deps/gtest/include/gtest/internal/gtest-param-util.h
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/deps/gtest/include/gtest/internal/gtest-param-util.h
 iterator
 -
 utility
@@ -152,15 +152,15 @@ utility
 vector
 -
 gtest/internal/gtest-internal.h
-/home/yqk/live_comment_new/src/cppjieba-master/deps/gtest/include/gtest/internal/gtest/internal/gtest-internal.h
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/deps/gtest/include/gtest/internal/gtest/internal/gtest-internal.h
 gtest/internal/gtest-linked_ptr.h
-/home/yqk/live_comment_new/src/cppjieba-master/deps/gtest/include/gtest/internal/gtest/internal/gtest-linked_ptr.h
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/deps/gtest/include/gtest/internal/gtest/internal/gtest-linked_ptr.h
 gtest/internal/gtest-port.h
-/home/yqk/live_comment_new/src/cppjieba-master/deps/gtest/include/gtest/internal/gtest/internal/gtest-port.h
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/deps/gtest/include/gtest/internal/gtest/internal/gtest-port.h
 gtest/gtest-printers.h
-/home/yqk/live_comment_new/src/cppjieba-master/deps/gtest/include/gtest/internal/gtest/gtest-printers.h
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/deps/gtest/include/gtest/internal/gtest/gtest-printers.h
 
-/home/yqk/live_comment_new/src/cppjieba-master/deps/gtest/include/gtest/internal/gtest-port.h
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/deps/gtest/include/gtest/internal/gtest-port.h
 ctype.h
 -
 stddef.h
@@ -198,7 +198,7 @@ pthread.h
 time.h
 -
 gtest/internal/gtest-tuple.h
-/home/yqk/live_comment_new/src/cppjieba-master/deps/gtest/include/gtest/internal/gtest/internal/gtest-tuple.h
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/deps/gtest/include/gtest/internal/gtest/internal/gtest-tuple.h
 tuple
 -
 tr1/tuple
@@ -212,31 +212,31 @@ tuple
 vector
 -
 
-/home/yqk/live_comment_new/src/cppjieba-master/deps/gtest/include/gtest/internal/gtest-string.h
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/deps/gtest/include/gtest/internal/gtest-string.h
 mem.h
 -
 string.h
 -
 gtest/internal/gtest-port.h
-/home/yqk/live_comment_new/src/cppjieba-master/deps/gtest/include/gtest/internal/gtest/internal/gtest-port.h
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/deps/gtest/include/gtest/internal/gtest/internal/gtest-port.h
 string
 -
 
-/home/yqk/live_comment_new/src/cppjieba-master/deps/gtest/include/gtest/internal/gtest-tuple.h
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/deps/gtest/include/gtest/internal/gtest-tuple.h
 utility
 -
 
-/home/yqk/live_comment_new/src/cppjieba-master/deps/gtest/include/gtest/internal/gtest-type-util.h
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/deps/gtest/include/gtest/internal/gtest-type-util.h
 gtest/internal/gtest-port.h
-/home/yqk/live_comment_new/src/cppjieba-master/deps/gtest/include/gtest/internal/gtest/internal/gtest-port.h
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/deps/gtest/include/gtest/internal/gtest/internal/gtest-port.h
 gtest/internal/gtest-string.h
-/home/yqk/live_comment_new/src/cppjieba-master/deps/gtest/include/gtest/internal/gtest/internal/gtest-string.h
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/deps/gtest/include/gtest/internal/gtest/internal/gtest-string.h
 cxxabi.h
 -
 acxx_demangle.h
 -
 
-/home/yqk/live_comment_new/src/cppjieba-master/deps/limonp/LocalVector.hpp
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/deps/limonp/LocalVector.hpp
 iostream
 -
 stdlib.h
@@ -246,7 +246,7 @@ assert.h
 string.h
 -
 
-/home/yqk/live_comment_new/src/cppjieba-master/deps/limonp/Logging.hpp
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/deps/limonp/Logging.hpp
 sstream
 -
 iostream
@@ -258,7 +258,7 @@ cstdlib
 ctime
 -
 
-/home/yqk/live_comment_new/src/cppjieba-master/deps/limonp/StdExtension.hpp
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/deps/limonp/StdExtension.hpp
 map
 -
 unordered_map
@@ -290,7 +290,7 @@ fstream
 sstream
 -
 
-/home/yqk/live_comment_new/src/cppjieba-master/deps/limonp/StringUtil.hpp
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/deps/limonp/StringUtil.hpp
 fstream
 -
 iostream
@@ -326,9 +326,9 @@ iterator
 algorithm
 -
 StdExtension.hpp
-/home/yqk/live_comment_new/src/cppjieba-master/deps/limonp/StdExtension.hpp
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/deps/limonp/StdExtension.hpp
 
-/home/yqk/live_comment_new/src/cppjieba-master/include/cppjieba/DictTrie.hpp
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/include/cppjieba/DictTrie.hpp
 iostream
 -
 fstream
@@ -348,15 +348,15 @@ cmath
 limits
 -
 limonp/StringUtil.hpp
-/home/yqk/live_comment_new/src/cppjieba-master/include/cppjieba/limonp/StringUtil.hpp
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/include/cppjieba/limonp/StringUtil.hpp
 limonp/Logging.hpp
-/home/yqk/live_comment_new/src/cppjieba-master/include/cppjieba/limonp/Logging.hpp
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/include/cppjieba/limonp/Logging.hpp
 Unicode.hpp
-/home/yqk/live_comment_new/src/cppjieba-master/include/cppjieba/Unicode.hpp
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/include/cppjieba/Unicode.hpp
 Trie.hpp
-/home/yqk/live_comment_new/src/cppjieba-master/include/cppjieba/Trie.hpp
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/include/cppjieba/Trie.hpp
 
-/home/yqk/live_comment_new/src/cppjieba-master/include/cppjieba/FullSegment.hpp
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/include/cppjieba/FullSegment.hpp
 algorithm
 -
 set
@@ -364,21 +364,21 @@ set
 cassert
 -
 limonp/Logging.hpp
-/home/yqk/live_comment_new/src/cppjieba-master/include/cppjieba/limonp/Logging.hpp
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/include/cppjieba/limonp/Logging.hpp
 DictTrie.hpp
-/home/yqk/live_comment_new/src/cppjieba-master/include/cppjieba/DictTrie.hpp
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/include/cppjieba/DictTrie.hpp
 SegmentBase.hpp
-/home/yqk/live_comment_new/src/cppjieba-master/include/cppjieba/SegmentBase.hpp
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/include/cppjieba/SegmentBase.hpp
 Unicode.hpp
-/home/yqk/live_comment_new/src/cppjieba-master/include/cppjieba/Unicode.hpp
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/include/cppjieba/Unicode.hpp
 
-/home/yqk/live_comment_new/src/cppjieba-master/include/cppjieba/HMMModel.hpp
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/include/cppjieba/HMMModel.hpp
 limonp/StringUtil.hpp
-/home/yqk/live_comment_new/src/cppjieba-master/include/cppjieba/limonp/StringUtil.hpp
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/include/cppjieba/limonp/StringUtil.hpp
 Trie.hpp
-/home/yqk/live_comment_new/src/cppjieba-master/include/cppjieba/Trie.hpp
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/include/cppjieba/Trie.hpp
 
-/home/yqk/live_comment_new/src/cppjieba-master/include/cppjieba/HMMSegment.hpp
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/include/cppjieba/HMMSegment.hpp
 iostream
 -
 fstream
@@ -388,23 +388,23 @@ memory.h
 cassert
 -
 HMMModel.hpp
-/home/yqk/live_comment_new/src/cppjieba-master/include/cppjieba/HMMModel.hpp
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/include/cppjieba/HMMModel.hpp
 SegmentBase.hpp
-/home/yqk/live_comment_new/src/cppjieba-master/include/cppjieba/SegmentBase.hpp
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/include/cppjieba/SegmentBase.hpp
 
-/home/yqk/live_comment_new/src/cppjieba-master/include/cppjieba/Jieba.hpp
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/include/cppjieba/Jieba.hpp
 QuerySegment.hpp
-/home/yqk/live_comment_new/src/cppjieba-master/include/cppjieba/QuerySegment.hpp
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/include/cppjieba/QuerySegment.hpp
 
-/home/yqk/live_comment_new/src/cppjieba-master/include/cppjieba/KeywordExtractor.hpp
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/include/cppjieba/KeywordExtractor.hpp
 cmath
 -
 set
 -
 Jieba.hpp
-/home/yqk/live_comment_new/src/cppjieba-master/include/cppjieba/Jieba.hpp
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/include/cppjieba/Jieba.hpp
 
-/home/yqk/live_comment_new/src/cppjieba-master/include/cppjieba/MPSegment.hpp
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/include/cppjieba/MPSegment.hpp
 algorithm
 -
 set
@@ -412,41 +412,41 @@ set
 cassert
 -
 limonp/Logging.hpp
-/home/yqk/live_comment_new/src/cppjieba-master/include/cppjieba/limonp/Logging.hpp
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/include/cppjieba/limonp/Logging.hpp
 DictTrie.hpp
-/home/yqk/live_comment_new/src/cppjieba-master/include/cppjieba/DictTrie.hpp
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/include/cppjieba/DictTrie.hpp
 SegmentTagged.hpp
-/home/yqk/live_comment_new/src/cppjieba-master/include/cppjieba/SegmentTagged.hpp
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/include/cppjieba/SegmentTagged.hpp
 PosTagger.hpp
-/home/yqk/live_comment_new/src/cppjieba-master/include/cppjieba/PosTagger.hpp
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/include/cppjieba/PosTagger.hpp
 
-/home/yqk/live_comment_new/src/cppjieba-master/include/cppjieba/MixSegment.hpp
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/include/cppjieba/MixSegment.hpp
 cassert
 -
 MPSegment.hpp
-/home/yqk/live_comment_new/src/cppjieba-master/include/cppjieba/MPSegment.hpp
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/include/cppjieba/MPSegment.hpp
 HMMSegment.hpp
-/home/yqk/live_comment_new/src/cppjieba-master/include/cppjieba/HMMSegment.hpp
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/include/cppjieba/HMMSegment.hpp
 limonp/StringUtil.hpp
-/home/yqk/live_comment_new/src/cppjieba-master/include/cppjieba/limonp/StringUtil.hpp
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/include/cppjieba/limonp/StringUtil.hpp
 PosTagger.hpp
-/home/yqk/live_comment_new/src/cppjieba-master/include/cppjieba/PosTagger.hpp
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/include/cppjieba/PosTagger.hpp
 
-/home/yqk/live_comment_new/src/cppjieba-master/include/cppjieba/PosTagger.hpp
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/include/cppjieba/PosTagger.hpp
 limonp/StringUtil.hpp
-/home/yqk/live_comment_new/src/cppjieba-master/include/cppjieba/limonp/StringUtil.hpp
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/include/cppjieba/limonp/StringUtil.hpp
 SegmentTagged.hpp
-/home/yqk/live_comment_new/src/cppjieba-master/include/cppjieba/SegmentTagged.hpp
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/include/cppjieba/SegmentTagged.hpp
 DictTrie.hpp
-/home/yqk/live_comment_new/src/cppjieba-master/include/cppjieba/DictTrie.hpp
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/include/cppjieba/DictTrie.hpp
 
-/home/yqk/live_comment_new/src/cppjieba-master/include/cppjieba/PreFilter.hpp
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/include/cppjieba/PreFilter.hpp
 Trie.hpp
-/home/yqk/live_comment_new/src/cppjieba-master/include/cppjieba/Trie.hpp
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/include/cppjieba/Trie.hpp
 limonp/Logging.hpp
-/home/yqk/live_comment_new/src/cppjieba-master/include/cppjieba/limonp/Logging.hpp
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/include/cppjieba/limonp/Logging.hpp
 
-/home/yqk/live_comment_new/src/cppjieba-master/include/cppjieba/QuerySegment.hpp
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/include/cppjieba/QuerySegment.hpp
 algorithm
 -
 set
@@ -454,49 +454,49 @@ set
 cassert
 -
 limonp/Logging.hpp
-/home/yqk/live_comment_new/src/cppjieba-master/include/cppjieba/limonp/Logging.hpp
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/include/cppjieba/limonp/Logging.hpp
 DictTrie.hpp
-/home/yqk/live_comment_new/src/cppjieba-master/include/cppjieba/DictTrie.hpp
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/include/cppjieba/DictTrie.hpp
 SegmentBase.hpp
-/home/yqk/live_comment_new/src/cppjieba-master/include/cppjieba/SegmentBase.hpp
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/include/cppjieba/SegmentBase.hpp
 FullSegment.hpp
-/home/yqk/live_comment_new/src/cppjieba-master/include/cppjieba/FullSegment.hpp
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/include/cppjieba/FullSegment.hpp
 MixSegment.hpp
-/home/yqk/live_comment_new/src/cppjieba-master/include/cppjieba/MixSegment.hpp
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/include/cppjieba/MixSegment.hpp
 Unicode.hpp
-/home/yqk/live_comment_new/src/cppjieba-master/include/cppjieba/Unicode.hpp
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/include/cppjieba/Unicode.hpp
 DictTrie.hpp
-/home/yqk/live_comment_new/src/cppjieba-master/include/cppjieba/DictTrie.hpp
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/include/cppjieba/DictTrie.hpp
 
-/home/yqk/live_comment_new/src/cppjieba-master/include/cppjieba/SegmentBase.hpp
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/include/cppjieba/SegmentBase.hpp
 limonp/Logging.hpp
-/home/yqk/live_comment_new/src/cppjieba-master/include/cppjieba/limonp/Logging.hpp
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/include/cppjieba/limonp/Logging.hpp
 PreFilter.hpp
-/home/yqk/live_comment_new/src/cppjieba-master/include/cppjieba/PreFilter.hpp
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/include/cppjieba/PreFilter.hpp
 cassert
 -
 
-/home/yqk/live_comment_new/src/cppjieba-master/include/cppjieba/SegmentTagged.hpp
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/include/cppjieba/SegmentTagged.hpp
 SegmentBase.hpp
-/home/yqk/live_comment_new/src/cppjieba-master/include/cppjieba/SegmentBase.hpp
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/include/cppjieba/SegmentBase.hpp
 
-/home/yqk/live_comment_new/src/cppjieba-master/include/cppjieba/TextRankExtractor.hpp
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/include/cppjieba/TextRankExtractor.hpp
 cmath
 -
 Jieba.hpp
-/home/yqk/live_comment_new/src/cppjieba-master/include/cppjieba/Jieba.hpp
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/include/cppjieba/Jieba.hpp
 
-/home/yqk/live_comment_new/src/cppjieba-master/include/cppjieba/Trie.hpp
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/include/cppjieba/Trie.hpp
 vector
 -
 queue
 -
 limonp/StdExtension.hpp
-/home/yqk/live_comment_new/src/cppjieba-master/include/cppjieba/limonp/StdExtension.hpp
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/include/cppjieba/limonp/StdExtension.hpp
 Unicode.hpp
-/home/yqk/live_comment_new/src/cppjieba-master/include/cppjieba/Unicode.hpp
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/include/cppjieba/Unicode.hpp
 
-/home/yqk/live_comment_new/src/cppjieba-master/include/cppjieba/Unicode.hpp
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/include/cppjieba/Unicode.hpp
 stdint.h
 -
 stdlib.h
@@ -508,75 +508,75 @@ vector
 ostream
 -
 limonp/LocalVector.hpp
-/home/yqk/live_comment_new/src/cppjieba-master/include/cppjieba/limonp/LocalVector.hpp
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/include/cppjieba/limonp/LocalVector.hpp
 
-/home/yqk/live_comment_new/src/cppjieba-master/test/unittest/gtest_main.cpp
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/test/unittest/gtest_main.cpp
 iostream
 -
 gtest/gtest.h
-/home/yqk/live_comment_new/src/cppjieba-master/test/unittest/gtest/gtest.h
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/test/unittest/gtest/gtest.h
 
-/home/yqk/live_comment_new/src/cppjieba-master/test/unittest/jieba_test.cpp
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/test/unittest/jieba_test.cpp
 cppjieba/Jieba.hpp
-/home/yqk/live_comment_new/src/cppjieba-master/test/unittest/cppjieba/Jieba.hpp
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/test/unittest/cppjieba/Jieba.hpp
 gtest/gtest.h
-/home/yqk/live_comment_new/src/cppjieba-master/test/unittest/gtest/gtest.h
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/test/unittest/gtest/gtest.h
 
-/home/yqk/live_comment_new/src/cppjieba-master/test/unittest/keyword_extractor_test.cpp
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/test/unittest/keyword_extractor_test.cpp
 cppjieba/KeywordExtractor.hpp
-/home/yqk/live_comment_new/src/cppjieba-master/test/unittest/cppjieba/KeywordExtractor.hpp
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/test/unittest/cppjieba/KeywordExtractor.hpp
 gtest/gtest.h
-/home/yqk/live_comment_new/src/cppjieba-master/test/unittest/gtest/gtest.h
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/test/unittest/gtest/gtest.h
 
-/home/yqk/live_comment_new/src/cppjieba-master/test/unittest/pos_tagger_test.cpp
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/test/unittest/pos_tagger_test.cpp
 cppjieba/MixSegment.hpp
-/home/yqk/live_comment_new/src/cppjieba-master/test/unittest/cppjieba/MixSegment.hpp
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/test/unittest/cppjieba/MixSegment.hpp
 gtest/gtest.h
-/home/yqk/live_comment_new/src/cppjieba-master/test/unittest/gtest/gtest.h
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/test/unittest/gtest/gtest.h
 
-/home/yqk/live_comment_new/src/cppjieba-master/test/unittest/pre_filter_test.cpp
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/test/unittest/pre_filter_test.cpp
 gtest/gtest.h
-/home/yqk/live_comment_new/src/cppjieba-master/test/unittest/gtest/gtest.h
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/test/unittest/gtest/gtest.h
 cppjieba/PreFilter.hpp
-/home/yqk/live_comment_new/src/cppjieba-master/test/unittest/cppjieba/PreFilter.hpp
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/test/unittest/cppjieba/PreFilter.hpp
 limonp/StringUtil.hpp
-/home/yqk/live_comment_new/src/cppjieba-master/test/unittest/limonp/StringUtil.hpp
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/test/unittest/limonp/StringUtil.hpp
 
-/home/yqk/live_comment_new/src/cppjieba-master/test/unittest/segments_test.cpp
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/test/unittest/segments_test.cpp
 cppjieba/SegmentBase.hpp
-/home/yqk/live_comment_new/src/cppjieba-master/test/unittest/cppjieba/SegmentBase.hpp
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/test/unittest/cppjieba/SegmentBase.hpp
 cppjieba/MixSegment.hpp
-/home/yqk/live_comment_new/src/cppjieba-master/test/unittest/cppjieba/MixSegment.hpp
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/test/unittest/cppjieba/MixSegment.hpp
 cppjieba/MPSegment.hpp
-/home/yqk/live_comment_new/src/cppjieba-master/test/unittest/cppjieba/MPSegment.hpp
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/test/unittest/cppjieba/MPSegment.hpp
 cppjieba/HMMSegment.hpp
-/home/yqk/live_comment_new/src/cppjieba-master/test/unittest/cppjieba/HMMSegment.hpp
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/test/unittest/cppjieba/HMMSegment.hpp
 cppjieba/FullSegment.hpp
-/home/yqk/live_comment_new/src/cppjieba-master/test/unittest/cppjieba/FullSegment.hpp
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/test/unittest/cppjieba/FullSegment.hpp
 cppjieba/QuerySegment.hpp
-/home/yqk/live_comment_new/src/cppjieba-master/test/unittest/cppjieba/QuerySegment.hpp
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/test/unittest/cppjieba/QuerySegment.hpp
 gtest/gtest.h
-/home/yqk/live_comment_new/src/cppjieba-master/test/unittest/gtest/gtest.h
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/test/unittest/gtest/gtest.h
 
-/home/yqk/live_comment_new/src/cppjieba-master/test/unittest/textrank_test.cpp
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/test/unittest/textrank_test.cpp
 cppjieba/TextRankExtractor.hpp
-/home/yqk/live_comment_new/src/cppjieba-master/test/unittest/cppjieba/TextRankExtractor.hpp
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/test/unittest/cppjieba/TextRankExtractor.hpp
 gtest/gtest.h
-/home/yqk/live_comment_new/src/cppjieba-master/test/unittest/gtest/gtest.h
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/test/unittest/gtest/gtest.h
 
-/home/yqk/live_comment_new/src/cppjieba-master/test/unittest/trie_test.cpp
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/test/unittest/trie_test.cpp
 cppjieba/DictTrie.hpp
-/home/yqk/live_comment_new/src/cppjieba-master/test/unittest/cppjieba/DictTrie.hpp
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/test/unittest/cppjieba/DictTrie.hpp
 cppjieba/MPSegment.hpp
-/home/yqk/live_comment_new/src/cppjieba-master/test/unittest/cppjieba/MPSegment.hpp
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/test/unittest/cppjieba/MPSegment.hpp
 gtest/gtest.h
-/home/yqk/live_comment_new/src/cppjieba-master/test/unittest/gtest/gtest.h
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/test/unittest/gtest/gtest.h
 
-/home/yqk/live_comment_new/src/cppjieba-master/test/unittest/unicode_test.cpp
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/test/unittest/unicode_test.cpp
 cppjieba/Unicode.hpp
-/home/yqk/live_comment_new/src/cppjieba-master/test/unittest/cppjieba/Unicode.hpp
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/test/unittest/cppjieba/Unicode.hpp
 limonp/StdExtension.hpp
-/home/yqk/live_comment_new/src/cppjieba-master/test/unittest/limonp/StdExtension.hpp
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/test/unittest/limonp/StdExtension.hpp
 gtest/gtest.h
-/home/yqk/live_comment_new/src/cppjieba-master/test/unittest/gtest/gtest.h
+/home/kovean/WORK/live-comment-spark/src/cppjieba-master/test/unittest/gtest/gtest.h
 

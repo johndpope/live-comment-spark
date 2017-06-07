@@ -4,16 +4,16 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/yqk/live_comment_new/src/cppjieba-master/deps/gtest/src/gtest-all.cc" "/home/yqk/live_comment_new/src/jieba/deps/gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o"
+  "/home/kovean/WORK/live-comment-spark/src/cppjieba-master/deps/gtest/src/gtest-all.cc" "/home/kovean/WORK/live-comment-spark/src/jieba/deps/gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/yqk/live_comment_new/src/cppjieba-master/deps"
-  "/home/yqk/live_comment_new/src/cppjieba-master/include"
-  "/home/yqk/live_comment_new/src/cppjieba-master/deps/gtest/."
-  "/home/yqk/live_comment_new/src/cppjieba-master/deps/gtest/include"
+  "/home/kovean/WORK/live-comment-spark/src/cppjieba-master/deps"
+  "/home/kovean/WORK/live-comment-spark/src/cppjieba-master/include"
+  "/home/kovean/WORK/live-comment-spark/src/cppjieba-master/deps/gtest/."
+  "/home/kovean/WORK/live-comment-spark/src/cppjieba-master/deps/gtest/include"
   )
 
 # Targets to which this target links.

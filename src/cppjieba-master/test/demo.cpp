@@ -191,7 +191,7 @@ int main(int argc, char** argv) {
   }
   /* 读取训练样本 */
   while( fin.peek()!=EOF ){//fin.getline(weibo_id,MAX_ID_LENGTH) && fin.getline(content,MAX_CONTENT_LENGTH)){
-    getline(fin,weibo_id,'\t');
+////    getline(fin,weibo_id,'\t');
     getline(fin,category,'\t');
     getline(fin,content,'\n');
     string content_140;
@@ -229,7 +229,6 @@ int main(int argc, char** argv) {
       else
         ++iter;
     }
-    
     ARTICLE article=make_pair(category,words);
     article_vec.push_back(article);
  // 分词结果写入文件 

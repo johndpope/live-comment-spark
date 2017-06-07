@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yqk/live_comment_new/src/cppjieba-master
+CMAKE_SOURCE_DIR = /home/kovean/WORK/live-comment-spark/src/cppjieba-master
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yqk/live_comment_new/src/jieba
+CMAKE_BINARY_DIR = /home/kovean/WORK/live-comment-spark/src/jieba
 
 # Include any dependencies generated for this target.
 include test/unittest/CMakeFiles/test.run.dir/depend.make
@@ -58,17 +58,17 @@ include test/unittest/CMakeFiles/test.run.dir/progress.make
 include test/unittest/CMakeFiles/test.run.dir/flags.make
 
 test/unittest/CMakeFiles/test.run.dir/gtest_main.cpp.o: test/unittest/CMakeFiles/test.run.dir/flags.make
-test/unittest/CMakeFiles/test.run.dir/gtest_main.cpp.o: /home/yqk/live_comment_new/src/cppjieba-master/test/unittest/gtest_main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yqk/live_comment_new/src/jieba/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object test/unittest/CMakeFiles/test.run.dir/gtest_main.cpp.o"
-	cd /home/yqk/live_comment_new/src/jieba/test/unittest && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.run.dir/gtest_main.cpp.o -c /home/yqk/live_comment_new/src/cppjieba-master/test/unittest/gtest_main.cpp
+test/unittest/CMakeFiles/test.run.dir/gtest_main.cpp.o: /home/kovean/WORK/live-comment-spark/src/cppjieba-master/test/unittest/gtest_main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kovean/WORK/live-comment-spark/src/jieba/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object test/unittest/CMakeFiles/test.run.dir/gtest_main.cpp.o"
+	cd /home/kovean/WORK/live-comment-spark/src/jieba/test/unittest && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.run.dir/gtest_main.cpp.o -c /home/kovean/WORK/live-comment-spark/src/cppjieba-master/test/unittest/gtest_main.cpp
 
 test/unittest/CMakeFiles/test.run.dir/gtest_main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.run.dir/gtest_main.cpp.i"
-	cd /home/yqk/live_comment_new/src/jieba/test/unittest && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yqk/live_comment_new/src/cppjieba-master/test/unittest/gtest_main.cpp > CMakeFiles/test.run.dir/gtest_main.cpp.i
+	cd /home/kovean/WORK/live-comment-spark/src/jieba/test/unittest && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kovean/WORK/live-comment-spark/src/cppjieba-master/test/unittest/gtest_main.cpp > CMakeFiles/test.run.dir/gtest_main.cpp.i
 
 test/unittest/CMakeFiles/test.run.dir/gtest_main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.run.dir/gtest_main.cpp.s"
-	cd /home/yqk/live_comment_new/src/jieba/test/unittest && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yqk/live_comment_new/src/cppjieba-master/test/unittest/gtest_main.cpp -o CMakeFiles/test.run.dir/gtest_main.cpp.s
+	cd /home/kovean/WORK/live-comment-spark/src/jieba/test/unittest && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kovean/WORK/live-comment-spark/src/cppjieba-master/test/unittest/gtest_main.cpp -o CMakeFiles/test.run.dir/gtest_main.cpp.s
 
 test/unittest/CMakeFiles/test.run.dir/gtest_main.cpp.o.requires:
 
@@ -82,17 +82,17 @@ test/unittest/CMakeFiles/test.run.dir/gtest_main.cpp.o.provides.build: test/unit
 
 
 test/unittest/CMakeFiles/test.run.dir/keyword_extractor_test.cpp.o: test/unittest/CMakeFiles/test.run.dir/flags.make
-test/unittest/CMakeFiles/test.run.dir/keyword_extractor_test.cpp.o: /home/yqk/live_comment_new/src/cppjieba-master/test/unittest/keyword_extractor_test.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yqk/live_comment_new/src/jieba/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object test/unittest/CMakeFiles/test.run.dir/keyword_extractor_test.cpp.o"
-	cd /home/yqk/live_comment_new/src/jieba/test/unittest && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.run.dir/keyword_extractor_test.cpp.o -c /home/yqk/live_comment_new/src/cppjieba-master/test/unittest/keyword_extractor_test.cpp
+test/unittest/CMakeFiles/test.run.dir/keyword_extractor_test.cpp.o: /home/kovean/WORK/live-comment-spark/src/cppjieba-master/test/unittest/keyword_extractor_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kovean/WORK/live-comment-spark/src/jieba/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object test/unittest/CMakeFiles/test.run.dir/keyword_extractor_test.cpp.o"
+	cd /home/kovean/WORK/live-comment-spark/src/jieba/test/unittest && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.run.dir/keyword_extractor_test.cpp.o -c /home/kovean/WORK/live-comment-spark/src/cppjieba-master/test/unittest/keyword_extractor_test.cpp
 
 test/unittest/CMakeFiles/test.run.dir/keyword_extractor_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.run.dir/keyword_extractor_test.cpp.i"
-	cd /home/yqk/live_comment_new/src/jieba/test/unittest && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yqk/live_comment_new/src/cppjieba-master/test/unittest/keyword_extractor_test.cpp > CMakeFiles/test.run.dir/keyword_extractor_test.cpp.i
+	cd /home/kovean/WORK/live-comment-spark/src/jieba/test/unittest && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kovean/WORK/live-comment-spark/src/cppjieba-master/test/unittest/keyword_extractor_test.cpp > CMakeFiles/test.run.dir/keyword_extractor_test.cpp.i
 
 test/unittest/CMakeFiles/test.run.dir/keyword_extractor_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.run.dir/keyword_extractor_test.cpp.s"
-	cd /home/yqk/live_comment_new/src/jieba/test/unittest && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yqk/live_comment_new/src/cppjieba-master/test/unittest/keyword_extractor_test.cpp -o CMakeFiles/test.run.dir/keyword_extractor_test.cpp.s
+	cd /home/kovean/WORK/live-comment-spark/src/jieba/test/unittest && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kovean/WORK/live-comment-spark/src/cppjieba-master/test/unittest/keyword_extractor_test.cpp -o CMakeFiles/test.run.dir/keyword_extractor_test.cpp.s
 
 test/unittest/CMakeFiles/test.run.dir/keyword_extractor_test.cpp.o.requires:
 
@@ -106,17 +106,17 @@ test/unittest/CMakeFiles/test.run.dir/keyword_extractor_test.cpp.o.provides.buil
 
 
 test/unittest/CMakeFiles/test.run.dir/trie_test.cpp.o: test/unittest/CMakeFiles/test.run.dir/flags.make
-test/unittest/CMakeFiles/test.run.dir/trie_test.cpp.o: /home/yqk/live_comment_new/src/cppjieba-master/test/unittest/trie_test.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yqk/live_comment_new/src/jieba/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object test/unittest/CMakeFiles/test.run.dir/trie_test.cpp.o"
-	cd /home/yqk/live_comment_new/src/jieba/test/unittest && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.run.dir/trie_test.cpp.o -c /home/yqk/live_comment_new/src/cppjieba-master/test/unittest/trie_test.cpp
+test/unittest/CMakeFiles/test.run.dir/trie_test.cpp.o: /home/kovean/WORK/live-comment-spark/src/cppjieba-master/test/unittest/trie_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kovean/WORK/live-comment-spark/src/jieba/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object test/unittest/CMakeFiles/test.run.dir/trie_test.cpp.o"
+	cd /home/kovean/WORK/live-comment-spark/src/jieba/test/unittest && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.run.dir/trie_test.cpp.o -c /home/kovean/WORK/live-comment-spark/src/cppjieba-master/test/unittest/trie_test.cpp
 
 test/unittest/CMakeFiles/test.run.dir/trie_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.run.dir/trie_test.cpp.i"
-	cd /home/yqk/live_comment_new/src/jieba/test/unittest && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yqk/live_comment_new/src/cppjieba-master/test/unittest/trie_test.cpp > CMakeFiles/test.run.dir/trie_test.cpp.i
+	cd /home/kovean/WORK/live-comment-spark/src/jieba/test/unittest && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kovean/WORK/live-comment-spark/src/cppjieba-master/test/unittest/trie_test.cpp > CMakeFiles/test.run.dir/trie_test.cpp.i
 
 test/unittest/CMakeFiles/test.run.dir/trie_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.run.dir/trie_test.cpp.s"
-	cd /home/yqk/live_comment_new/src/jieba/test/unittest && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yqk/live_comment_new/src/cppjieba-master/test/unittest/trie_test.cpp -o CMakeFiles/test.run.dir/trie_test.cpp.s
+	cd /home/kovean/WORK/live-comment-spark/src/jieba/test/unittest && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kovean/WORK/live-comment-spark/src/cppjieba-master/test/unittest/trie_test.cpp -o CMakeFiles/test.run.dir/trie_test.cpp.s
 
 test/unittest/CMakeFiles/test.run.dir/trie_test.cpp.o.requires:
 
@@ -130,17 +130,17 @@ test/unittest/CMakeFiles/test.run.dir/trie_test.cpp.o.provides.build: test/unitt
 
 
 test/unittest/CMakeFiles/test.run.dir/segments_test.cpp.o: test/unittest/CMakeFiles/test.run.dir/flags.make
-test/unittest/CMakeFiles/test.run.dir/segments_test.cpp.o: /home/yqk/live_comment_new/src/cppjieba-master/test/unittest/segments_test.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yqk/live_comment_new/src/jieba/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object test/unittest/CMakeFiles/test.run.dir/segments_test.cpp.o"
-	cd /home/yqk/live_comment_new/src/jieba/test/unittest && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.run.dir/segments_test.cpp.o -c /home/yqk/live_comment_new/src/cppjieba-master/test/unittest/segments_test.cpp
+test/unittest/CMakeFiles/test.run.dir/segments_test.cpp.o: /home/kovean/WORK/live-comment-spark/src/cppjieba-master/test/unittest/segments_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kovean/WORK/live-comment-spark/src/jieba/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object test/unittest/CMakeFiles/test.run.dir/segments_test.cpp.o"
+	cd /home/kovean/WORK/live-comment-spark/src/jieba/test/unittest && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.run.dir/segments_test.cpp.o -c /home/kovean/WORK/live-comment-spark/src/cppjieba-master/test/unittest/segments_test.cpp
 
 test/unittest/CMakeFiles/test.run.dir/segments_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.run.dir/segments_test.cpp.i"
-	cd /home/yqk/live_comment_new/src/jieba/test/unittest && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yqk/live_comment_new/src/cppjieba-master/test/unittest/segments_test.cpp > CMakeFiles/test.run.dir/segments_test.cpp.i
+	cd /home/kovean/WORK/live-comment-spark/src/jieba/test/unittest && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kovean/WORK/live-comment-spark/src/cppjieba-master/test/unittest/segments_test.cpp > CMakeFiles/test.run.dir/segments_test.cpp.i
 
 test/unittest/CMakeFiles/test.run.dir/segments_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.run.dir/segments_test.cpp.s"
-	cd /home/yqk/live_comment_new/src/jieba/test/unittest && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yqk/live_comment_new/src/cppjieba-master/test/unittest/segments_test.cpp -o CMakeFiles/test.run.dir/segments_test.cpp.s
+	cd /home/kovean/WORK/live-comment-spark/src/jieba/test/unittest && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kovean/WORK/live-comment-spark/src/cppjieba-master/test/unittest/segments_test.cpp -o CMakeFiles/test.run.dir/segments_test.cpp.s
 
 test/unittest/CMakeFiles/test.run.dir/segments_test.cpp.o.requires:
 
@@ -154,17 +154,17 @@ test/unittest/CMakeFiles/test.run.dir/segments_test.cpp.o.provides.build: test/u
 
 
 test/unittest/CMakeFiles/test.run.dir/pos_tagger_test.cpp.o: test/unittest/CMakeFiles/test.run.dir/flags.make
-test/unittest/CMakeFiles/test.run.dir/pos_tagger_test.cpp.o: /home/yqk/live_comment_new/src/cppjieba-master/test/unittest/pos_tagger_test.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yqk/live_comment_new/src/jieba/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object test/unittest/CMakeFiles/test.run.dir/pos_tagger_test.cpp.o"
-	cd /home/yqk/live_comment_new/src/jieba/test/unittest && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.run.dir/pos_tagger_test.cpp.o -c /home/yqk/live_comment_new/src/cppjieba-master/test/unittest/pos_tagger_test.cpp
+test/unittest/CMakeFiles/test.run.dir/pos_tagger_test.cpp.o: /home/kovean/WORK/live-comment-spark/src/cppjieba-master/test/unittest/pos_tagger_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kovean/WORK/live-comment-spark/src/jieba/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object test/unittest/CMakeFiles/test.run.dir/pos_tagger_test.cpp.o"
+	cd /home/kovean/WORK/live-comment-spark/src/jieba/test/unittest && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.run.dir/pos_tagger_test.cpp.o -c /home/kovean/WORK/live-comment-spark/src/cppjieba-master/test/unittest/pos_tagger_test.cpp
 
 test/unittest/CMakeFiles/test.run.dir/pos_tagger_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.run.dir/pos_tagger_test.cpp.i"
-	cd /home/yqk/live_comment_new/src/jieba/test/unittest && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yqk/live_comment_new/src/cppjieba-master/test/unittest/pos_tagger_test.cpp > CMakeFiles/test.run.dir/pos_tagger_test.cpp.i
+	cd /home/kovean/WORK/live-comment-spark/src/jieba/test/unittest && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kovean/WORK/live-comment-spark/src/cppjieba-master/test/unittest/pos_tagger_test.cpp > CMakeFiles/test.run.dir/pos_tagger_test.cpp.i
 
 test/unittest/CMakeFiles/test.run.dir/pos_tagger_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.run.dir/pos_tagger_test.cpp.s"
-	cd /home/yqk/live_comment_new/src/jieba/test/unittest && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yqk/live_comment_new/src/cppjieba-master/test/unittest/pos_tagger_test.cpp -o CMakeFiles/test.run.dir/pos_tagger_test.cpp.s
+	cd /home/kovean/WORK/live-comment-spark/src/jieba/test/unittest && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kovean/WORK/live-comment-spark/src/cppjieba-master/test/unittest/pos_tagger_test.cpp -o CMakeFiles/test.run.dir/pos_tagger_test.cpp.s
 
 test/unittest/CMakeFiles/test.run.dir/pos_tagger_test.cpp.o.requires:
 
@@ -178,17 +178,17 @@ test/unittest/CMakeFiles/test.run.dir/pos_tagger_test.cpp.o.provides.build: test
 
 
 test/unittest/CMakeFiles/test.run.dir/jieba_test.cpp.o: test/unittest/CMakeFiles/test.run.dir/flags.make
-test/unittest/CMakeFiles/test.run.dir/jieba_test.cpp.o: /home/yqk/live_comment_new/src/cppjieba-master/test/unittest/jieba_test.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yqk/live_comment_new/src/jieba/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object test/unittest/CMakeFiles/test.run.dir/jieba_test.cpp.o"
-	cd /home/yqk/live_comment_new/src/jieba/test/unittest && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.run.dir/jieba_test.cpp.o -c /home/yqk/live_comment_new/src/cppjieba-master/test/unittest/jieba_test.cpp
+test/unittest/CMakeFiles/test.run.dir/jieba_test.cpp.o: /home/kovean/WORK/live-comment-spark/src/cppjieba-master/test/unittest/jieba_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kovean/WORK/live-comment-spark/src/jieba/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object test/unittest/CMakeFiles/test.run.dir/jieba_test.cpp.o"
+	cd /home/kovean/WORK/live-comment-spark/src/jieba/test/unittest && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.run.dir/jieba_test.cpp.o -c /home/kovean/WORK/live-comment-spark/src/cppjieba-master/test/unittest/jieba_test.cpp
 
 test/unittest/CMakeFiles/test.run.dir/jieba_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.run.dir/jieba_test.cpp.i"
-	cd /home/yqk/live_comment_new/src/jieba/test/unittest && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yqk/live_comment_new/src/cppjieba-master/test/unittest/jieba_test.cpp > CMakeFiles/test.run.dir/jieba_test.cpp.i
+	cd /home/kovean/WORK/live-comment-spark/src/jieba/test/unittest && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kovean/WORK/live-comment-spark/src/cppjieba-master/test/unittest/jieba_test.cpp > CMakeFiles/test.run.dir/jieba_test.cpp.i
 
 test/unittest/CMakeFiles/test.run.dir/jieba_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.run.dir/jieba_test.cpp.s"
-	cd /home/yqk/live_comment_new/src/jieba/test/unittest && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yqk/live_comment_new/src/cppjieba-master/test/unittest/jieba_test.cpp -o CMakeFiles/test.run.dir/jieba_test.cpp.s
+	cd /home/kovean/WORK/live-comment-spark/src/jieba/test/unittest && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kovean/WORK/live-comment-spark/src/cppjieba-master/test/unittest/jieba_test.cpp -o CMakeFiles/test.run.dir/jieba_test.cpp.s
 
 test/unittest/CMakeFiles/test.run.dir/jieba_test.cpp.o.requires:
 
@@ -202,17 +202,17 @@ test/unittest/CMakeFiles/test.run.dir/jieba_test.cpp.o.provides.build: test/unit
 
 
 test/unittest/CMakeFiles/test.run.dir/pre_filter_test.cpp.o: test/unittest/CMakeFiles/test.run.dir/flags.make
-test/unittest/CMakeFiles/test.run.dir/pre_filter_test.cpp.o: /home/yqk/live_comment_new/src/cppjieba-master/test/unittest/pre_filter_test.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yqk/live_comment_new/src/jieba/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object test/unittest/CMakeFiles/test.run.dir/pre_filter_test.cpp.o"
-	cd /home/yqk/live_comment_new/src/jieba/test/unittest && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.run.dir/pre_filter_test.cpp.o -c /home/yqk/live_comment_new/src/cppjieba-master/test/unittest/pre_filter_test.cpp
+test/unittest/CMakeFiles/test.run.dir/pre_filter_test.cpp.o: /home/kovean/WORK/live-comment-spark/src/cppjieba-master/test/unittest/pre_filter_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kovean/WORK/live-comment-spark/src/jieba/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object test/unittest/CMakeFiles/test.run.dir/pre_filter_test.cpp.o"
+	cd /home/kovean/WORK/live-comment-spark/src/jieba/test/unittest && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.run.dir/pre_filter_test.cpp.o -c /home/kovean/WORK/live-comment-spark/src/cppjieba-master/test/unittest/pre_filter_test.cpp
 
 test/unittest/CMakeFiles/test.run.dir/pre_filter_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.run.dir/pre_filter_test.cpp.i"
-	cd /home/yqk/live_comment_new/src/jieba/test/unittest && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yqk/live_comment_new/src/cppjieba-master/test/unittest/pre_filter_test.cpp > CMakeFiles/test.run.dir/pre_filter_test.cpp.i
+	cd /home/kovean/WORK/live-comment-spark/src/jieba/test/unittest && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kovean/WORK/live-comment-spark/src/cppjieba-master/test/unittest/pre_filter_test.cpp > CMakeFiles/test.run.dir/pre_filter_test.cpp.i
 
 test/unittest/CMakeFiles/test.run.dir/pre_filter_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.run.dir/pre_filter_test.cpp.s"
-	cd /home/yqk/live_comment_new/src/jieba/test/unittest && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yqk/live_comment_new/src/cppjieba-master/test/unittest/pre_filter_test.cpp -o CMakeFiles/test.run.dir/pre_filter_test.cpp.s
+	cd /home/kovean/WORK/live-comment-spark/src/jieba/test/unittest && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kovean/WORK/live-comment-spark/src/cppjieba-master/test/unittest/pre_filter_test.cpp -o CMakeFiles/test.run.dir/pre_filter_test.cpp.s
 
 test/unittest/CMakeFiles/test.run.dir/pre_filter_test.cpp.o.requires:
 
@@ -226,17 +226,17 @@ test/unittest/CMakeFiles/test.run.dir/pre_filter_test.cpp.o.provides.build: test
 
 
 test/unittest/CMakeFiles/test.run.dir/unicode_test.cpp.o: test/unittest/CMakeFiles/test.run.dir/flags.make
-test/unittest/CMakeFiles/test.run.dir/unicode_test.cpp.o: /home/yqk/live_comment_new/src/cppjieba-master/test/unittest/unicode_test.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yqk/live_comment_new/src/jieba/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object test/unittest/CMakeFiles/test.run.dir/unicode_test.cpp.o"
-	cd /home/yqk/live_comment_new/src/jieba/test/unittest && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.run.dir/unicode_test.cpp.o -c /home/yqk/live_comment_new/src/cppjieba-master/test/unittest/unicode_test.cpp
+test/unittest/CMakeFiles/test.run.dir/unicode_test.cpp.o: /home/kovean/WORK/live-comment-spark/src/cppjieba-master/test/unittest/unicode_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kovean/WORK/live-comment-spark/src/jieba/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object test/unittest/CMakeFiles/test.run.dir/unicode_test.cpp.o"
+	cd /home/kovean/WORK/live-comment-spark/src/jieba/test/unittest && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.run.dir/unicode_test.cpp.o -c /home/kovean/WORK/live-comment-spark/src/cppjieba-master/test/unittest/unicode_test.cpp
 
 test/unittest/CMakeFiles/test.run.dir/unicode_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.run.dir/unicode_test.cpp.i"
-	cd /home/yqk/live_comment_new/src/jieba/test/unittest && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yqk/live_comment_new/src/cppjieba-master/test/unittest/unicode_test.cpp > CMakeFiles/test.run.dir/unicode_test.cpp.i
+	cd /home/kovean/WORK/live-comment-spark/src/jieba/test/unittest && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kovean/WORK/live-comment-spark/src/cppjieba-master/test/unittest/unicode_test.cpp > CMakeFiles/test.run.dir/unicode_test.cpp.i
 
 test/unittest/CMakeFiles/test.run.dir/unicode_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.run.dir/unicode_test.cpp.s"
-	cd /home/yqk/live_comment_new/src/jieba/test/unittest && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yqk/live_comment_new/src/cppjieba-master/test/unittest/unicode_test.cpp -o CMakeFiles/test.run.dir/unicode_test.cpp.s
+	cd /home/kovean/WORK/live-comment-spark/src/jieba/test/unittest && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kovean/WORK/live-comment-spark/src/cppjieba-master/test/unittest/unicode_test.cpp -o CMakeFiles/test.run.dir/unicode_test.cpp.s
 
 test/unittest/CMakeFiles/test.run.dir/unicode_test.cpp.o.requires:
 
@@ -250,17 +250,17 @@ test/unittest/CMakeFiles/test.run.dir/unicode_test.cpp.o.provides.build: test/un
 
 
 test/unittest/CMakeFiles/test.run.dir/textrank_test.cpp.o: test/unittest/CMakeFiles/test.run.dir/flags.make
-test/unittest/CMakeFiles/test.run.dir/textrank_test.cpp.o: /home/yqk/live_comment_new/src/cppjieba-master/test/unittest/textrank_test.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yqk/live_comment_new/src/jieba/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object test/unittest/CMakeFiles/test.run.dir/textrank_test.cpp.o"
-	cd /home/yqk/live_comment_new/src/jieba/test/unittest && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.run.dir/textrank_test.cpp.o -c /home/yqk/live_comment_new/src/cppjieba-master/test/unittest/textrank_test.cpp
+test/unittest/CMakeFiles/test.run.dir/textrank_test.cpp.o: /home/kovean/WORK/live-comment-spark/src/cppjieba-master/test/unittest/textrank_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kovean/WORK/live-comment-spark/src/jieba/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object test/unittest/CMakeFiles/test.run.dir/textrank_test.cpp.o"
+	cd /home/kovean/WORK/live-comment-spark/src/jieba/test/unittest && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.run.dir/textrank_test.cpp.o -c /home/kovean/WORK/live-comment-spark/src/cppjieba-master/test/unittest/textrank_test.cpp
 
 test/unittest/CMakeFiles/test.run.dir/textrank_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.run.dir/textrank_test.cpp.i"
-	cd /home/yqk/live_comment_new/src/jieba/test/unittest && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yqk/live_comment_new/src/cppjieba-master/test/unittest/textrank_test.cpp > CMakeFiles/test.run.dir/textrank_test.cpp.i
+	cd /home/kovean/WORK/live-comment-spark/src/jieba/test/unittest && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kovean/WORK/live-comment-spark/src/cppjieba-master/test/unittest/textrank_test.cpp > CMakeFiles/test.run.dir/textrank_test.cpp.i
 
 test/unittest/CMakeFiles/test.run.dir/textrank_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.run.dir/textrank_test.cpp.s"
-	cd /home/yqk/live_comment_new/src/jieba/test/unittest && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yqk/live_comment_new/src/cppjieba-master/test/unittest/textrank_test.cpp -o CMakeFiles/test.run.dir/textrank_test.cpp.s
+	cd /home/kovean/WORK/live-comment-spark/src/jieba/test/unittest && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kovean/WORK/live-comment-spark/src/cppjieba-master/test/unittest/textrank_test.cpp -o CMakeFiles/test.run.dir/textrank_test.cpp.s
 
 test/unittest/CMakeFiles/test.run.dir/textrank_test.cpp.o.requires:
 
@@ -300,8 +300,8 @@ test/test.run: test/unittest/CMakeFiles/test.run.dir/textrank_test.cpp.o
 test/test.run: test/unittest/CMakeFiles/test.run.dir/build.make
 test/test.run: deps/gtest/libgtest.a
 test/test.run: test/unittest/CMakeFiles/test.run.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yqk/live_comment_new/src/jieba/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable ../test.run"
-	cd /home/yqk/live_comment_new/src/jieba/test/unittest && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test.run.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kovean/WORK/live-comment-spark/src/jieba/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable ../test.run"
+	cd /home/kovean/WORK/live-comment-spark/src/jieba/test/unittest && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test.run.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 test/unittest/CMakeFiles/test.run.dir/build: test/test.run
@@ -321,10 +321,10 @@ test/unittest/CMakeFiles/test.run.dir/requires: test/unittest/CMakeFiles/test.ru
 .PHONY : test/unittest/CMakeFiles/test.run.dir/requires
 
 test/unittest/CMakeFiles/test.run.dir/clean:
-	cd /home/yqk/live_comment_new/src/jieba/test/unittest && $(CMAKE_COMMAND) -P CMakeFiles/test.run.dir/cmake_clean.cmake
+	cd /home/kovean/WORK/live-comment-spark/src/jieba/test/unittest && $(CMAKE_COMMAND) -P CMakeFiles/test.run.dir/cmake_clean.cmake
 .PHONY : test/unittest/CMakeFiles/test.run.dir/clean
 
 test/unittest/CMakeFiles/test.run.dir/depend:
-	cd /home/yqk/live_comment_new/src/jieba && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yqk/live_comment_new/src/cppjieba-master /home/yqk/live_comment_new/src/cppjieba-master/test/unittest /home/yqk/live_comment_new/src/jieba /home/yqk/live_comment_new/src/jieba/test/unittest /home/yqk/live_comment_new/src/jieba/test/unittest/CMakeFiles/test.run.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/kovean/WORK/live-comment-spark/src/jieba && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kovean/WORK/live-comment-spark/src/cppjieba-master /home/kovean/WORK/live-comment-spark/src/cppjieba-master/test/unittest /home/kovean/WORK/live-comment-spark/src/jieba /home/kovean/WORK/live-comment-spark/src/jieba/test/unittest /home/kovean/WORK/live-comment-spark/src/jieba/test/unittest/CMakeFiles/test.run.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : test/unittest/CMakeFiles/test.run.dir/depend
 

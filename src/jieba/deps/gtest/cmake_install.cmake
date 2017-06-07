@@ -1,4 +1,4 @@
-# Install script for directory: /home/yqk/live_comment_new/src/cppjieba-master/deps/gtest
+# Install script for directory: /home/kovean/WORK/live-comment-spark/src/cppjieba-master/deps/gtest
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

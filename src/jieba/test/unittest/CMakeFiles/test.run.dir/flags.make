@@ -6,5 +6,5 @@ CXX_FLAGS =   -O3 -Wall -g
 
 CXX_DEFINES = -DLOGGING_LEVEL=LL_WARNING
 
-CXX_INCLUDES = -I/home/yqk/live_comment_new/src/cppjieba-master/deps -I/home/yqk/live_comment_new/src/cppjieba-master/include -I/home/yqk/live_comment_new/src/cppjieba-master/deps/gtest/include 
+CXX_INCLUDES = -I/home/kovean/WORK/live-comment-spark/src/cppjieba-master/deps -I/home/kovean/WORK/live-comment-spark/src/cppjieba-master/include -I/home/kovean/WORK/live-comment-spark/src/cppjieba-master/deps/gtest/include 
 

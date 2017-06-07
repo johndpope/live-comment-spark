@@ -7,11 +7,11 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
-  "/home/yqk/live_comment_new/src/cppjieba-master/CMakeLists.txt"
-  "/home/yqk/live_comment_new/src/cppjieba-master/deps/CMakeLists.txt"
-  "/home/yqk/live_comment_new/src/cppjieba-master/deps/gtest/CMakeLists.txt"
-  "/home/yqk/live_comment_new/src/cppjieba-master/test/CMakeLists.txt"
-  "/home/yqk/live_comment_new/src/cppjieba-master/test/unittest/CMakeLists.txt"
+  "/home/kovean/WORK/live-comment-spark/src/cppjieba-master/CMakeLists.txt"
+  "/home/kovean/WORK/live-comment-spark/src/cppjieba-master/deps/CMakeLists.txt"
+  "/home/kovean/WORK/live-comment-spark/src/cppjieba-master/deps/gtest/CMakeLists.txt"
+  "/home/kovean/WORK/live-comment-spark/src/cppjieba-master/test/CMakeLists.txt"
+  "/home/kovean/WORK/live-comment-spark/src/cppjieba-master/test/unittest/CMakeLists.txt"
   "CMakeFiles/3.5.1/CMakeCCompiler.cmake"
   "CMakeFiles/3.5.1/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.5.1/CMakeSystem.cmake"

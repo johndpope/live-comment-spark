@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yqk/live_comment_new/src/cppjieba-master
+CMAKE_SOURCE_DIR = /home/kovean/WORK/live-comment-spark/src/cppjieba-master
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yqk/live_comment_new/src/jieba
+CMAKE_BINARY_DIR = /home/kovean/WORK/live-comment-spark/src/jieba
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,8 +80,8 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -91,14 +91,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/yqk/live_comment_new/src/jieba && $(CMAKE_COMMAND) -E cmake_progress_start /home/yqk/live_comment_new/src/jieba/CMakeFiles /home/yqk/live_comment_new/src/jieba/test/CMakeFiles/progress.marks
-	cd /home/yqk/live_comment_new/src/jieba && $(MAKE) -f CMakeFiles/Makefile2 test/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yqk/live_comment_new/src/jieba/CMakeFiles 0
+	cd /home/kovean/WORK/live-comment-spark/src/jieba && $(CMAKE_COMMAND) -E cmake_progress_start /home/kovean/WORK/live-comment-spark/src/jieba/CMakeFiles /home/kovean/WORK/live-comment-spark/src/jieba/test/CMakeFiles/progress.marks
+	cd /home/kovean/WORK/live-comment-spark/src/jieba && $(MAKE) -f CMakeFiles/Makefile2 test/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kovean/WORK/live-comment-spark/src/jieba/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/yqk/live_comment_new/src/jieba && $(MAKE) -f CMakeFiles/Makefile2 test/clean
+	cd /home/kovean/WORK/live-comment-spark/src/jieba && $(MAKE) -f CMakeFiles/Makefile2 test/clean
 .PHONY : clean
 
 # The main clean target
@@ -108,22 +108,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/yqk/live_comment_new/src/jieba && $(MAKE) -f CMakeFiles/Makefile2 test/preinstall
+	cd /home/kovean/WORK/live-comment-spark/src/jieba && $(MAKE) -f CMakeFiles/Makefile2 test/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/yqk/live_comment_new/src/jieba && $(MAKE) -f CMakeFiles/Makefile2 test/preinstall
+	cd /home/kovean/WORK/live-comment-spark/src/jieba && $(MAKE) -f CMakeFiles/Makefile2 test/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/yqk/live_comment_new/src/jieba && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/kovean/WORK/live-comment-spark/src/jieba && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 test/CMakeFiles/demo.dir/rule:
-	cd /home/yqk/live_comment_new/src/jieba && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/demo.dir/rule
+	cd /home/kovean/WORK/live-comment-spark/src/jieba && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/demo.dir/rule
 .PHONY : test/CMakeFiles/demo.dir/rule
 
 # Convenience name for target.
@@ -133,12 +133,12 @@ demo: test/CMakeFiles/demo.dir/rule
 
 # fast build rule for target.
 demo/fast:
-	cd /home/yqk/live_comment_new/src/jieba && $(MAKE) -f test/CMakeFiles/demo.dir/build.make test/CMakeFiles/demo.dir/build
+	cd /home/kovean/WORK/live-comment-spark/src/jieba && $(MAKE) -f test/CMakeFiles/demo.dir/build.make test/CMakeFiles/demo.dir/build
 .PHONY : demo/fast
 
 # Convenience name for target.
 test/CMakeFiles/load_test.dir/rule:
-	cd /home/yqk/live_comment_new/src/jieba && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/load_test.dir/rule
+	cd /home/kovean/WORK/live-comment-spark/src/jieba && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/load_test.dir/rule
 .PHONY : test/CMakeFiles/load_test.dir/rule
 
 # Convenience name for target.
@@ -148,7 +148,7 @@ load_test: test/CMakeFiles/load_test.dir/rule
 
 # fast build rule for target.
 load_test/fast:
-	cd /home/yqk/live_comment_new/src/jieba && $(MAKE) -f test/CMakeFiles/load_test.dir/build.make test/CMakeFiles/load_test.dir/build
+	cd /home/kovean/WORK/live-comment-spark/src/jieba && $(MAKE) -f test/CMakeFiles/load_test.dir/build.make test/CMakeFiles/load_test.dir/build
 .PHONY : load_test/fast
 
 demo.o: demo.cpp.o
@@ -157,7 +157,7 @@ demo.o: demo.cpp.o
 
 # target to build an object file
 demo.cpp.o:
-	cd /home/yqk/live_comment_new/src/jieba && $(MAKE) -f test/CMakeFiles/demo.dir/build.make test/CMakeFiles/demo.dir/demo.cpp.o
+	cd /home/kovean/WORK/live-comment-spark/src/jieba && $(MAKE) -f test/CMakeFiles/demo.dir/build.make test/CMakeFiles/demo.dir/demo.cpp.o
 .PHONY : demo.cpp.o
 
 demo.i: demo.cpp.i
@@ -166,7 +166,7 @@ demo.i: demo.cpp.i
 
 # target to preprocess a source file
 demo.cpp.i:
-	cd /home/yqk/live_comment_new/src/jieba && $(MAKE) -f test/CMakeFiles/demo.dir/build.make test/CMakeFiles/demo.dir/demo.cpp.i
+	cd /home/kovean/WORK/live-comment-spark/src/jieba && $(MAKE) -f test/CMakeFiles/demo.dir/build.make test/CMakeFiles/demo.dir/demo.cpp.i
 .PHONY : demo.cpp.i
 
 demo.s: demo.cpp.s
@@ -175,7 +175,7 @@ demo.s: demo.cpp.s
 
 # target to generate assembly for a file
 demo.cpp.s:
-	cd /home/yqk/live_comment_new/src/jieba && $(MAKE) -f test/CMakeFiles/demo.dir/build.make test/CMakeFiles/demo.dir/demo.cpp.s
+	cd /home/kovean/WORK/live-comment-spark/src/jieba && $(MAKE) -f test/CMakeFiles/demo.dir/build.make test/CMakeFiles/demo.dir/demo.cpp.s
 .PHONY : demo.cpp.s
 
 load_test.o: load_test.cpp.o
@@ -184,7 +184,7 @@ load_test.o: load_test.cpp.o
 
 # target to build an object file
 load_test.cpp.o:
-	cd /home/yqk/live_comment_new/src/jieba && $(MAKE) -f test/CMakeFiles/load_test.dir/build.make test/CMakeFiles/load_test.dir/load_test.cpp.o
+	cd /home/kovean/WORK/live-comment-spark/src/jieba && $(MAKE) -f test/CMakeFiles/load_test.dir/build.make test/CMakeFiles/load_test.dir/load_test.cpp.o
 .PHONY : load_test.cpp.o
 
 load_test.i: load_test.cpp.i
@@ -193,7 +193,7 @@ load_test.i: load_test.cpp.i
 
 # target to preprocess a source file
 load_test.cpp.i:
-	cd /home/yqk/live_comment_new/src/jieba && $(MAKE) -f test/CMakeFiles/load_test.dir/build.make test/CMakeFiles/load_test.dir/load_test.cpp.i
+	cd /home/kovean/WORK/live-comment-spark/src/jieba && $(MAKE) -f test/CMakeFiles/load_test.dir/build.make test/CMakeFiles/load_test.dir/load_test.cpp.i
 .PHONY : load_test.cpp.i
 
 load_test.s: load_test.cpp.s
@@ -202,7 +202,7 @@ load_test.s: load_test.cpp.s
 
 # target to generate assembly for a file
 load_test.cpp.s:
-	cd /home/yqk/live_comment_new/src/jieba && $(MAKE) -f test/CMakeFiles/load_test.dir/build.make test/CMakeFiles/load_test.dir/load_test.cpp.s
+	cd /home/kovean/WORK/live-comment-spark/src/jieba && $(MAKE) -f test/CMakeFiles/load_test.dir/build.make test/CMakeFiles/load_test.dir/load_test.cpp.s
 .PHONY : load_test.cpp.s
 
 # Help Target
@@ -233,6 +233,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/yqk/live_comment_new/src/jieba && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/kovean/WORK/live-comment-spark/src/jieba && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

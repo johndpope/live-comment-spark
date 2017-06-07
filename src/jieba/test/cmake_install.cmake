@@ -1,4 +1,4 @@
-# Install script for directory: /home/yqk/live_comment_new/src/cppjieba-master/test
+# Install script for directory: /home/kovean/WORK/live-comment-spark/src/cppjieba-master/test
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/yqk/live_comment_new/src/jieba/test/unittest/cmake_install.cmake")
+  include("/home/kovean/WORK/live-comment-spark/src/jieba/test/unittest/cmake_install.cmake")
 
 endif()
 

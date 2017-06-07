@@ -1,4 +1,4 @@
-# Install script for directory: /home/yqk/live_comment_new/src/cppjieba-master/test/unittest
+# Install script for directory: /home/kovean/WORK/live-comment-spark/src/cppjieba-master/test/unittest
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

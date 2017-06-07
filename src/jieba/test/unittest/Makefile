@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yqk/live_comment_new/src/cppjieba-master
+CMAKE_SOURCE_DIR = /home/kovean/WORK/live-comment-spark/src/cppjieba-master
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yqk/live_comment_new/src/jieba
+CMAKE_BINARY_DIR = /home/kovean/WORK/live-comment-spark/src/jieba
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -69,8 +69,8 @@ test/fast: test
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -91,14 +91,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/yqk/live_comment_new/src/jieba && $(CMAKE_COMMAND) -E cmake_progress_start /home/yqk/live_comment_new/src/jieba/CMakeFiles /home/yqk/live_comment_new/src/jieba/test/unittest/CMakeFiles/progress.marks
-	cd /home/yqk/live_comment_new/src/jieba && $(MAKE) -f CMakeFiles/Makefile2 test/unittest/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yqk/live_comment_new/src/jieba/CMakeFiles 0
+	cd /home/kovean/WORK/live-comment-spark/src/jieba && $(CMAKE_COMMAND) -E cmake_progress_start /home/kovean/WORK/live-comment-spark/src/jieba/CMakeFiles /home/kovean/WORK/live-comment-spark/src/jieba/test/unittest/CMakeFiles/progress.marks
+	cd /home/kovean/WORK/live-comment-spark/src/jieba && $(MAKE) -f CMakeFiles/Makefile2 test/unittest/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kovean/WORK/live-comment-spark/src/jieba/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/yqk/live_comment_new/src/jieba && $(MAKE) -f CMakeFiles/Makefile2 test/unittest/clean
+	cd /home/kovean/WORK/live-comment-spark/src/jieba && $(MAKE) -f CMakeFiles/Makefile2 test/unittest/clean
 .PHONY : clean
 
 # The main clean target
@@ -108,22 +108,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/yqk/live_comment_new/src/jieba && $(MAKE) -f CMakeFiles/Makefile2 test/unittest/preinstall
+	cd /home/kovean/WORK/live-comment-spark/src/jieba && $(MAKE) -f CMakeFiles/Makefile2 test/unittest/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/yqk/live_comment_new/src/jieba && $(MAKE) -f CMakeFiles/Makefile2 test/unittest/preinstall
+	cd /home/kovean/WORK/live-comment-spark/src/jieba && $(MAKE) -f CMakeFiles/Makefile2 test/unittest/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/yqk/live_comment_new/src/jieba && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/kovean/WORK/live-comment-spark/src/jieba && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 test/unittest/CMakeFiles/test.run.dir/rule:
-	cd /home/yqk/live_comment_new/src/jieba && $(MAKE) -f CMakeFiles/Makefile2 test/unittest/CMakeFiles/test.run.dir/rule
+	cd /home/kovean/WORK/live-comment-spark/src/jieba && $(MAKE) -f CMakeFiles/Makefile2 test/unittest/CMakeFiles/test.run.dir/rule
 .PHONY : test/unittest/CMakeFiles/test.run.dir/rule
 
 # Convenience name for target.
@@ -133,7 +133,7 @@ test.run: test/unittest/CMakeFiles/test.run.dir/rule
 
 # fast build rule for target.
 test.run/fast:
-	cd /home/yqk/live_comment_new/src/jieba && $(MAKE) -f test/unittest/CMakeFiles/test.run.dir/build.make test/unittest/CMakeFiles/test.run.dir/build
+	cd /home/kovean/WORK/live-comment-spark/src/jieba && $(MAKE) -f test/unittest/CMakeFiles/test.run.dir/build.make test/unittest/CMakeFiles/test.run.dir/build
 .PHONY : test.run/fast
 
 gtest_main.o: gtest_main.cpp.o
@@ -142,7 +142,7 @@ gtest_main.o: gtest_main.cpp.o
 
 # target to build an object file
 gtest_main.cpp.o:
-	cd /home/yqk/live_comment_new/src/jieba && $(MAKE) -f test/unittest/CMakeFiles/test.run.dir/build.make test/unittest/CMakeFiles/test.run.dir/gtest_main.cpp.o
+	cd /home/kovean/WORK/live-comment-spark/src/jieba && $(MAKE) -f test/unittest/CMakeFiles/test.run.dir/build.make test/unittest/CMakeFiles/test.run.dir/gtest_main.cpp.o
 .PHONY : gtest_main.cpp.o
 
 gtest_main.i: gtest_main.cpp.i
@@ -151,7 +151,7 @@ gtest_main.i: gtest_main.cpp.i
 
 # target to preprocess a source file
 gtest_main.cpp.i:
-	cd /home/yqk/live_comment_new/src/jieba && $(MAKE) -f test/unittest/CMakeFiles/test.run.dir/build.make test/unittest/CMakeFiles/test.run.dir/gtest_main.cpp.i
+	cd /home/kovean/WORK/live-comment-spark/src/jieba && $(MAKE) -f test/unittest/CMakeFiles/test.run.dir/build.make test/unittest/CMakeFiles/test.run.dir/gtest_main.cpp.i
 .PHONY : gtest_main.cpp.i
 
 gtest_main.s: gtest_main.cpp.s
@@ -160,7 +160,7 @@ gtest_main.s: gtest_main.cpp.s
 
 # target to generate assembly for a file
 gtest_main.cpp.s:
-	cd /home/yqk/live_comment_new/src/jieba && $(MAKE) -f test/unittest/CMakeFiles/test.run.dir/build.make test/unittest/CMakeFiles/test.run.dir/gtest_main.cpp.s
+	cd /home/kovean/WORK/live-comment-spark/src/jieba && $(MAKE) -f test/unittest/CMakeFiles/test.run.dir/build.make test/unittest/CMakeFiles/test.run.dir/gtest_main.cpp.s
 .PHONY : gtest_main.cpp.s
 
 jieba_test.o: jieba_test.cpp.o
@@ -169,7 +169,7 @@ jieba_test.o: jieba_test.cpp.o
 
 # target to build an object file
 jieba_test.cpp.o:
-	cd /home/yqk/live_comment_new/src/jieba && $(MAKE) -f test/unittest/CMakeFiles/test.run.dir/build.make test/unittest/CMakeFiles/test.run.dir/jieba_test.cpp.o
+	cd /home/kovean/WORK/live-comment-spark/src/jieba && $(MAKE) -f test/unittest/CMakeFiles/test.run.dir/build.make test/unittest/CMakeFiles/test.run.dir/jieba_test.cpp.o
 .PHONY : jieba_test.cpp.o
 
 jieba_test.i: jieba_test.cpp.i
@@ -178,7 +178,7 @@ jieba_test.i: jieba_test.cpp.i
 
 # target to preprocess a source file
 jieba_test.cpp.i:
-	cd /home/yqk/live_comment_new/src/jieba && $(MAKE) -f test/unittest/CMakeFiles/test.run.dir/build.make test/unittest/CMakeFiles/test.run.dir/jieba_test.cpp.i
+	cd /home/kovean/WORK/live-comment-spark/src/jieba && $(MAKE) -f test/unittest/CMakeFiles/test.run.dir/build.make test/unittest/CMakeFiles/test.run.dir/jieba_test.cpp.i
 .PHONY : jieba_test.cpp.i
 
 jieba_test.s: jieba_test.cpp.s
@@ -187,7 +187,7 @@ jieba_test.s: jieba_test.cpp.s
 
 # target to generate assembly for a file
 jieba_test.cpp.s:
-	cd /home/yqk/live_comment_new/src/jieba && $(MAKE) -f test/unittest/CMakeFiles/test.run.dir/build.make test/unittest/CMakeFiles/test.run.dir/jieba_test.cpp.s
+	cd /home/kovean/WORK/live-comment-spark/src/jieba && $(MAKE) -f test/unittest/CMakeFiles/test.run.dir/build.make test/unittest/CMakeFiles/test.run.dir/jieba_test.cpp.s
 .PHONY : jieba_test.cpp.s
 
 keyword_extractor_test.o: keyword_extractor_test.cpp.o
@@ -196,7 +196,7 @@ keyword_extractor_test.o: keyword_extractor_test.cpp.o
 
 # target to build an object file
 keyword_extractor_test.cpp.o:
-	cd /home/yqk/live_comment_new/src/jieba && $(MAKE) -f test/unittest/CMakeFiles/test.run.dir/build.make test/unittest/CMakeFiles/test.run.dir/keyword_extractor_test.cpp.o
+	cd /home/kovean/WORK/live-comment-spark/src/jieba && $(MAKE) -f test/unittest/CMakeFiles/test.run.dir/build.make test/unittest/CMakeFiles/test.run.dir/keyword_extractor_test.cpp.o
 .PHONY : keyword_extractor_test.cpp.o
 
 keyword_extractor_test.i: keyword_extractor_test.cpp.i
@@ -205,7 +205,7 @@ keyword_extractor_test.i: keyword_extractor_test.cpp.i
 
 # target to preprocess a source file
 keyword_extractor_test.cpp.i:
-	cd /home/yqk/live_comment_new/src/jieba && $(MAKE) -f test/unittest/CMakeFiles/test.run.dir/build.make test/unittest/CMakeFiles/test.run.dir/keyword_extractor_test.cpp.i
+	cd /home/kovean/WORK/live-comment-spark/src/jieba && $(MAKE) -f test/unittest/CMakeFiles/test.run.dir/build.make test/unittest/CMakeFiles/test.run.dir/keyword_extractor_test.cpp.i
 .PHONY : keyword_extractor_test.cpp.i
 
 keyword_extractor_test.s: keyword_extractor_test.cpp.s
@@ -214,7 +214,7 @@ keyword_extractor_test.s: keyword_extractor_test.cpp.s
 
 # target to generate assembly for a file
 keyword_extractor_test.cpp.s:
-	cd /home/yqk/live_comment_new/src/jieba && $(MAKE) -f test/unittest/CMakeFiles/test.run.dir/build.make test/unittest/CMakeFiles/test.run.dir/keyword_extractor_test.cpp.s
+	cd /home/kovean/WORK/live-comment-spark/src/jieba && $(MAKE) -f test/unittest/CMakeFiles/test.run.dir/build.make test/unittest/CMakeFiles/test.run.dir/keyword_extractor_test.cpp.s
 .PHONY : keyword_extractor_test.cpp.s
 
 pos_tagger_test.o: pos_tagger_test.cpp.o
@@ -223,7 +223,7 @@ pos_tagger_test.o: pos_tagger_test.cpp.o
 
 # target to build an object file
 pos_tagger_test.cpp.o:
-	cd /home/yqk/live_comment_new/src/jieba && $(MAKE) -f test/unittest/CMakeFiles/test.run.dir/build.make test/unittest/CMakeFiles/test.run.dir/pos_tagger_test.cpp.o
+	cd /home/kovean/WORK/live-comment-spark/src/jieba && $(MAKE) -f test/unittest/CMakeFiles/test.run.dir/build.make test/unittest/CMakeFiles/test.run.dir/pos_tagger_test.cpp.o
 .PHONY : pos_tagger_test.cpp.o
 
 pos_tagger_test.i: pos_tagger_test.cpp.i
@@ -232,7 +232,7 @@ pos_tagger_test.i: pos_tagger_test.cpp.i
 
 # target to preprocess a source file
 pos_tagger_test.cpp.i:
-	cd /home/yqk/live_comment_new/src/jieba && $(MAKE) -f test/unittest/CMakeFiles/test.run.dir/build.make test/unittest/CMakeFiles/test.run.dir/pos_tagger_test.cpp.i
+	cd /home/kovean/WORK/live-comment-spark/src/jieba && $(MAKE) -f test/unittest/CMakeFiles/test.run.dir/build.make test/unittest/CMakeFiles/test.run.dir/pos_tagger_test.cpp.i
 .PHONY : pos_tagger_test.cpp.i
 
 pos_tagger_test.s: pos_tagger_test.cpp.s
@@ -241,7 +241,7 @@ pos_tagger_test.s: pos_tagger_test.cpp.s
 
 # target to generate assembly for a file
 pos_tagger_test.cpp.s:
-	cd /home/yqk/live_comment_new/src/jieba && $(MAKE) -f test/unittest/CMakeFiles/test.run.dir/build.make test/unittest/CMakeFiles/test.run.dir/pos_tagger_test.cpp.s
+	cd /home/kovean/WORK/live-comment-spark/src/jieba && $(MAKE) -f test/unittest/CMakeFiles/test.run.dir/build.make test/unittest/CMakeFiles/test.run.dir/pos_tagger_test.cpp.s
 .PHONY : pos_tagger_test.cpp.s
 
 pre_filter_test.o: pre_filter_test.cpp.o
@@ -250,7 +250,7 @@ pre_filter_test.o: pre_filter_test.cpp.o
 
 # target to build an object file
 pre_filter_test.cpp.o:
-	cd /home/yqk/live_comment_new/src/jieba && $(MAKE) -f test/unittest/CMakeFiles/test.run.dir/build.make test/unittest/CMakeFiles/test.run.dir/pre_filter_test.cpp.o
+	cd /home/kovean/WORK/live-comment-spark/src/jieba && $(MAKE) -f test/unittest/CMakeFiles/test.run.dir/build.make test/unittest/CMakeFiles/test.run.dir/pre_filter_test.cpp.o
 .PHONY : pre_filter_test.cpp.o
 
 pre_filter_test.i: pre_filter_test.cpp.i
@@ -259,7 +259,7 @@ pre_filter_test.i: pre_filter_test.cpp.i
 
 # target to preprocess a source file
 pre_filter_test.cpp.i:
-	cd /home/yqk/live_comment_new/src/jieba && $(MAKE) -f test/unittest/CMakeFiles/test.run.dir/build.make test/unittest/CMakeFiles/test.run.dir/pre_filter_test.cpp.i
+	cd /home/kovean/WORK/live-comment-spark/src/jieba && $(MAKE) -f test/unittest/CMakeFiles/test.run.dir/build.make test/unittest/CMakeFiles/test.run.dir/pre_filter_test.cpp.i
 .PHONY : pre_filter_test.cpp.i
 
 pre_filter_test.s: pre_filter_test.cpp.s
@@ -268,7 +268,7 @@ pre_filter_test.s: pre_filter_test.cpp.s
 
 # target to generate assembly for a file
 pre_filter_test.cpp.s:
-	cd /home/yqk/live_comment_new/src/jieba && $(MAKE) -f test/unittest/CMakeFiles/test.run.dir/build.make test/unittest/CMakeFiles/test.run.dir/pre_filter_test.cpp.s
+	cd /home/kovean/WORK/live-comment-spark/src/jieba && $(MAKE) -f test/unittest/CMakeFiles/test.run.dir/build.make test/unittest/CMakeFiles/test.run.dir/pre_filter_test.cpp.s
 .PHONY : pre_filter_test.cpp.s
 
 segments_test.o: segments_test.cpp.o
@@ -277,7 +277,7 @@ segments_test.o: segments_test.cpp.o
 
 # target to build an object file
 segments_test.cpp.o:
-	cd /home/yqk/live_comment_new/src/jieba && $(MAKE) -f test/unittest/CMakeFiles/test.run.dir/build.make test/unittest/CMakeFiles/test.run.dir/segments_test.cpp.o
+	cd /home/kovean/WORK/live-comment-spark/src/jieba && $(MAKE) -f test/unittest/CMakeFiles/test.run.dir/build.make test/unittest/CMakeFiles/test.run.dir/segments_test.cpp.o
 .PHONY : segments_test.cpp.o
 
 segments_test.i: segments_test.cpp.i
@@ -286,7 +286,7 @@ segments_test.i: segments_test.cpp.i
 
 # target to preprocess a source file
 segments_test.cpp.i:
-	cd /home/yqk/live_comment_new/src/jieba && $(MAKE) -f test/unittest/CMakeFiles/test.run.dir/build.make test/unittest/CMakeFiles/test.run.dir/segments_test.cpp.i
+	cd /home/kovean/WORK/live-comment-spark/src/jieba && $(MAKE) -f test/unittest/CMakeFiles/test.run.dir/build.make test/unittest/CMakeFiles/test.run.dir/segments_test.cpp.i
 .PHONY : segments_test.cpp.i
 
 segments_test.s: segments_test.cpp.s
@@ -295,7 +295,7 @@ segments_test.s: segments_test.cpp.s
 
 # target to generate assembly for a file
 segments_test.cpp.s:
-	cd /home/yqk/live_comment_new/src/jieba && $(MAKE) -f test/unittest/CMakeFiles/test.run.dir/build.make test/unittest/CMakeFiles/test.run.dir/segments_test.cpp.s
+	cd /home/kovean/WORK/live-comment-spark/src/jieba && $(MAKE) -f test/unittest/CMakeFiles/test.run.dir/build.make test/unittest/CMakeFiles/test.run.dir/segments_test.cpp.s
 .PHONY : segments_test.cpp.s
 
 textrank_test.o: textrank_test.cpp.o
@@ -304,7 +304,7 @@ textrank_test.o: textrank_test.cpp.o
 
 # target to build an object file
 textrank_test.cpp.o:
-	cd /home/yqk/live_comment_new/src/jieba && $(MAKE) -f test/unittest/CMakeFiles/test.run.dir/build.make test/unittest/CMakeFiles/test.run.dir/textrank_test.cpp.o
+	cd /home/kovean/WORK/live-comment-spark/src/jieba && $(MAKE) -f test/unittest/CMakeFiles/test.run.dir/build.make test/unittest/CMakeFiles/test.run.dir/textrank_test.cpp.o
 .PHONY : textrank_test.cpp.o
 
 textrank_test.i: textrank_test.cpp.i
@@ -313,7 +313,7 @@ textrank_test.i: textrank_test.cpp.i
 
 # target to preprocess a source file
 textrank_test.cpp.i:
-	cd /home/yqk/live_comment_new/src/jieba && $(MAKE) -f test/unittest/CMakeFiles/test.run.dir/build.make test/unittest/CMakeFiles/test.run.dir/textrank_test.cpp.i
+	cd /home/kovean/WORK/live-comment-spark/src/jieba && $(MAKE) -f test/unittest/CMakeFiles/test.run.dir/build.make test/unittest/CMakeFiles/test.run.dir/textrank_test.cpp.i
 .PHONY : textrank_test.cpp.i
 
 textrank_test.s: textrank_test.cpp.s
@@ -322,7 +322,7 @@ textrank_test.s: textrank_test.cpp.s
 
 # target to generate assembly for a file
 textrank_test.cpp.s:
-	cd /home/yqk/live_comment_new/src/jieba && $(MAKE) -f test/unittest/CMakeFiles/test.run.dir/build.make test/unittest/CMakeFiles/test.run.dir/textrank_test.cpp.s
+	cd /home/kovean/WORK/live-comment-spark/src/jieba && $(MAKE) -f test/unittest/CMakeFiles/test.run.dir/build.make test/unittest/CMakeFiles/test.run.dir/textrank_test.cpp.s
 .PHONY : textrank_test.cpp.s
 
 trie_test.o: trie_test.cpp.o
@@ -331,7 +331,7 @@ trie_test.o: trie_test.cpp.o
 
 # target to build an object file
 trie_test.cpp.o:
-	cd /home/yqk/live_comment_new/src/jieba && $(MAKE) -f test/unittest/CMakeFiles/test.run.dir/build.make test/unittest/CMakeFiles/test.run.dir/trie_test.cpp.o
+	cd /home/kovean/WORK/live-comment-spark/src/jieba && $(MAKE) -f test/unittest/CMakeFiles/test.run.dir/build.make test/unittest/CMakeFiles/test.run.dir/trie_test.cpp.o
 .PHONY : trie_test.cpp.o
 
 trie_test.i: trie_test.cpp.i
@@ -340,7 +340,7 @@ trie_test.i: trie_test.cpp.i
 
 # target to preprocess a source file
 trie_test.cpp.i:
-	cd /home/yqk/live_comment_new/src/jieba && $(MAKE) -f test/unittest/CMakeFiles/test.run.dir/build.make test/unittest/CMakeFiles/test.run.dir/trie_test.cpp.i
+	cd /home/kovean/WORK/live-comment-spark/src/jieba && $(MAKE) -f test/unittest/CMakeFiles/test.run.dir/build.make test/unittest/CMakeFiles/test.run.dir/trie_test.cpp.i
 .PHONY : trie_test.cpp.i
 
 trie_test.s: trie_test.cpp.s
@@ -349,7 +349,7 @@ trie_test.s: trie_test.cpp.s
 
 # target to generate assembly for a file
 trie_test.cpp.s:
-	cd /home/yqk/live_comment_new/src/jieba && $(MAKE) -f test/unittest/CMakeFiles/test.run.dir/build.make test/unittest/CMakeFiles/test.run.dir/trie_test.cpp.s
+	cd /home/kovean/WORK/live-comment-spark/src/jieba && $(MAKE) -f test/unittest/CMakeFiles/test.run.dir/build.make test/unittest/CMakeFiles/test.run.dir/trie_test.cpp.s
 .PHONY : trie_test.cpp.s
 
 unicode_test.o: unicode_test.cpp.o
@@ -358,7 +358,7 @@ unicode_test.o: unicode_test.cpp.o
 
 # target to build an object file
 unicode_test.cpp.o:
-	cd /home/yqk/live_comment_new/src/jieba && $(MAKE) -f test/unittest/CMakeFiles/test.run.dir/build.make test/unittest/CMakeFiles/test.run.dir/unicode_test.cpp.o
+	cd /home/kovean/WORK/live-comment-spark/src/jieba && $(MAKE) -f test/unittest/CMakeFiles/test.run.dir/build.make test/unittest/CMakeFiles/test.run.dir/unicode_test.cpp.o
 .PHONY : unicode_test.cpp.o
 
 unicode_test.i: unicode_test.cpp.i
@@ -367,7 +367,7 @@ unicode_test.i: unicode_test.cpp.i
 
 # target to preprocess a source file
 unicode_test.cpp.i:
-	cd /home/yqk/live_comment_new/src/jieba && $(MAKE) -f test/unittest/CMakeFiles/test.run.dir/build.make test/unittest/CMakeFiles/test.run.dir/unicode_test.cpp.i
+	cd /home/kovean/WORK/live-comment-spark/src/jieba && $(MAKE) -f test/unittest/CMakeFiles/test.run.dir/build.make test/unittest/CMakeFiles/test.run.dir/unicode_test.cpp.i
 .PHONY : unicode_test.cpp.i
 
 unicode_test.s: unicode_test.cpp.s
@@ -376,7 +376,7 @@ unicode_test.s: unicode_test.cpp.s
 
 # target to generate assembly for a file
 unicode_test.cpp.s:
-	cd /home/yqk/live_comment_new/src/jieba && $(MAKE) -f test/unittest/CMakeFiles/test.run.dir/build.make test/unittest/CMakeFiles/test.run.dir/unicode_test.cpp.s
+	cd /home/kovean/WORK/live-comment-spark/src/jieba && $(MAKE) -f test/unittest/CMakeFiles/test.run.dir/build.make test/unittest/CMakeFiles/test.run.dir/unicode_test.cpp.s
 .PHONY : unicode_test.cpp.s
 
 # Help Target
@@ -427,6 +427,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/yqk/live_comment_new/src/jieba && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/kovean/WORK/live-comment-spark/src/jieba && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
