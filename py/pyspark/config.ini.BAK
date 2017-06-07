@@ -1,0 +1,20 @@
+# -*- coding: utf-8 -*-
+[dev_pipi]
+;corpus_filename = /home/pipi/files/DATASETS/SparkMLlib/sample_lda_data.txt
+corpus_filename = /home/yqk/live_comment_new/py/pyspark/sample_lda_data.txt
+;corpus_filename = hdfs://...absSPARK_HOME = /home/pipi/ENV/spark
+PYSPARK_PYTHON = /home/yqk/anaconda2/bin/python
+SPARK_LOCAL_IP = 127.0.0.1
+SPARK_HOME = /bin/spark-2.1.0/bin
+PYTHONPATH=$SPARK_HOME/python:$SPARK_HOME/python/lib/py4j-0.8.2.1-src.zip:$PYTHONPATH
+;JAVA_HOME = /home/pipi/ENV/jdk
+
+;topic model设置
+K = 3
+alpha = 5
+beta = 5
+max_iter = 20
+seed = 0
+checkin_point_interval = 10
+optimizer = em
+
