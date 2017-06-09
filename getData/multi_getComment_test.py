@@ -26,8 +26,6 @@ def getUrl(url):
   return res
 
 def getComments(scid):
-  scid='hEnjWcxiHORcVNM2'
-  print(scid)
   ts = 0
 #  f2 = open('./data/20161114/' + scid + '.dat','w')             #评论内容文件
   while 1:
@@ -40,9 +38,9 @@ def getComments(scid):
       for x in res['data']['list']:
         print x['content']
 #        f2.write(x['content']+"\n")
-    else:
+    elif ts > 5000000:
       break
-    ts = int(ts)+4000
+    ts = int(ts)+3000
 #  f2.close()
 #    print url+"---->"+res_uid
 #    res_uid = json.loads(json_obj)
@@ -63,7 +61,7 @@ for scid in lines:
     global f2
     f2 = open('./tmp/' + scid + '.dat','w')             #评论内容文件
 '''
-scid = 'hEnjWcxiHORcVNM2'
+scid = 'TDJX8_Lpq7U55bod'
 getComments(scid)
 ###    f2.close()
 
