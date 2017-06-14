@@ -32,10 +32,11 @@ def config():
     conf = configparser.ConfigParser()
     conf.read(os.path.join(os.path.split(os.path.realpath(__file__))[0], 'config.ini'))
 
-    global corpus_filename_libsvm, corpus_filename, K, alpha, beta, max_iter, seed, checkin_point_interval, optimizer
+    global corpus_filename_libsvm, corpus_filename, K, describe, alpha, beta, max_iter, seed, checkin_point_interval, optimizer
     corpus_filename_libsvm = conf.get(SECTION, 'corpus_filename_libsvm')
     corpus_filename = conf.get(SECTION, 'corpus_filename')
     K = conf.getint(SECTION, 'K')
+    describe = conf.getint(SECTION, 'describe')
     alpha = conf.getfloat(SECTION, 'alpha')
     beta = conf.getfloat(SECTION, 'beta')
     max_iter = conf.getint(SECTION, 'max_iter')
@@ -45,6 +46,7 @@ def config():
 
     # spark environment settings
     import sys, os
+    os.environ['HADOOP_HOME'] = conf.get(SECTION, 'HADOOP_HOME')
     os.environ['SPARK_HOME'] = conf.get(SECTION, 'SPARK_HOME')
     sys.path.append(os.path.join(conf.get(SECTION, 'SPARK_HOME'), 'python'))
     os.environ["PYSPARK_PYTHON"] = conf.get(SECTION, 'PYSPARK_PYTHON')
@@ -107,7 +109,7 @@ if __name__ == "__main__":
     dataset = spark.read.format("libsvm").load(corpus_filename_libsvm)
 
     # Trains a LDA model.
-    lda = LDA(k=10, maxIter=10)
+    lda = LDA(k=K, maxIter=max_iter, seed=seed, checkpointInterval=checkin_point_interval, optimizer="em")
     model = lda.fit(dataset)
 
     ll = model.logLikelihood(dataset)
@@ -116,7 +118,7 @@ if __name__ == "__main__":
     print("The upper bound on perplexity: " + str(lp))
 
     # Describe topics.
-    topics = model.describeTopics(3)
+    topics = model.describeTopics(describe)
     print("The topics described by their top-weighted terms:")
     topics.show(truncate=False)
 

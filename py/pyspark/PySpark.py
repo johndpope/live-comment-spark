@@ -29,7 +29,7 @@ def config():
     import configparser, os
     SECTION = 'dev_pipi'
     conf = configparser.ConfigParser()
-    conf.read(os.path.join(os.path.split(os.path.realpath(__file__))[0], 'config.ini'))
+    conf.read(os.path.join(os.path.split(os.path.realpath(__file__))[0], 'config_2.ini'))
 
     global corpus_filename, K, alpha, beta, max_iter, seed, checkin_point_interval, optimizer
     corpus_filename = conf.get(SECTION, 'corpus_filename')

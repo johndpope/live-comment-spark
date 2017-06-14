@@ -1,48 +1,1356 @@
-[[  7.37834974   9.73045219   8.89119806]
- [  6.59081862  11.11751082  11.29167056]
- [  3.49398022   4.20302496   4.30299482]
- [ 22.18678815   8.95779841   8.85541344]
- [  5.66785333  10.41486342   8.91728325]
- [  4.66999543   9.06092291   8.26908166]
- [ 12.07883143   8.65705136  10.26411722]
- [  2.15391819   4.20420497   3.64187684]
- [  2.92593943   2.42997556   2.64408501]
- [  7.77320999   7.84974291   8.37704709]
- [ 19.3787363    6.39079306   7.23047064]]
-(([3, 10, 6, 9, 0, 1, 4, 5, 2, 8, 7], [0.2352827115707874, 0.20550435657462032, 0.1280915557385629, 0.08243202724157772, 0.07824467978393211, 0.06989320247522371, 0.06010549569499809, 0.049523580448153526, 0.037052372595403976, 0.0310285092801503, 0.022841508596589895]), ([1, 4, 0, 5, 3, 6, 9, 10, 7, 2, 8], [0.1339195481553572, 0.12545558317496697, 0.11721128789397567, 0.10914625786006753, 0.10790403851951184, 0.10428129326981435, 0.09455660002934743, 0.076982350886056, 0.050643101545488345, 0.05062888736049978, 0.02927105130491492]), 22)
-Topic0:
- 7.37834974184
- 6.59081862005
- 3.49398022369
- 22.1867881493
- 5.66785332714
- 4.66999543003
- 12.0788314276
- 2.15391819
- 2.92593942578
- 7.77320999456
- 19.3787362983
-Topic1:
- 9.73045219375
- 11.1175108178
- 4.20302495549
- 8.95779840996
- 10.4148634185
- 9.0609229138
- 8.65705135654
- 4.20420496512
- 2.42997556379
- 7.84974291061
- 6.39079305857
-Topic2:
- 8.89119806441
- 11.2916705621
- 4.30299482082
- 8.8554134407
- 8.91728325435
- 8.26908165618
- 10.2641172159
- 3.64187684489
- 2.64408501043
- 8.37704709483
- 7.2304706431
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+17/06/09 18:40:07 WARN Utils: Your hostname, bjfuiai-HP-Z820-Workstation resolves to a loopback address: 127.0.1.1; using 211.71.149.235 instead (on interface eno1)
+17/06/09 18:40:07 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+17/06/09 18:40:09 INFO SparkContext: Running Spark version 2.1.0
+17/06/09 18:40:11 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+17/06/09 18:40:11 INFO SecurityManager: Changing view acls to: root
+17/06/09 18:40:11 INFO SecurityManager: Changing modify acls to: root
+17/06/09 18:40:11 INFO SecurityManager: Changing view acls groups to: 
+17/06/09 18:40:11 INFO SecurityManager: Changing modify acls groups to: 
+17/06/09 18:40:11 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(root); groups with view permissions: Set(); users  with modify permissions: Set(root); groups with modify permissions: Set()
+17/06/09 18:40:12 INFO Utils: Successfully started service 'sparkDriver' on port 45681.
+17/06/09 18:40:12 INFO SparkEnv: Registering MapOutputTracker
+17/06/09 18:40:13 INFO SparkEnv: Registering BlockManagerMaster
+17/06/09 18:40:13 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+17/06/09 18:40:13 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+17/06/09 18:40:13 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-f5cb3502-14f6-4a32-a717-12d3eeb599eb
+17/06/09 18:40:13 INFO MemoryStore: MemoryStore started with capacity 366.3 MB
+17/06/09 18:40:13 INFO SparkEnv: Registering OutputCommitCoordinator
+17/06/09 18:40:14 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+17/06/09 18:40:14 INFO SparkUI: Bound SparkUI to 0.0.0.0, and started at http://211.71.149.235:4040
+17/06/09 18:40:15 INFO SparkContext: Added file file:/home/yqk/live-comment-spark-master/py/pyspark/PySparkMl.py at file:/home/yqk/live-comment-spark-master/py/pyspark/PySparkMl.py with timestamp 1497004815970
+17/06/09 18:40:15 INFO Utils: Copying /home/yqk/live-comment-spark-master/py/pyspark/PySparkMl.py to /tmp/spark-49d7d8b3-7390-4233-9ddb-510d1e65bc60/userFiles-dc95c3c7-54a0-407c-acb9-101ca6435cff/PySparkMl.py
+17/06/09 18:40:16 INFO Executor: Starting executor ID driver on host localhost
+17/06/09 18:40:16 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 45219.
+17/06/09 18:40:16 INFO NettyBlockTransferService: Server created on 211.71.149.235:45219
+17/06/09 18:40:16 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+17/06/09 18:40:16 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 211.71.149.235, 45219, None)
+17/06/09 18:40:16 INFO BlockManagerMasterEndpoint: Registering block manager 211.71.149.235:45219 with 366.3 MB RAM, BlockManagerId(driver, 211.71.149.235, 45219, None)
+17/06/09 18:40:16 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 211.71.149.235, 45219, None)
+17/06/09 18:40:16 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 211.71.149.235, 45219, None)
+17/06/09 18:40:17 INFO SharedState: Warehouse path is 'file:/home/yqk/live-comment-spark-master/py/pyspark/spark-warehouse/'.
+/home/yqk/live-comment-spark-master/data/libsvm_data/20160903TDJX8_Lpq7U55bod_libsvm.dat
+17/06/09 18:40:20 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 236.5 KB, free 366.1 MB)
+17/06/09 18:40:20 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 22.9 KB, free 366.0 MB)
+17/06/09 18:40:20 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 211.71.149.235:45219 (size: 22.9 KB, free: 366.3 MB)
+17/06/09 18:40:20 INFO SparkContext: Created broadcast 0 from textFile at MLUtils.scala:99
+17/06/09 18:40:20 INFO FileInputFormat: Total input paths to process : 1
+17/06/09 18:40:20 INFO SparkContext: Starting job: reduce at MLUtils.scala:92
+17/06/09 18:40:20 INFO DAGScheduler: Got job 0 (reduce at MLUtils.scala:92) with 24 output partitions
+17/06/09 18:40:20 INFO DAGScheduler: Final stage: ResultStage 0 (reduce at MLUtils.scala:92)
+17/06/09 18:40:20 INFO DAGScheduler: Parents of final stage: List()
+17/06/09 18:40:20 INFO DAGScheduler: Missing parents: List()
+17/06/09 18:40:20 INFO DAGScheduler: Submitting ResultStage 0 (MapPartitionsRDD[5] at map at MLUtils.scala:90), which has no missing parents
+17/06/09 18:40:21 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 4.1 KB, free 366.0 MB)
+17/06/09 18:40:21 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 2.3 KB, free 366.0 MB)
+17/06/09 18:40:21 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on 211.71.149.235:45219 (size: 2.3 KB, free: 366.3 MB)
+17/06/09 18:40:21 INFO SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:996
+17/06/09 18:40:21 INFO DAGScheduler: Submitting 24 missing tasks from ResultStage 0 (MapPartitionsRDD[5] at map at MLUtils.scala:90)
+17/06/09 18:40:21 INFO TaskSchedulerImpl: Adding task set 0.0 with 24 tasks
+17/06/09 18:40:21 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0, localhost, executor driver, partition 0, PROCESS_LOCAL, 6114 bytes)
+17/06/09 18:40:21 INFO TaskSetManager: Starting task 1.0 in stage 0.0 (TID 1, localhost, executor driver, partition 1, PROCESS_LOCAL, 6114 bytes)
+17/06/09 18:40:21 INFO TaskSetManager: Starting task 2.0 in stage 0.0 (TID 2, localhost, executor driver, partition 2, PROCESS_LOCAL, 6114 bytes)
+17/06/09 18:40:21 INFO TaskSetManager: Starting task 3.0 in stage 0.0 (TID 3, localhost, executor driver, partition 3, PROCESS_LOCAL, 6114 bytes)
+17/06/09 18:40:21 INFO TaskSetManager: Starting task 4.0 in stage 0.0 (TID 4, localhost, executor driver, partition 4, PROCESS_LOCAL, 6114 bytes)
+17/06/09 18:40:21 INFO TaskSetManager: Starting task 5.0 in stage 0.0 (TID 5, localhost, executor driver, partition 5, PROCESS_LOCAL, 6114 bytes)
+17/06/09 18:40:21 INFO TaskSetManager: Starting task 6.0 in stage 0.0 (TID 6, localhost, executor driver, partition 6, PROCESS_LOCAL, 6114 bytes)
+17/06/09 18:40:21 INFO TaskSetManager: Starting task 7.0 in stage 0.0 (TID 7, localhost, executor driver, partition 7, PROCESS_LOCAL, 6114 bytes)
+17/06/09 18:40:21 INFO TaskSetManager: Starting task 8.0 in stage 0.0 (TID 8, localhost, executor driver, partition 8, PROCESS_LOCAL, 6114 bytes)
+17/06/09 18:40:21 INFO TaskSetManager: Starting task 9.0 in stage 0.0 (TID 9, localhost, executor driver, partition 9, PROCESS_LOCAL, 6114 bytes)
+17/06/09 18:40:21 INFO TaskSetManager: Starting task 10.0 in stage 0.0 (TID 10, localhost, executor driver, partition 10, PROCESS_LOCAL, 6114 bytes)
+17/06/09 18:40:21 INFO TaskSetManager: Starting task 11.0 in stage 0.0 (TID 11, localhost, executor driver, partition 11, PROCESS_LOCAL, 6114 bytes)
+17/06/09 18:40:21 INFO TaskSetManager: Starting task 12.0 in stage 0.0 (TID 12, localhost, executor driver, partition 12, PROCESS_LOCAL, 6114 bytes)
+17/06/09 18:40:21 INFO TaskSetManager: Starting task 13.0 in stage 0.0 (TID 13, localhost, executor driver, partition 13, PROCESS_LOCAL, 6114 bytes)
+17/06/09 18:40:21 INFO TaskSetManager: Starting task 14.0 in stage 0.0 (TID 14, localhost, executor driver, partition 14, PROCESS_LOCAL, 6114 bytes)
+17/06/09 18:40:21 INFO TaskSetManager: Starting task 15.0 in stage 0.0 (TID 15, localhost, executor driver, partition 15, PROCESS_LOCAL, 6114 bytes)
+17/06/09 18:40:21 INFO TaskSetManager: Starting task 16.0 in stage 0.0 (TID 16, localhost, executor driver, partition 16, PROCESS_LOCAL, 6114 bytes)
+17/06/09 18:40:21 INFO TaskSetManager: Starting task 17.0 in stage 0.0 (TID 17, localhost, executor driver, partition 17, PROCESS_LOCAL, 6114 bytes)
+17/06/09 18:40:21 INFO TaskSetManager: Starting task 18.0 in stage 0.0 (TID 18, localhost, executor driver, partition 18, PROCESS_LOCAL, 6114 bytes)
+17/06/09 18:40:21 INFO TaskSetManager: Starting task 19.0 in stage 0.0 (TID 19, localhost, executor driver, partition 19, PROCESS_LOCAL, 6114 bytes)
+17/06/09 18:40:21 INFO TaskSetManager: Starting task 20.0 in stage 0.0 (TID 20, localhost, executor driver, partition 20, PROCESS_LOCAL, 6114 bytes)
+17/06/09 18:40:21 INFO TaskSetManager: Starting task 21.0 in stage 0.0 (TID 21, localhost, executor driver, partition 21, PROCESS_LOCAL, 6114 bytes)
+17/06/09 18:40:21 INFO TaskSetManager: Starting task 22.0 in stage 0.0 (TID 22, localhost, executor driver, partition 22, PROCESS_LOCAL, 6114 bytes)
+17/06/09 18:40:21 INFO TaskSetManager: Starting task 23.0 in stage 0.0 (TID 23, localhost, executor driver, partition 23, PROCESS_LOCAL, 6114 bytes)
+17/06/09 18:40:22 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+17/06/09 18:40:21 INFO Executor: Running task 1.0 in stage 0.0 (TID 1)
+17/06/09 18:40:22 INFO Executor: Fetching file:/home/yqk/live-comment-spark-master/py/pyspark/PySparkMl.py with timestamp 1497004815970
+17/06/09 18:40:21 INFO Executor: Running task 2.0 in stage 0.0 (TID 2)
+17/06/09 18:40:21 INFO Executor: Running task 3.0 in stage 0.0 (TID 3)
+17/06/09 18:40:21 INFO Executor: Running task 4.0 in stage 0.0 (TID 4)
+17/06/09 18:40:21 INFO Executor: Running task 5.0 in stage 0.0 (TID 5)
+17/06/09 18:40:21 INFO Executor: Running task 6.0 in stage 0.0 (TID 6)
+17/06/09 18:40:21 INFO Executor: Running task 7.0 in stage 0.0 (TID 7)
+17/06/09 18:40:21 INFO Executor: Running task 8.0 in stage 0.0 (TID 8)
+17/06/09 18:40:21 INFO Executor: Running task 9.0 in stage 0.0 (TID 9)
+17/06/09 18:40:21 INFO Executor: Running task 10.0 in stage 0.0 (TID 10)
+17/06/09 18:40:21 INFO Executor: Running task 11.0 in stage 0.0 (TID 11)
+17/06/09 18:40:21 INFO Executor: Running task 13.0 in stage 0.0 (TID 13)
+17/06/09 18:40:22 INFO Executor: Running task 23.0 in stage 0.0 (TID 23)
+17/06/09 18:40:21 INFO Executor: Running task 22.0 in stage 0.0 (TID 22)
+17/06/09 18:40:21 INFO Executor: Running task 21.0 in stage 0.0 (TID 21)
+17/06/09 18:40:21 INFO Executor: Running task 20.0 in stage 0.0 (TID 20)
+17/06/09 18:40:21 INFO Executor: Running task 19.0 in stage 0.0 (TID 19)
+17/06/09 18:40:21 INFO Executor: Running task 18.0 in stage 0.0 (TID 18)
+17/06/09 18:40:21 INFO Executor: Running task 17.0 in stage 0.0 (TID 17)
+17/06/09 18:40:21 INFO Executor: Running task 16.0 in stage 0.0 (TID 16)
+17/06/09 18:40:21 INFO Executor: Running task 14.0 in stage 0.0 (TID 14)
+17/06/09 18:40:21 INFO Executor: Running task 15.0 in stage 0.0 (TID 15)
+17/06/09 18:40:21 INFO Executor: Running task 12.0 in stage 0.0 (TID 12)
+17/06/09 18:40:22 INFO Utils: /home/yqk/live-comment-spark-master/py/pyspark/PySparkMl.py has been previously copied to /tmp/spark-49d7d8b3-7390-4233-9ddb-510d1e65bc60/userFiles-dc95c3c7-54a0-407c-acb9-101ca6435cff/PySparkMl.py
+17/06/09 18:40:22 INFO HadoopRDD: Input split: file:/home/yqk/live-comment-spark-master/data/libsvm_data/20160903TDJX8_Lpq7U55bod_libsvm.dat:5123+5123
+17/06/09 18:40:22 INFO HadoopRDD: Input split: file:/home/yqk/live-comment-spark-master/data/libsvm_data/20160903TDJX8_Lpq7U55bod_libsvm.dat:51230+5123
+17/06/09 18:40:22 INFO HadoopRDD: Input split: file:/home/yqk/live-comment-spark-master/data/libsvm_data/20160903TDJX8_Lpq7U55bod_libsvm.dat:112706+5123
+17/06/09 18:40:22 INFO HadoopRDD: Input split: file:/home/yqk/live-comment-spark-master/data/libsvm_data/20160903TDJX8_Lpq7U55bod_libsvm.dat:25615+5123
+17/06/09 18:40:22 INFO HadoopRDD: Input split: file:/home/yqk/live-comment-spark-master/data/libsvm_data/20160903TDJX8_Lpq7U55bod_libsvm.dat:102460+5123
+17/06/09 18:40:22 INFO HadoopRDD: Input split: file:/home/yqk/live-comment-spark-master/data/libsvm_data/20160903TDJX8_Lpq7U55bod_libsvm.dat:0+5123
+17/06/09 18:40:22 INFO HadoopRDD: Input split: file:/home/yqk/live-comment-spark-master/data/libsvm_data/20160903TDJX8_Lpq7U55bod_libsvm.dat:35861+5123
+17/06/09 18:40:22 INFO HadoopRDD: Input split: file:/home/yqk/live-comment-spark-master/data/libsvm_data/20160903TDJX8_Lpq7U55bod_libsvm.dat:76845+5123
+17/06/09 18:40:22 INFO HadoopRDD: Input split: file:/home/yqk/live-comment-spark-master/data/libsvm_data/20160903TDJX8_Lpq7U55bod_libsvm.dat:87091+5123
+17/06/09 18:40:22 INFO HadoopRDD: Input split: file:/home/yqk/live-comment-spark-master/data/libsvm_data/20160903TDJX8_Lpq7U55bod_libsvm.dat:20492+5123
+17/06/09 18:40:22 INFO HadoopRDD: Input split: file:/home/yqk/live-comment-spark-master/data/libsvm_data/20160903TDJX8_Lpq7U55bod_libsvm.dat:71722+5123
+17/06/09 18:40:22 INFO HadoopRDD: Input split: file:/home/yqk/live-comment-spark-master/data/libsvm_data/20160903TDJX8_Lpq7U55bod_libsvm.dat:30738+5123
+17/06/09 18:40:22 INFO HadoopRDD: Input split: file:/home/yqk/live-comment-spark-master/data/libsvm_data/20160903TDJX8_Lpq7U55bod_libsvm.dat:66599+5123
+17/06/09 18:40:22 INFO HadoopRDD: Input split: file:/home/yqk/live-comment-spark-master/data/libsvm_data/20160903TDJX8_Lpq7U55bod_libsvm.dat:40984+5123
+17/06/09 18:40:22 INFO HadoopRDD: Input split: file:/home/yqk/live-comment-spark-master/data/libsvm_data/20160903TDJX8_Lpq7U55bod_libsvm.dat:10246+5123
+17/06/09 18:40:22 INFO HadoopRDD: Input split: file:/home/yqk/live-comment-spark-master/data/libsvm_data/20160903TDJX8_Lpq7U55bod_libsvm.dat:15369+5123
+17/06/09 18:40:22 INFO HadoopRDD: Input split: file:/home/yqk/live-comment-spark-master/data/libsvm_data/20160903TDJX8_Lpq7U55bod_libsvm.dat:81968+5123
+17/06/09 18:40:22 INFO HadoopRDD: Input split: file:/home/yqk/live-comment-spark-master/data/libsvm_data/20160903TDJX8_Lpq7U55bod_libsvm.dat:46107+5123
+17/06/09 18:40:22 INFO HadoopRDD: Input split: file:/home/yqk/live-comment-spark-master/data/libsvm_data/20160903TDJX8_Lpq7U55bod_libsvm.dat:56353+5123
+17/06/09 18:40:22 INFO HadoopRDD: Input split: file:/home/yqk/live-comment-spark-master/data/libsvm_data/20160903TDJX8_Lpq7U55bod_libsvm.dat:92214+5123
+17/06/09 18:40:22 INFO HadoopRDD: Input split: file:/home/yqk/live-comment-spark-master/data/libsvm_data/20160903TDJX8_Lpq7U55bod_libsvm.dat:97337+5123
+17/06/09 18:40:22 INFO HadoopRDD: Input split: file:/home/yqk/live-comment-spark-master/data/libsvm_data/20160903TDJX8_Lpq7U55bod_libsvm.dat:107583+5123
+17/06/09 18:40:22 INFO HadoopRDD: Input split: file:/home/yqk/live-comment-spark-master/data/libsvm_data/20160903TDJX8_Lpq7U55bod_libsvm.dat:61476+5123
+17/06/09 18:40:22 INFO HadoopRDD: Input split: file:/home/yqk/live-comment-spark-master/data/libsvm_data/20160903TDJX8_Lpq7U55bod_libsvm.dat:117829+5133
+17/06/09 18:40:22 INFO deprecation: mapred.tip.id is deprecated. Instead, use mapreduce.task.id
+17/06/09 18:40:22 INFO deprecation: mapred.task.id is deprecated. Instead, use mapreduce.task.attempt.id
+17/06/09 18:40:22 INFO deprecation: mapred.task.is.map is deprecated. Instead, use mapreduce.task.ismap
+17/06/09 18:40:22 INFO deprecation: mapred.job.id is deprecated. Instead, use mapreduce.job.id
+17/06/09 18:40:22 INFO deprecation: mapred.task.partition is deprecated. Instead, use mapreduce.task.partition
+17/06/09 18:40:22 INFO Executor: Finished task 12.0 in stage 0.0 (TID 12). 1201 bytes result sent to driver
+17/06/09 18:40:22 INFO Executor: Finished task 13.0 in stage 0.0 (TID 13). 1201 bytes result sent to driver
+17/06/09 18:40:22 INFO TaskSetManager: Finished task 12.0 in stage 0.0 (TID 12) in 1048 ms on localhost (executor driver) (1/24)
+17/06/09 18:40:22 INFO Executor: Finished task 22.0 in stage 0.0 (TID 22). 1201 bytes result sent to driver
+17/06/09 18:40:22 INFO Executor: Finished task 3.0 in stage 0.0 (TID 3). 1201 bytes result sent to driver
+17/06/09 18:40:22 INFO Executor: Finished task 16.0 in stage 0.0 (TID 16). 1201 bytes result sent to driver
+17/06/09 18:40:22 INFO Executor: Finished task 7.0 in stage 0.0 (TID 7). 1201 bytes result sent to driver
+17/06/09 18:40:22 INFO Executor: Finished task 0.0 in stage 0.0 (TID 0). 1201 bytes result sent to driver
+17/06/09 18:40:22 INFO Executor: Finished task 18.0 in stage 0.0 (TID 18). 1201 bytes result sent to driver
+17/06/09 18:40:22 INFO Executor: Finished task 6.0 in stage 0.0 (TID 6). 1201 bytes result sent to driver
+17/06/09 18:40:22 INFO Executor: Finished task 5.0 in stage 0.0 (TID 5). 1201 bytes result sent to driver
+17/06/09 18:40:22 INFO Executor: Finished task 4.0 in stage 0.0 (TID 4). 1201 bytes result sent to driver
+17/06/09 18:40:22 INFO Executor: Finished task 2.0 in stage 0.0 (TID 2). 1201 bytes result sent to driver
+17/06/09 18:40:22 INFO Executor: Finished task 8.0 in stage 0.0 (TID 8). 1201 bytes result sent to driver
+17/06/09 18:40:22 INFO Executor: Finished task 21.0 in stage 0.0 (TID 21). 1201 bytes result sent to driver
+17/06/09 18:40:22 INFO Executor: Finished task 19.0 in stage 0.0 (TID 19). 1288 bytes result sent to driver
+17/06/09 18:40:22 INFO Executor: Finished task 23.0 in stage 0.0 (TID 23). 1201 bytes result sent to driver
+17/06/09 18:40:22 INFO Executor: Finished task 10.0 in stage 0.0 (TID 10). 1201 bytes result sent to driver
+17/06/09 18:40:22 INFO Executor: Finished task 15.0 in stage 0.0 (TID 15). 1201 bytes result sent to driver
+17/06/09 18:40:22 INFO Executor: Finished task 1.0 in stage 0.0 (TID 1). 1201 bytes result sent to driver
+17/06/09 18:40:22 INFO Executor: Finished task 20.0 in stage 0.0 (TID 20). 1201 bytes result sent to driver
+17/06/09 18:40:22 INFO Executor: Finished task 14.0 in stage 0.0 (TID 14). 1201 bytes result sent to driver
+17/06/09 18:40:22 INFO Executor: Finished task 17.0 in stage 0.0 (TID 17). 1201 bytes result sent to driver
+17/06/09 18:40:22 INFO TaskSetManager: Finished task 13.0 in stage 0.0 (TID 13) in 1077 ms on localhost (executor driver) (2/24)
+17/06/09 18:40:22 INFO Executor: Finished task 9.0 in stage 0.0 (TID 9). 1201 bytes result sent to driver
+17/06/09 18:40:22 INFO TaskSetManager: Finished task 3.0 in stage 0.0 (TID 3) in 1262 ms on localhost (executor driver) (3/24)
+17/06/09 18:40:22 INFO TaskSetManager: Finished task 7.0 in stage 0.0 (TID 7) in 1221 ms on localhost (executor driver) (4/24)
+17/06/09 18:40:22 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 1563 ms on localhost (executor driver) (5/24)
+17/06/09 18:40:22 INFO TaskSetManager: Finished task 22.0 in stage 0.0 (TID 22) in 1137 ms on localhost (executor driver) (6/24)
+17/06/09 18:40:22 INFO TaskSetManager: Finished task 16.0 in stage 0.0 (TID 16) in 1156 ms on localhost (executor driver) (7/24)
+17/06/09 18:40:22 INFO TaskSetManager: Finished task 6.0 in stage 0.0 (TID 6) in 1235 ms on localhost (executor driver) (8/24)
+17/06/09 18:40:22 INFO TaskSetManager: Finished task 18.0 in stage 0.0 (TID 18) in 1150 ms on localhost (executor driver) (9/24)
+17/06/09 18:40:22 INFO TaskSetManager: Finished task 4.0 in stage 0.0 (TID 4) in 1259 ms on localhost (executor driver) (10/24)
+17/06/09 18:40:22 INFO TaskSetManager: Finished task 5.0 in stage 0.0 (TID 5) in 1250 ms on localhost (executor driver) (11/24)
+17/06/09 18:40:22 INFO TaskSetManager: Finished task 19.0 in stage 0.0 (TID 19) in 1153 ms on localhost (executor driver) (12/24)
+17/06/09 18:40:22 INFO TaskSetManager: Finished task 23.0 in stage 0.0 (TID 23) in 1145 ms on localhost (executor driver) (13/24)
+17/06/09 18:40:22 INFO TaskSetManager: Finished task 21.0 in stage 0.0 (TID 21) in 1148 ms on localhost (executor driver) (14/24)
+17/06/09 18:40:22 INFO TaskSetManager: Finished task 10.0 in stage 0.0 (TID 10) in 1212 ms on localhost (executor driver) (15/24)
+17/06/09 18:40:22 INFO TaskSetManager: Finished task 8.0 in stage 0.0 (TID 8) in 1225 ms on localhost (executor driver) (16/24)
+17/06/09 18:40:22 INFO TaskSetManager: Finished task 15.0 in stage 0.0 (TID 15) in 1182 ms on localhost (executor driver) (17/24)
+17/06/09 18:40:22 INFO TaskSetManager: Finished task 1.0 in stage 0.0 (TID 1) in 1341 ms on localhost (executor driver) (18/24)
+17/06/09 18:40:22 INFO TaskSetManager: Finished task 2.0 in stage 0.0 (TID 2) in 1301 ms on localhost (executor driver) (19/24)
+17/06/09 18:40:22 INFO TaskSetManager: Finished task 20.0 in stage 0.0 (TID 20) in 1159 ms on localhost (executor driver) (20/24)
+17/06/09 18:40:22 INFO TaskSetManager: Finished task 17.0 in stage 0.0 (TID 17) in 1169 ms on localhost (executor driver) (21/24)
+17/06/09 18:40:22 INFO TaskSetManager: Finished task 14.0 in stage 0.0 (TID 14) in 1217 ms on localhost (executor driver) (22/24)
+17/06/09 18:40:22 INFO TaskSetManager: Finished task 9.0 in stage 0.0 (TID 9) in 1235 ms on localhost (executor driver) (23/24)
+17/06/09 18:40:22 INFO Executor: Finished task 11.0 in stage 0.0 (TID 11). 1288 bytes result sent to driver
+17/06/09 18:40:22 INFO TaskSetManager: Finished task 11.0 in stage 0.0 (TID 11) in 1242 ms on localhost (executor driver) (24/24)
+17/06/09 18:40:22 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+17/06/09 18:40:22 INFO DAGScheduler: ResultStage 0 (reduce at MLUtils.scala:92) finished in 1.662 s
+17/06/09 18:40:22 INFO DAGScheduler: Job 0 finished: reduce at MLUtils.scala:92, took 2.057017 s
+17/06/09 18:40:32 INFO FileSourceStrategy: Pruning directories with: 
+17/06/09 18:40:32 INFO FileSourceStrategy: Post-Scan Filters: 
+17/06/09 18:40:32 INFO FileSourceStrategy: Output Data Schema: struct<label: double, features: vector>
+17/06/09 18:40:32 INFO FileSourceStrategy: Pushed Filters: 
+17/06/09 18:40:33 INFO BlockManagerInfo: Removed broadcast_0_piece0 on 211.71.149.235:45219 in memory (size: 22.9 KB, free: 366.3 MB)
+17/06/09 18:40:33 INFO BlockManagerInfo: Removed broadcast_1_piece0 on 211.71.149.235:45219 in memory (size: 2.3 KB, free: 366.3 MB)
+17/06/09 18:40:34 INFO CodeGenerator: Code generated in 1149.510258 ms
+17/06/09 18:40:34 INFO MemoryStore: Block broadcast_2 stored as values in memory (estimated size 277.4 KB, free 366.0 MB)
+17/06/09 18:40:34 INFO MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 23.3 KB, free 366.0 MB)
+17/06/09 18:40:34 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on 211.71.149.235:45219 (size: 23.3 KB, free: 366.3 MB)
+17/06/09 18:40:34 INFO SparkContext: Created broadcast 2 from broadcast at LibSVMRelation.scala:159
+17/06/09 18:40:34 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+17/06/09 18:40:35 INFO SparkContext: Starting job: count at LDAOptimizer.scala:417
+17/06/09 18:40:35 INFO DAGScheduler: Got job 1 (count at LDAOptimizer.scala:417) with 1 output partitions
+17/06/09 18:40:35 INFO DAGScheduler: Final stage: ResultStage 1 (count at LDAOptimizer.scala:417)
+17/06/09 18:40:35 INFO DAGScheduler: Parents of final stage: List()
+17/06/09 18:40:35 INFO DAGScheduler: Missing parents: List()
+17/06/09 18:40:35 INFO DAGScheduler: Submitting ResultStage 1 (MapPartitionsRDD[10] at map at LDA.scala:928), which has no missing parents
+17/06/09 18:40:35 INFO MemoryStore: Block broadcast_3 stored as values in memory (estimated size 17.5 KB, free 366.0 MB)
+17/06/09 18:40:35 INFO MemoryStore: Block broadcast_3_piece0 stored as bytes in memory (estimated size 7.6 KB, free 366.0 MB)
+17/06/09 18:40:35 INFO BlockManagerInfo: Added broadcast_3_piece0 in memory on 211.71.149.235:45219 (size: 7.6 KB, free: 366.3 MB)
+17/06/09 18:40:35 INFO SparkContext: Created broadcast 3 from broadcast at DAGScheduler.scala:996
+17/06/09 18:40:35 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 1 (MapPartitionsRDD[10] at map at LDA.scala:928)
+17/06/09 18:40:35 INFO TaskSchedulerImpl: Adding task set 1.0 with 1 tasks
+17/06/09 18:40:35 INFO TaskSetManager: Starting task 0.0 in stage 1.0 (TID 24, localhost, executor driver, partition 0, PROCESS_LOCAL, 6537 bytes)
+17/06/09 18:40:35 INFO Executor: Running task 0.0 in stage 1.0 (TID 24)
+17/06/09 18:40:35 INFO CodeGenerator: Code generated in 107.712708 ms
+17/06/09 18:40:35 INFO FileScanRDD: Reading File path: file:///home/yqk/live-comment-spark-master/data/libsvm_data/20160903TDJX8_Lpq7U55bod_libsvm.dat, range: 0-122962, partition values: [empty row]
+17/06/09 18:40:35 INFO CodeGenerator: Code generated in 88.022473 ms
+17/06/09 18:40:36 INFO CodeGenerator: Code generated in 409.907626 ms
+17/06/09 18:40:36 INFO Executor: Finished task 0.0 in stage 1.0 (TID 24). 1607 bytes result sent to driver
+17/06/09 18:40:36 INFO TaskSetManager: Finished task 0.0 in stage 1.0 (TID 24) in 1620 ms on localhost (executor driver) (1/1)
+17/06/09 18:40:36 INFO TaskSchedulerImpl: Removed TaskSet 1.0, whose tasks have all completed, from pool 
+17/06/09 18:40:36 INFO DAGScheduler: ResultStage 1 (count at LDAOptimizer.scala:417) finished in 1.587 s
+17/06/09 18:40:36 INFO DAGScheduler: Job 1 finished: count at LDAOptimizer.scala:417, took 1.899397 s
+17/06/09 18:40:36 INFO SparkContext: Starting job: first at LDAOptimizer.scala:418
+17/06/09 18:40:37 INFO DAGScheduler: Got job 2 (first at LDAOptimizer.scala:418) with 1 output partitions
+17/06/09 18:40:37 INFO DAGScheduler: Final stage: ResultStage 2 (first at LDAOptimizer.scala:418)
+17/06/09 18:40:37 INFO DAGScheduler: Parents of final stage: List()
+17/06/09 18:40:37 INFO DAGScheduler: Missing parents: List()
+17/06/09 18:40:37 INFO DAGScheduler: Submitting ResultStage 2 (MapPartitionsRDD[10] at map at LDA.scala:928), which has no missing parents
+17/06/09 18:40:37 INFO MemoryStore: Block broadcast_4 stored as values in memory (estimated size 17.7 KB, free 366.0 MB)
+17/06/09 18:40:37 INFO MemoryStore: Block broadcast_4_piece0 stored as bytes in memory (estimated size 7.7 KB, free 366.0 MB)
+17/06/09 18:40:37 INFO BlockManagerInfo: Added broadcast_4_piece0 in memory on 211.71.149.235:45219 (size: 7.7 KB, free: 366.3 MB)
+17/06/09 18:40:37 INFO SparkContext: Created broadcast 4 from broadcast at DAGScheduler.scala:996
+17/06/09 18:40:37 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 2 (MapPartitionsRDD[10] at map at LDA.scala:928)
+17/06/09 18:40:37 INFO TaskSchedulerImpl: Adding task set 2.0 with 1 tasks
+17/06/09 18:40:37 INFO TaskSetManager: Starting task 0.0 in stage 2.0 (TID 25, localhost, executor driver, partition 0, PROCESS_LOCAL, 6620 bytes)
+17/06/09 18:40:37 INFO Executor: Running task 0.0 in stage 2.0 (TID 25)
+17/06/09 18:40:37 INFO FileScanRDD: Reading File path: file:///home/yqk/live-comment-spark-master/data/libsvm_data/20160903TDJX8_Lpq7U55bod_libsvm.dat, range: 0-122962, partition values: [empty row]
+17/06/09 18:40:37 INFO Executor: Finished task 0.0 in stage 2.0 (TID 25). 1880 bytes result sent to driver
+17/06/09 18:40:37 INFO TaskSetManager: Finished task 0.0 in stage 2.0 (TID 25) in 82 ms on localhost (executor driver) (1/1)
+17/06/09 18:40:37 INFO TaskSchedulerImpl: Removed TaskSet 2.0, whose tasks have all completed, from pool 
+17/06/09 18:40:37 INFO DAGScheduler: ResultStage 2 (first at LDAOptimizer.scala:418) finished in 0.081 s
+17/06/09 18:40:37 INFO DAGScheduler: Job 2 finished: first at LDAOptimizer.scala:418, took 0.173126 s
+17/06/09 18:40:39 INFO BlockManagerInfo: Removed broadcast_4_piece0 on 211.71.149.235:45219 in memory (size: 7.7 KB, free: 366.3 MB)
+17/06/09 18:40:39 INFO BlockManagerInfo: Removed broadcast_3_piece0 on 211.71.149.235:45219 in memory (size: 7.6 KB, free: 366.3 MB)
+17/06/09 18:40:40 INFO SparkContext: Starting job: isEmpty at LDAOptimizer.scala:448
+17/06/09 18:40:40 INFO DAGScheduler: Got job 3 (isEmpty at LDAOptimizer.scala:448) with 1 output partitions
+17/06/09 18:40:40 INFO DAGScheduler: Final stage: ResultStage 3 (isEmpty at LDAOptimizer.scala:448)
+17/06/09 18:40:40 INFO DAGScheduler: Parents of final stage: List()
+17/06/09 18:40:40 INFO DAGScheduler: Missing parents: List()
+17/06/09 18:40:40 INFO DAGScheduler: Submitting ResultStage 3 (PartitionwiseSampledRDD[11] at sample at LDAOptimizer.scala:446), which has no missing parents
+17/06/09 18:40:40 INFO MemoryStore: Block broadcast_5 stored as values in memory (estimated size 34.6 KB, free 366.0 MB)
+17/06/09 18:40:40 INFO MemoryStore: Block broadcast_5_piece0 stored as bytes in memory (estimated size 14.1 KB, free 366.0 MB)
+17/06/09 18:40:40 INFO BlockManagerInfo: Added broadcast_5_piece0 in memory on 211.71.149.235:45219 (size: 14.1 KB, free: 366.3 MB)
+17/06/09 18:40:40 INFO SparkContext: Created broadcast 5 from broadcast at DAGScheduler.scala:996
+17/06/09 18:40:40 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 3 (PartitionwiseSampledRDD[11] at sample at LDAOptimizer.scala:446)
+17/06/09 18:40:40 INFO TaskSchedulerImpl: Adding task set 3.0 with 1 tasks
+17/06/09 18:40:40 INFO TaskSetManager: Starting task 0.0 in stage 3.0 (TID 26, localhost, executor driver, partition 0, PROCESS_LOCAL, 6731 bytes)
+17/06/09 18:40:40 INFO Executor: Running task 0.0 in stage 3.0 (TID 26)
+17/06/09 18:40:40 INFO FileScanRDD: Reading File path: file:///home/yqk/live-comment-spark-master/data/libsvm_data/20160903TDJX8_Lpq7U55bod_libsvm.dat, range: 0-122962, partition values: [empty row]
+17/06/09 18:40:40 INFO Executor: Finished task 0.0 in stage 3.0 (TID 26). 1781 bytes result sent to driver
+17/06/09 18:40:40 INFO TaskSetManager: Finished task 0.0 in stage 3.0 (TID 26) in 126 ms on localhost (executor driver) (1/1)
+17/06/09 18:40:40 INFO TaskSchedulerImpl: Removed TaskSet 3.0, whose tasks have all completed, from pool 
+17/06/09 18:40:40 INFO DAGScheduler: ResultStage 3 (isEmpty at LDAOptimizer.scala:448) finished in 0.121 s
+17/06/09 18:40:40 INFO DAGScheduler: Job 3 finished: isEmpty at LDAOptimizer.scala:448, took 0.138463 s
+17/06/09 18:40:44 INFO BlockManagerInfo: Removed broadcast_5_piece0 on 211.71.149.235:45219 in memory (size: 14.1 KB, free: 366.3 MB)
+17/06/09 18:40:45 INFO MemoryStore: Block broadcast_6 stored as values in memory (estimated size 19.7 MB, free 346.3 MB)
+17/06/09 18:40:45 INFO MemoryStore: Block broadcast_6_piece0 stored as bytes in memory (estimated size 4.0 MB, free 342.3 MB)
+17/06/09 18:40:45 INFO BlockManagerInfo: Added broadcast_6_piece0 in memory on 211.71.149.235:45219 (size: 4.0 MB, free: 362.3 MB)
+17/06/09 18:40:45 INFO MemoryStore: Block broadcast_6_piece1 stored as bytes in memory (estimated size 4.0 MB, free 338.3 MB)
+17/06/09 18:40:45 INFO BlockManagerInfo: Added broadcast_6_piece1 in memory on 211.71.149.235:45219 (size: 4.0 MB, free: 358.3 MB)
+17/06/09 18:40:45 INFO MemoryStore: Block broadcast_6_piece2 stored as bytes in memory (estimated size 4.0 MB, free 334.3 MB)
+17/06/09 18:40:45 INFO BlockManagerInfo: Added broadcast_6_piece2 in memory on 211.71.149.235:45219 (size: 4.0 MB, free: 354.3 MB)
+17/06/09 18:40:45 INFO MemoryStore: Block broadcast_6_piece3 stored as bytes in memory (estimated size 4.0 MB, free 330.3 MB)
+17/06/09 18:40:45 INFO BlockManagerInfo: Added broadcast_6_piece3 in memory on 211.71.149.235:45219 (size: 4.0 MB, free: 350.3 MB)
+17/06/09 18:40:45 INFO MemoryStore: Block broadcast_6_piece4 stored as bytes in memory (estimated size 3.8 MB, free 326.5 MB)
+17/06/09 18:40:45 INFO BlockManagerInfo: Added broadcast_6_piece4 in memory on 211.71.149.235:45219 (size: 3.8 MB, free: 346.5 MB)
+17/06/09 18:40:45 INFO SparkContext: Created broadcast 6 from broadcast at LDAOptimizer.scala:462
+17/06/09 18:40:45 INFO SparkContext: Starting job: treeAggregate at LDAOptimizer.scala:479
+17/06/09 18:40:45 INFO DAGScheduler: Got job 4 (treeAggregate at LDAOptimizer.scala:479) with 1 output partitions
+17/06/09 18:40:45 INFO DAGScheduler: Final stage: ResultStage 4 (treeAggregate at LDAOptimizer.scala:479)
+17/06/09 18:40:45 INFO DAGScheduler: Parents of final stage: List()
+17/06/09 18:40:45 INFO DAGScheduler: Missing parents: List()
+17/06/09 18:40:46 INFO DAGScheduler: Submitting ResultStage 4 (MapPartitionsRDD[14] at treeAggregate at LDAOptimizer.scala:479), which has no missing parents
+17/06/09 18:40:46 INFO MemoryStore: Block broadcast_7 stored as values in memory (estimated size 19.8 MB, free 306.7 MB)
+17/06/09 18:40:46 INFO MemoryStore: Block broadcast_7_piece0 stored as bytes in memory (estimated size 113.6 KB, free 306.6 MB)
+17/06/09 18:40:46 INFO BlockManagerInfo: Added broadcast_7_piece0 in memory on 211.71.149.235:45219 (size: 113.6 KB, free: 346.4 MB)
+17/06/09 18:40:46 INFO SparkContext: Created broadcast 7 from broadcast at DAGScheduler.scala:996
+17/06/09 18:40:46 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 4 (MapPartitionsRDD[14] at treeAggregate at LDAOptimizer.scala:479)
+17/06/09 18:40:46 INFO TaskSchedulerImpl: Adding task set 4.0 with 1 tasks
+17/06/09 18:40:46 INFO TaskSetManager: Starting task 0.0 in stage 4.0 (TID 27, localhost, executor driver, partition 0, PROCESS_LOCAL, 6737 bytes)
+17/06/09 18:40:46 INFO Executor: Running task 0.0 in stage 4.0 (TID 27)
+17/06/09 18:40:46 INFO FileScanRDD: Reading File path: file:///home/yqk/live-comment-spark-master/data/libsvm_data/20160903TDJX8_Lpq7U55bod_libsvm.dat, range: 0-122962, partition values: [empty row]
+17/06/09 18:40:46 WARN BLAS: Failed to load implementation from: com.github.fommil.netlib.NativeSystemBLAS
+17/06/09 18:40:46 WARN BLAS: Failed to load implementation from: com.github.fommil.netlib.NativeRefBLAS
+17/06/09 18:40:47 INFO MemoryStore: Block rdd_12_0 stored as values in memory (estimated size 19.8 MB, free 286.9 MB)
+17/06/09 18:40:47 INFO BlockManagerInfo: Added rdd_12_0 in memory on 211.71.149.235:45219 (size: 19.8 MB, free: 326.6 MB)
+17/06/09 18:40:48 INFO MemoryStore: Block taskresult_27 stored as bytes in memory (estimated size 19.8 MB, free 267.0 MB)
+17/06/09 18:40:48 INFO BlockManagerInfo: Added taskresult_27 in memory on 211.71.149.235:45219 (size: 19.8 MB, free: 306.8 MB)
+17/06/09 18:40:48 INFO Executor: Finished task 0.0 in stage 4.0 (TID 27). 20801763 bytes result sent via BlockManager)
+17/06/09 18:40:48 INFO TransportClientFactory: Successfully created connection to /211.71.149.235:45219 after 61 ms (0 ms spent in bootstraps)
+17/06/09 18:40:49 INFO BlockManagerInfo: Removed taskresult_27 on 211.71.149.235:45219 in memory (size: 19.8 MB, free: 326.6 MB)
+17/06/09 18:40:49 INFO TaskSetManager: Finished task 0.0 in stage 4.0 (TID 27) in 2852 ms on localhost (executor driver) (1/1)
+17/06/09 18:40:49 INFO TaskSchedulerImpl: Removed TaskSet 4.0, whose tasks have all completed, from pool 
+17/06/09 18:40:49 INFO DAGScheduler: ResultStage 4 (treeAggregate at LDAOptimizer.scala:479) finished in 2.853 s
+17/06/09 18:40:49 INFO DAGScheduler: Job 4 finished: treeAggregate at LDAOptimizer.scala:479, took 3.083507 s
+17/06/09 18:40:49 INFO SparkContext: Starting job: collect at LDAOptimizer.scala:482
+17/06/09 18:40:49 INFO DAGScheduler: Got job 5 (collect at LDAOptimizer.scala:482) with 1 output partitions
+17/06/09 18:40:49 INFO DAGScheduler: Final stage: ResultStage 5 (collect at LDAOptimizer.scala:482)
+17/06/09 18:40:49 INFO DAGScheduler: Parents of final stage: List()
+17/06/09 18:40:49 INFO DAGScheduler: Missing parents: List()
+17/06/09 18:40:49 INFO DAGScheduler: Submitting ResultStage 5 (MapPartitionsRDD[16] at flatMap at LDAOptimizer.scala:482), which has no missing parents
+17/06/09 18:40:49 INFO MemoryStore: Block broadcast_8 stored as values in memory (estimated size 35.8 KB, free 286.8 MB)
+17/06/09 18:40:49 INFO MemoryStore: Block broadcast_8_piece0 stored as bytes in memory (estimated size 14.7 KB, free 286.8 MB)
+17/06/09 18:40:49 INFO BlockManagerInfo: Added broadcast_8_piece0 in memory on 211.71.149.235:45219 (size: 14.7 KB, free: 326.6 MB)
+17/06/09 18:40:49 INFO SparkContext: Created broadcast 8 from broadcast at DAGScheduler.scala:996
+17/06/09 18:40:49 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 5 (MapPartitionsRDD[16] at flatMap at LDAOptimizer.scala:482)
+17/06/09 18:40:49 INFO TaskSchedulerImpl: Adding task set 5.0 with 1 tasks
+17/06/09 18:40:49 INFO TaskSetManager: Starting task 0.0 in stage 5.0 (TID 28, localhost, executor driver, partition 0, PROCESS_LOCAL, 6731 bytes)
+17/06/09 18:40:49 INFO Executor: Running task 0.0 in stage 5.0 (TID 28)
+17/06/09 18:40:49 INFO BlockManager: Found block rdd_12_0 locally
+17/06/09 18:40:49 INFO Executor: Finished task 0.0 in stage 5.0 (TID 28). 22644 bytes result sent to driver
+17/06/09 18:40:49 INFO TaskSetManager: Finished task 0.0 in stage 5.0 (TID 28) in 34 ms on localhost (executor driver) (1/1)
+17/06/09 18:40:49 INFO TaskSchedulerImpl: Removed TaskSet 5.0, whose tasks have all completed, from pool 
+17/06/09 18:40:49 INFO DAGScheduler: ResultStage 5 (collect at LDAOptimizer.scala:482) finished in 0.033 s
+17/06/09 18:40:49 INFO DAGScheduler: Job 5 finished: collect at LDAOptimizer.scala:482, took 0.115036 s
+17/06/09 18:40:49 INFO MapPartitionsRDD: Removing RDD 12 from persistence list
+17/06/09 18:40:49 INFO BlockManager: Removing RDD 12
+17/06/09 18:40:49 INFO TorrentBroadcast: Destroying Broadcast(6) (from destroy at LDAOptimizer.scala:484)
+17/06/09 18:40:49 INFO BlockManagerInfo: Removed broadcast_6_piece2 on 211.71.149.235:45219 in memory (size: 4.0 MB, free: 350.4 MB)
+17/06/09 18:40:49 INFO BlockManagerInfo: Removed broadcast_6_piece4 on 211.71.149.235:45219 in memory (size: 3.8 MB, free: 354.2 MB)
+17/06/09 18:40:49 INFO BlockManagerInfo: Removed broadcast_6_piece1 on 211.71.149.235:45219 in memory (size: 4.0 MB, free: 358.2 MB)
+17/06/09 18:40:49 INFO BlockManagerInfo: Removed broadcast_6_piece3 on 211.71.149.235:45219 in memory (size: 4.0 MB, free: 362.2 MB)
+17/06/09 18:40:49 INFO BlockManagerInfo: Removed broadcast_6_piece0 on 211.71.149.235:45219 in memory (size: 4.0 MB, free: 366.2 MB)
+17/06/09 18:40:49 INFO BlockManagerInfo: Removed broadcast_8_piece0 on 211.71.149.235:45219 in memory (size: 14.7 KB, free: 366.2 MB)
+17/06/09 18:40:49 INFO BlockManagerInfo: Removed broadcast_7_piece0 on 211.71.149.235:45219 in memory (size: 113.6 KB, free: 366.3 MB)
+17/06/09 18:40:49 INFO SparkContext: Starting job: isEmpty at LDAOptimizer.scala:448
+17/06/09 18:40:49 INFO DAGScheduler: Got job 6 (isEmpty at LDAOptimizer.scala:448) with 1 output partitions
+17/06/09 18:40:49 INFO DAGScheduler: Final stage: ResultStage 6 (isEmpty at LDAOptimizer.scala:448)
+17/06/09 18:40:49 INFO DAGScheduler: Parents of final stage: List()
+17/06/09 18:40:49 INFO DAGScheduler: Missing parents: List()
+17/06/09 18:40:49 INFO DAGScheduler: Submitting ResultStage 6 (PartitionwiseSampledRDD[17] at sample at LDAOptimizer.scala:446), which has no missing parents
+17/06/09 18:40:49 INFO MemoryStore: Block broadcast_9 stored as values in memory (estimated size 34.6 KB, free 366.0 MB)
+17/06/09 18:40:49 INFO MemoryStore: Block broadcast_9_piece0 stored as bytes in memory (estimated size 14.1 KB, free 366.0 MB)
+17/06/09 18:40:49 INFO BlockManagerInfo: Added broadcast_9_piece0 in memory on 211.71.149.235:45219 (size: 14.1 KB, free: 366.3 MB)
+17/06/09 18:40:49 INFO SparkContext: Created broadcast 9 from broadcast at DAGScheduler.scala:996
+17/06/09 18:40:49 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 6 (PartitionwiseSampledRDD[17] at sample at LDAOptimizer.scala:446)
+17/06/09 18:40:49 INFO TaskSchedulerImpl: Adding task set 6.0 with 1 tasks
+17/06/09 18:40:49 INFO TaskSetManager: Starting task 0.0 in stage 6.0 (TID 29, localhost, executor driver, partition 0, PROCESS_LOCAL, 6731 bytes)
+17/06/09 18:40:49 INFO Executor: Running task 0.0 in stage 6.0 (TID 29)
+17/06/09 18:40:49 INFO FileScanRDD: Reading File path: file:///home/yqk/live-comment-spark-master/data/libsvm_data/20160903TDJX8_Lpq7U55bod_libsvm.dat, range: 0-122962, partition values: [empty row]
+17/06/09 18:40:49 INFO Executor: Finished task 0.0 in stage 6.0 (TID 29). 1866 bytes result sent to driver
+17/06/09 18:40:49 INFO TaskSetManager: Finished task 0.0 in stage 6.0 (TID 29) in 144 ms on localhost (executor driver) (1/1)
+17/06/09 18:40:49 INFO TaskSchedulerImpl: Removed TaskSet 6.0, whose tasks have all completed, from pool 
+17/06/09 18:40:49 INFO DAGScheduler: ResultStage 6 (isEmpty at LDAOptimizer.scala:448) finished in 0.146 s
+17/06/09 18:40:49 INFO DAGScheduler: Job 6 finished: isEmpty at LDAOptimizer.scala:448, took 0.158911 s
+17/06/09 18:40:53 INFO BlockManagerInfo: Removed broadcast_9_piece0 on 211.71.149.235:45219 in memory (size: 14.1 KB, free: 366.3 MB)
+17/06/09 18:40:54 INFO MemoryStore: Block broadcast_10 stored as values in memory (estimated size 19.7 MB, free 346.3 MB)
+17/06/09 18:40:54 INFO MemoryStore: Block broadcast_10_piece0 stored as bytes in memory (estimated size 4.0 MB, free 342.3 MB)
+17/06/09 18:40:54 INFO BlockManagerInfo: Added broadcast_10_piece0 in memory on 211.71.149.235:45219 (size: 4.0 MB, free: 362.3 MB)
+17/06/09 18:40:54 INFO MemoryStore: Block broadcast_10_piece1 stored as bytes in memory (estimated size 4.0 MB, free 338.3 MB)
+17/06/09 18:40:54 INFO BlockManagerInfo: Added broadcast_10_piece1 in memory on 211.71.149.235:45219 (size: 4.0 MB, free: 358.3 MB)
+17/06/09 18:40:54 INFO MemoryStore: Block broadcast_10_piece2 stored as bytes in memory (estimated size 4.0 MB, free 334.3 MB)
+17/06/09 18:40:54 INFO BlockManagerInfo: Added broadcast_10_piece2 in memory on 211.71.149.235:45219 (size: 4.0 MB, free: 354.3 MB)
+17/06/09 18:40:54 INFO MemoryStore: Block broadcast_10_piece3 stored as bytes in memory (estimated size 4.0 MB, free 330.3 MB)
+17/06/09 18:40:54 INFO BlockManagerInfo: Added broadcast_10_piece3 in memory on 211.71.149.235:45219 (size: 4.0 MB, free: 350.3 MB)
+17/06/09 18:40:54 INFO MemoryStore: Block broadcast_10_piece4 stored as bytes in memory (estimated size 3.8 MB, free 326.5 MB)
+17/06/09 18:40:54 INFO BlockManagerInfo: Added broadcast_10_piece4 in memory on 211.71.149.235:45219 (size: 3.8 MB, free: 346.5 MB)
+17/06/09 18:40:54 INFO SparkContext: Created broadcast 10 from broadcast at LDAOptimizer.scala:462
+17/06/09 18:40:55 INFO SparkContext: Starting job: treeAggregate at LDAOptimizer.scala:479
+17/06/09 18:40:55 INFO DAGScheduler: Got job 7 (treeAggregate at LDAOptimizer.scala:479) with 1 output partitions
+17/06/09 18:40:55 INFO DAGScheduler: Final stage: ResultStage 7 (treeAggregate at LDAOptimizer.scala:479)
+17/06/09 18:40:55 INFO DAGScheduler: Parents of final stage: List()
+17/06/09 18:40:55 INFO DAGScheduler: Missing parents: List()
+17/06/09 18:40:55 INFO DAGScheduler: Submitting ResultStage 7 (MapPartitionsRDD[20] at treeAggregate at LDAOptimizer.scala:479), which has no missing parents
+17/06/09 18:40:55 INFO MemoryStore: Block broadcast_11 stored as values in memory (estimated size 19.8 MB, free 306.7 MB)
+17/06/09 18:40:55 INFO MemoryStore: Block broadcast_11_piece0 stored as bytes in memory (estimated size 113.7 KB, free 306.6 MB)
+17/06/09 18:40:55 INFO BlockManagerInfo: Added broadcast_11_piece0 in memory on 211.71.149.235:45219 (size: 113.7 KB, free: 346.4 MB)
+17/06/09 18:40:55 INFO SparkContext: Created broadcast 11 from broadcast at DAGScheduler.scala:996
+17/06/09 18:40:55 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 7 (MapPartitionsRDD[20] at treeAggregate at LDAOptimizer.scala:479)
+17/06/09 18:40:55 INFO TaskSchedulerImpl: Adding task set 7.0 with 1 tasks
+17/06/09 18:40:55 INFO TaskSetManager: Starting task 0.0 in stage 7.0 (TID 30, localhost, executor driver, partition 0, PROCESS_LOCAL, 6737 bytes)
+17/06/09 18:40:55 INFO Executor: Running task 0.0 in stage 7.0 (TID 30)
+17/06/09 18:40:55 INFO FileScanRDD: Reading File path: file:///home/yqk/live-comment-spark-master/data/libsvm_data/20160903TDJX8_Lpq7U55bod_libsvm.dat, range: 0-122962, partition values: [empty row]
+17/06/09 18:40:56 INFO MemoryStore: Block rdd_18_0 stored as values in memory (estimated size 19.8 MB, free 286.9 MB)
+17/06/09 18:40:56 INFO BlockManagerInfo: Added rdd_18_0 in memory on 211.71.149.235:45219 (size: 19.8 MB, free: 326.6 MB)
+17/06/09 18:40:56 INFO MemoryStore: Block taskresult_30 stored as bytes in memory (estimated size 19.8 MB, free 267.0 MB)
+17/06/09 18:40:56 INFO BlockManagerInfo: Added taskresult_30 in memory on 211.71.149.235:45219 (size: 19.8 MB, free: 306.8 MB)
+17/06/09 18:40:56 INFO Executor: Finished task 0.0 in stage 7.0 (TID 30). 20801763 bytes result sent via BlockManager)
+17/06/09 18:40:56 INFO BlockManagerInfo: Removed taskresult_30 on 211.71.149.235:45219 in memory (size: 19.8 MB, free: 326.6 MB)
+17/06/09 18:40:56 INFO DAGScheduler: ResultStage 7 (treeAggregate at LDAOptimizer.scala:479) finished in 1.483 s
+17/06/09 18:40:56 INFO DAGScheduler: Job 7 finished: treeAggregate at LDAOptimizer.scala:479, took 1.831320 s
+17/06/09 18:40:56 INFO TaskSetManager: Finished task 0.0 in stage 7.0 (TID 30) in 1483 ms on localhost (executor driver) (1/1)
+17/06/09 18:40:56 INFO TaskSchedulerImpl: Removed TaskSet 7.0, whose tasks have all completed, from pool 
+17/06/09 18:40:56 INFO SparkContext: Starting job: collect at LDAOptimizer.scala:482
+17/06/09 18:40:56 INFO DAGScheduler: Got job 8 (collect at LDAOptimizer.scala:482) with 1 output partitions
+17/06/09 18:40:56 INFO DAGScheduler: Final stage: ResultStage 8 (collect at LDAOptimizer.scala:482)
+17/06/09 18:40:56 INFO DAGScheduler: Parents of final stage: List()
+17/06/09 18:40:56 INFO DAGScheduler: Missing parents: List()
+17/06/09 18:40:56 INFO DAGScheduler: Submitting ResultStage 8 (MapPartitionsRDD[22] at flatMap at LDAOptimizer.scala:482), which has no missing parents
+17/06/09 18:40:56 INFO MemoryStore: Block broadcast_12 stored as values in memory (estimated size 35.8 KB, free 286.8 MB)
+17/06/09 18:40:56 INFO MemoryStore: Block broadcast_12_piece0 stored as bytes in memory (estimated size 14.8 KB, free 286.8 MB)
+17/06/09 18:40:56 INFO BlockManagerInfo: Added broadcast_12_piece0 in memory on 211.71.149.235:45219 (size: 14.8 KB, free: 326.6 MB)
+17/06/09 18:40:56 INFO SparkContext: Created broadcast 12 from broadcast at DAGScheduler.scala:996
+17/06/09 18:40:56 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 8 (MapPartitionsRDD[22] at flatMap at LDAOptimizer.scala:482)
+17/06/09 18:40:56 INFO TaskSchedulerImpl: Adding task set 8.0 with 1 tasks
+17/06/09 18:40:56 INFO TaskSetManager: Starting task 0.0 in stage 8.0 (TID 31, localhost, executor driver, partition 0, PROCESS_LOCAL, 6731 bytes)
+17/06/09 18:40:56 INFO Executor: Running task 0.0 in stage 8.0 (TID 31)
+17/06/09 18:40:56 INFO BlockManager: Found block rdd_18_0 locally
+17/06/09 18:40:56 INFO Executor: Finished task 0.0 in stage 8.0 (TID 31). 22997 bytes result sent to driver
+17/06/09 18:40:56 INFO TaskSetManager: Finished task 0.0 in stage 8.0 (TID 31) in 20 ms on localhost (executor driver) (1/1)
+17/06/09 18:40:56 INFO TaskSchedulerImpl: Removed TaskSet 8.0, whose tasks have all completed, from pool 
+17/06/09 18:40:56 INFO DAGScheduler: ResultStage 8 (collect at LDAOptimizer.scala:482) finished in 0.021 s
+17/06/09 18:40:56 INFO DAGScheduler: Job 8 finished: collect at LDAOptimizer.scala:482, took 0.040217 s
+17/06/09 18:40:57 INFO MapPartitionsRDD: Removing RDD 18 from persistence list
+17/06/09 18:40:57 INFO BlockManager: Removing RDD 18
+17/06/09 18:40:57 INFO TorrentBroadcast: Destroying Broadcast(10) (from destroy at LDAOptimizer.scala:484)
+17/06/09 18:40:57 INFO BlockManagerInfo: Removed broadcast_10_piece0 on 211.71.149.235:45219 in memory (size: 4.0 MB, free: 350.4 MB)
+17/06/09 18:40:57 INFO BlockManagerInfo: Removed broadcast_10_piece2 on 211.71.149.235:45219 in memory (size: 4.0 MB, free: 354.4 MB)
+17/06/09 18:40:57 INFO BlockManagerInfo: Removed broadcast_10_piece1 on 211.71.149.235:45219 in memory (size: 4.0 MB, free: 358.4 MB)
+17/06/09 18:40:57 INFO BlockManagerInfo: Removed broadcast_10_piece4 on 211.71.149.235:45219 in memory (size: 3.8 MB, free: 362.2 MB)
+17/06/09 18:40:57 INFO BlockManagerInfo: Removed broadcast_10_piece3 on 211.71.149.235:45219 in memory (size: 4.0 MB, free: 366.2 MB)
+17/06/09 18:40:57 INFO BlockManagerInfo: Removed broadcast_12_piece0 on 211.71.149.235:45219 in memory (size: 14.8 KB, free: 366.2 MB)
+17/06/09 18:40:57 INFO SparkContext: Starting job: isEmpty at LDAOptimizer.scala:448
+17/06/09 18:40:57 INFO DAGScheduler: Got job 9 (isEmpty at LDAOptimizer.scala:448) with 1 output partitions
+17/06/09 18:40:57 INFO DAGScheduler: Final stage: ResultStage 9 (isEmpty at LDAOptimizer.scala:448)
+17/06/09 18:40:57 INFO DAGScheduler: Parents of final stage: List()
+17/06/09 18:40:57 INFO DAGScheduler: Missing parents: List()
+17/06/09 18:40:57 INFO DAGScheduler: Submitting ResultStage 9 (PartitionwiseSampledRDD[23] at sample at LDAOptimizer.scala:446), which has no missing parents
+17/06/09 18:40:57 INFO MemoryStore: Block broadcast_13 stored as values in memory (estimated size 34.6 KB, free 346.1 MB)
+17/06/09 18:40:57 INFO MemoryStore: Block broadcast_13_piece0 stored as bytes in memory (estimated size 14.1 KB, free 346.1 MB)
+17/06/09 18:40:57 INFO BlockManagerInfo: Added broadcast_13_piece0 in memory on 211.71.149.235:45219 (size: 14.1 KB, free: 366.2 MB)
+17/06/09 18:40:57 INFO SparkContext: Created broadcast 13 from broadcast at DAGScheduler.scala:996
+17/06/09 18:40:57 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 9 (PartitionwiseSampledRDD[23] at sample at LDAOptimizer.scala:446)
+17/06/09 18:40:57 INFO TaskSchedulerImpl: Adding task set 9.0 with 1 tasks
+17/06/09 18:40:57 INFO TaskSetManager: Starting task 0.0 in stage 9.0 (TID 32, localhost, executor driver, partition 0, PROCESS_LOCAL, 6731 bytes)
+17/06/09 18:40:57 INFO Executor: Running task 0.0 in stage 9.0 (TID 32)
+17/06/09 18:40:57 INFO FileScanRDD: Reading File path: file:///home/yqk/live-comment-spark-master/data/libsvm_data/20160903TDJX8_Lpq7U55bod_libsvm.dat, range: 0-122962, partition values: [empty row]
+17/06/09 18:40:57 INFO Executor: Finished task 0.0 in stage 9.0 (TID 32). 1781 bytes result sent to driver
+17/06/09 18:40:57 INFO TaskSetManager: Finished task 0.0 in stage 9.0 (TID 32) in 39 ms on localhost (executor driver) (1/1)
+17/06/09 18:40:57 INFO TaskSchedulerImpl: Removed TaskSet 9.0, whose tasks have all completed, from pool 
+17/06/09 18:40:57 INFO DAGScheduler: ResultStage 9 (isEmpty at LDAOptimizer.scala:448) finished in 0.040 s
+17/06/09 18:40:57 INFO DAGScheduler: Job 9 finished: isEmpty at LDAOptimizer.scala:448, took 0.069590 s
+17/06/09 18:40:57 INFO BlockManagerInfo: Removed broadcast_13_piece0 on 211.71.149.235:45219 in memory (size: 14.1 KB, free: 366.2 MB)
+17/06/09 18:41:02 INFO MemoryStore: Block broadcast_14 stored as values in memory (estimated size 19.7 MB, free 326.4 MB)
+17/06/09 18:41:03 INFO MemoryStore: Block broadcast_14_piece0 stored as bytes in memory (estimated size 4.0 MB, free 322.4 MB)
+17/06/09 18:41:03 INFO BlockManagerInfo: Added broadcast_14_piece0 in memory on 211.71.149.235:45219 (size: 4.0 MB, free: 362.2 MB)
+17/06/09 18:41:03 INFO MemoryStore: Block broadcast_14_piece1 stored as bytes in memory (estimated size 4.0 MB, free 318.4 MB)
+17/06/09 18:41:03 INFO BlockManagerInfo: Added broadcast_14_piece1 in memory on 211.71.149.235:45219 (size: 4.0 MB, free: 358.2 MB)
+17/06/09 18:41:03 INFO MemoryStore: Block broadcast_14_piece2 stored as bytes in memory (estimated size 4.0 MB, free 314.4 MB)
+17/06/09 18:41:03 INFO BlockManagerInfo: Added broadcast_14_piece2 in memory on 211.71.149.235:45219 (size: 4.0 MB, free: 354.2 MB)
+17/06/09 18:41:03 INFO MemoryStore: Block broadcast_14_piece3 stored as bytes in memory (estimated size 4.0 MB, free 310.4 MB)
+17/06/09 18:41:03 INFO BlockManagerInfo: Added broadcast_14_piece3 in memory on 211.71.149.235:45219 (size: 4.0 MB, free: 350.2 MB)
+17/06/09 18:41:03 INFO MemoryStore: Block broadcast_14_piece4 stored as bytes in memory (estimated size 3.8 MB, free 306.6 MB)
+17/06/09 18:41:03 INFO BlockManagerInfo: Added broadcast_14_piece4 in memory on 211.71.149.235:45219 (size: 3.8 MB, free: 346.4 MB)
+17/06/09 18:41:03 INFO SparkContext: Created broadcast 14 from broadcast at LDAOptimizer.scala:462
+17/06/09 18:41:03 INFO SparkContext: Starting job: treeAggregate at LDAOptimizer.scala:479
+17/06/09 18:41:03 INFO DAGScheduler: Got job 10 (treeAggregate at LDAOptimizer.scala:479) with 1 output partitions
+17/06/09 18:41:03 INFO DAGScheduler: Final stage: ResultStage 10 (treeAggregate at LDAOptimizer.scala:479)
+17/06/09 18:41:03 INFO DAGScheduler: Parents of final stage: List()
+17/06/09 18:41:03 INFO DAGScheduler: Missing parents: List()
+17/06/09 18:41:03 INFO DAGScheduler: Submitting ResultStage 10 (MapPartitionsRDD[26] at treeAggregate at LDAOptimizer.scala:479), which has no missing parents
+17/06/09 18:41:03 INFO MemoryStore: Block broadcast_15 stored as values in memory (estimated size 19.8 MB, free 286.9 MB)
+17/06/09 18:41:03 INFO MemoryStore: Block broadcast_15_piece0 stored as bytes in memory (estimated size 113.7 KB, free 286.7 MB)
+17/06/09 18:41:03 INFO BlockManagerInfo: Added broadcast_15_piece0 in memory on 211.71.149.235:45219 (size: 113.7 KB, free: 346.3 MB)
+17/06/09 18:41:03 INFO SparkContext: Created broadcast 15 from broadcast at DAGScheduler.scala:996
+17/06/09 18:41:03 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 10 (MapPartitionsRDD[26] at treeAggregate at LDAOptimizer.scala:479)
+17/06/09 18:41:03 INFO TaskSchedulerImpl: Adding task set 10.0 with 1 tasks
+17/06/09 18:41:03 INFO TaskSetManager: Starting task 0.0 in stage 10.0 (TID 33, localhost, executor driver, partition 0, PROCESS_LOCAL, 6737 bytes)
+17/06/09 18:41:03 INFO Executor: Running task 0.0 in stage 10.0 (TID 33)
+17/06/09 18:41:03 INFO FileScanRDD: Reading File path: file:///home/yqk/live-comment-spark-master/data/libsvm_data/20160903TDJX8_Lpq7U55bod_libsvm.dat, range: 0-122962, partition values: [empty row]
+17/06/09 18:41:04 INFO MemoryStore: Block rdd_24_0 stored as values in memory (estimated size 19.8 MB, free 267.0 MB)
+17/06/09 18:41:04 INFO BlockManagerInfo: Added rdd_24_0 in memory on 211.71.149.235:45219 (size: 19.8 MB, free: 326.5 MB)
+17/06/09 18:41:04 INFO MemoryStore: Block taskresult_33 stored as bytes in memory (estimated size 19.8 MB, free 247.1 MB)
+17/06/09 18:41:04 INFO BlockManagerInfo: Added taskresult_33 in memory on 211.71.149.235:45219 (size: 19.8 MB, free: 306.7 MB)
+17/06/09 18:41:04 INFO Executor: Finished task 0.0 in stage 10.0 (TID 33). 20801763 bytes result sent via BlockManager)
+17/06/09 18:41:05 INFO BlockManagerInfo: Removed broadcast_11_piece0 on 211.71.149.235:45219 in memory (size: 113.7 KB, free: 306.8 MB)
+17/06/09 18:41:05 INFO BlockManager: Removing RDD 18
+17/06/09 18:41:05 INFO ContextCleaner: Cleaned RDD 18
+17/06/09 18:41:05 INFO BlockManager: Removing RDD 12
+17/06/09 18:41:05 INFO ContextCleaner: Cleaned RDD 12
+17/06/09 18:41:05 INFO TaskSetManager: Finished task 0.0 in stage 10.0 (TID 33) in 1362 ms on localhost (executor driver) (1/1)
+17/06/09 18:41:05 INFO TaskSchedulerImpl: Removed TaskSet 10.0, whose tasks have all completed, from pool 
+17/06/09 18:41:05 INFO DAGScheduler: ResultStage 10 (treeAggregate at LDAOptimizer.scala:479) finished in 1.362 s
+17/06/09 18:41:05 INFO BlockManagerInfo: Removed taskresult_33 on 211.71.149.235:45219 in memory (size: 19.8 MB, free: 326.6 MB)
+17/06/09 18:41:05 INFO DAGScheduler: Job 10 finished: treeAggregate at LDAOptimizer.scala:479, took 1.652562 s
+17/06/09 18:41:05 INFO SparkContext: Starting job: collect at LDAOptimizer.scala:482
+17/06/09 18:41:05 INFO DAGScheduler: Got job 11 (collect at LDAOptimizer.scala:482) with 1 output partitions
+17/06/09 18:41:05 INFO DAGScheduler: Final stage: ResultStage 11 (collect at LDAOptimizer.scala:482)
+17/06/09 18:41:05 INFO DAGScheduler: Parents of final stage: List()
+17/06/09 18:41:05 INFO DAGScheduler: Missing parents: List()
+17/06/09 18:41:05 INFO DAGScheduler: Submitting ResultStage 11 (MapPartitionsRDD[28] at flatMap at LDAOptimizer.scala:482), which has no missing parents
+17/06/09 18:41:05 INFO MemoryStore: Block broadcast_16 stored as values in memory (estimated size 35.8 KB, free 286.8 MB)
+17/06/09 18:41:05 INFO MemoryStore: Block broadcast_16_piece0 stored as bytes in memory (estimated size 14.8 KB, free 286.8 MB)
+17/06/09 18:41:05 INFO BlockManagerInfo: Added broadcast_16_piece0 in memory on 211.71.149.235:45219 (size: 14.8 KB, free: 326.6 MB)
+17/06/09 18:41:05 INFO SparkContext: Created broadcast 16 from broadcast at DAGScheduler.scala:996
+17/06/09 18:41:05 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 11 (MapPartitionsRDD[28] at flatMap at LDAOptimizer.scala:482)
+17/06/09 18:41:05 INFO TaskSchedulerImpl: Adding task set 11.0 with 1 tasks
+17/06/09 18:41:05 INFO TaskSetManager: Starting task 0.0 in stage 11.0 (TID 34, localhost, executor driver, partition 0, PROCESS_LOCAL, 6731 bytes)
+17/06/09 18:41:05 INFO Executor: Running task 0.0 in stage 11.0 (TID 34)
+17/06/09 18:41:05 INFO BlockManager: Found block rdd_24_0 locally
+17/06/09 18:41:05 INFO Executor: Finished task 0.0 in stage 11.0 (TID 34). 23837 bytes result sent to driver
+17/06/09 18:41:05 INFO TaskSetManager: Finished task 0.0 in stage 11.0 (TID 34) in 11 ms on localhost (executor driver) (1/1)
+17/06/09 18:41:05 INFO TaskSchedulerImpl: Removed TaskSet 11.0, whose tasks have all completed, from pool 
+17/06/09 18:41:05 INFO DAGScheduler: ResultStage 11 (collect at LDAOptimizer.scala:482) finished in 0.013 s
+17/06/09 18:41:05 INFO DAGScheduler: Job 11 finished: collect at LDAOptimizer.scala:482, took 0.025740 s
+17/06/09 18:41:05 INFO MapPartitionsRDD: Removing RDD 24 from persistence list
+17/06/09 18:41:05 INFO BlockManager: Removing RDD 24
+17/06/09 18:41:05 INFO TorrentBroadcast: Destroying Broadcast(14) (from destroy at LDAOptimizer.scala:484)
+17/06/09 18:41:05 INFO BlockManagerInfo: Removed broadcast_14_piece0 on 211.71.149.235:45219 in memory (size: 4.0 MB, free: 350.4 MB)
+17/06/09 18:41:05 INFO BlockManagerInfo: Removed broadcast_14_piece2 on 211.71.149.235:45219 in memory (size: 4.0 MB, free: 354.4 MB)
+17/06/09 18:41:05 INFO BlockManagerInfo: Removed broadcast_14_piece1 on 211.71.149.235:45219 in memory (size: 4.0 MB, free: 358.4 MB)
+17/06/09 18:41:05 INFO BlockManagerInfo: Removed broadcast_14_piece4 on 211.71.149.235:45219 in memory (size: 3.8 MB, free: 362.2 MB)
+17/06/09 18:41:05 INFO BlockManagerInfo: Removed broadcast_14_piece3 on 211.71.149.235:45219 in memory (size: 4.0 MB, free: 366.2 MB)
+17/06/09 18:41:05 INFO BlockManagerInfo: Removed broadcast_16_piece0 on 211.71.149.235:45219 in memory (size: 14.8 KB, free: 366.2 MB)
+17/06/09 18:41:05 INFO SparkContext: Starting job: isEmpty at LDAOptimizer.scala:448
+17/06/09 18:41:05 INFO DAGScheduler: Got job 12 (isEmpty at LDAOptimizer.scala:448) with 1 output partitions
+17/06/09 18:41:05 INFO DAGScheduler: Final stage: ResultStage 12 (isEmpty at LDAOptimizer.scala:448)
+17/06/09 18:41:05 INFO DAGScheduler: Parents of final stage: List()
+17/06/09 18:41:05 INFO DAGScheduler: Missing parents: List()
+17/06/09 18:41:05 INFO DAGScheduler: Submitting ResultStage 12 (PartitionwiseSampledRDD[29] at sample at LDAOptimizer.scala:446), which has no missing parents
+17/06/09 18:41:05 INFO MemoryStore: Block broadcast_17 stored as values in memory (estimated size 34.6 KB, free 346.1 MB)
+17/06/09 18:41:05 INFO MemoryStore: Block broadcast_17_piece0 stored as bytes in memory (estimated size 14.1 KB, free 346.1 MB)
+17/06/09 18:41:05 INFO BlockManagerInfo: Added broadcast_17_piece0 in memory on 211.71.149.235:45219 (size: 14.1 KB, free: 366.2 MB)
+17/06/09 18:41:05 INFO SparkContext: Created broadcast 17 from broadcast at DAGScheduler.scala:996
+17/06/09 18:41:05 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 12 (PartitionwiseSampledRDD[29] at sample at LDAOptimizer.scala:446)
+17/06/09 18:41:05 INFO TaskSchedulerImpl: Adding task set 12.0 with 1 tasks
+17/06/09 18:41:05 INFO TaskSetManager: Starting task 0.0 in stage 12.0 (TID 35, localhost, executor driver, partition 0, PROCESS_LOCAL, 6731 bytes)
+17/06/09 18:41:05 INFO Executor: Running task 0.0 in stage 12.0 (TID 35)
+17/06/09 18:41:05 INFO FileScanRDD: Reading File path: file:///home/yqk/live-comment-spark-master/data/libsvm_data/20160903TDJX8_Lpq7U55bod_libsvm.dat, range: 0-122962, partition values: [empty row]
+17/06/09 18:41:05 INFO Executor: Finished task 0.0 in stage 12.0 (TID 35). 1805 bytes result sent to driver
+17/06/09 18:41:05 INFO TaskSetManager: Finished task 0.0 in stage 12.0 (TID 35) in 22 ms on localhost (executor driver) (1/1)
+17/06/09 18:41:05 INFO TaskSchedulerImpl: Removed TaskSet 12.0, whose tasks have all completed, from pool 
+17/06/09 18:41:05 INFO DAGScheduler: ResultStage 12 (isEmpty at LDAOptimizer.scala:448) finished in 0.022 s
+17/06/09 18:41:05 INFO DAGScheduler: Job 12 finished: isEmpty at LDAOptimizer.scala:448, took 0.034584 s
+17/06/09 18:41:05 INFO BlockManagerInfo: Removed broadcast_17_piece0 on 211.71.149.235:45219 in memory (size: 14.1 KB, free: 366.2 MB)
+17/06/09 18:41:10 INFO MemoryStore: Block broadcast_18 stored as values in memory (estimated size 19.7 MB, free 326.4 MB)
+17/06/09 18:41:11 INFO MemoryStore: Block broadcast_18_piece0 stored as bytes in memory (estimated size 4.0 MB, free 322.4 MB)
+17/06/09 18:41:11 INFO BlockManagerInfo: Added broadcast_18_piece0 in memory on 211.71.149.235:45219 (size: 4.0 MB, free: 362.2 MB)
+17/06/09 18:41:11 INFO MemoryStore: Block broadcast_18_piece1 stored as bytes in memory (estimated size 4.0 MB, free 318.4 MB)
+17/06/09 18:41:11 INFO BlockManagerInfo: Added broadcast_18_piece1 in memory on 211.71.149.235:45219 (size: 4.0 MB, free: 358.2 MB)
+17/06/09 18:41:11 INFO MemoryStore: Block broadcast_18_piece2 stored as bytes in memory (estimated size 4.0 MB, free 314.4 MB)
+17/06/09 18:41:11 INFO BlockManagerInfo: Added broadcast_18_piece2 in memory on 211.71.149.235:45219 (size: 4.0 MB, free: 354.2 MB)
+17/06/09 18:41:11 INFO MemoryStore: Block broadcast_18_piece3 stored as bytes in memory (estimated size 4.0 MB, free 310.4 MB)
+17/06/09 18:41:11 INFO BlockManagerInfo: Added broadcast_18_piece3 in memory on 211.71.149.235:45219 (size: 4.0 MB, free: 350.2 MB)
+17/06/09 18:41:11 INFO MemoryStore: Block broadcast_18_piece4 stored as bytes in memory (estimated size 3.8 MB, free 306.6 MB)
+17/06/09 18:41:11 INFO BlockManagerInfo: Added broadcast_18_piece4 in memory on 211.71.149.235:45219 (size: 3.8 MB, free: 346.4 MB)
+17/06/09 18:41:11 INFO SparkContext: Created broadcast 18 from broadcast at LDAOptimizer.scala:462
+17/06/09 18:41:11 INFO SparkContext: Starting job: treeAggregate at LDAOptimizer.scala:479
+17/06/09 18:41:11 INFO DAGScheduler: Got job 13 (treeAggregate at LDAOptimizer.scala:479) with 1 output partitions
+17/06/09 18:41:11 INFO DAGScheduler: Final stage: ResultStage 13 (treeAggregate at LDAOptimizer.scala:479)
+17/06/09 18:41:11 INFO DAGScheduler: Parents of final stage: List()
+17/06/09 18:41:11 INFO DAGScheduler: Missing parents: List()
+17/06/09 18:41:11 INFO DAGScheduler: Submitting ResultStage 13 (MapPartitionsRDD[32] at treeAggregate at LDAOptimizer.scala:479), which has no missing parents
+17/06/09 18:41:11 INFO MemoryStore: Block broadcast_19 stored as values in memory (estimated size 19.8 MB, free 286.9 MB)
+17/06/09 18:41:11 INFO MemoryStore: Block broadcast_19_piece0 stored as bytes in memory (estimated size 113.7 KB, free 286.7 MB)
+17/06/09 18:41:11 INFO BlockManagerInfo: Added broadcast_19_piece0 in memory on 211.71.149.235:45219 (size: 113.7 KB, free: 346.3 MB)
+17/06/09 18:41:12 INFO SparkContext: Created broadcast 19 from broadcast at DAGScheduler.scala:996
+17/06/09 18:41:12 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 13 (MapPartitionsRDD[32] at treeAggregate at LDAOptimizer.scala:479)
+17/06/09 18:41:12 INFO TaskSchedulerImpl: Adding task set 13.0 with 1 tasks
+17/06/09 18:41:12 INFO TaskSetManager: Starting task 0.0 in stage 13.0 (TID 36, localhost, executor driver, partition 0, PROCESS_LOCAL, 6737 bytes)
+17/06/09 18:41:12 INFO Executor: Running task 0.0 in stage 13.0 (TID 36)
+17/06/09 18:41:12 INFO FileScanRDD: Reading File path: file:///home/yqk/live-comment-spark-master/data/libsvm_data/20160903TDJX8_Lpq7U55bod_libsvm.dat, range: 0-122962, partition values: [empty row]
+17/06/09 18:41:12 INFO MemoryStore: Block rdd_30_0 stored as values in memory (estimated size 19.8 MB, free 267.0 MB)
+17/06/09 18:41:12 INFO BlockManagerInfo: Added rdd_30_0 in memory on 211.71.149.235:45219 (size: 19.8 MB, free: 326.5 MB)
+17/06/09 18:41:12 INFO MemoryStore: Block taskresult_36 stored as bytes in memory (estimated size 19.8 MB, free 247.1 MB)
+17/06/09 18:41:12 INFO BlockManagerInfo: Added taskresult_36 in memory on 211.71.149.235:45219 (size: 19.8 MB, free: 306.7 MB)
+17/06/09 18:41:12 INFO Executor: Finished task 0.0 in stage 13.0 (TID 36). 20801763 bytes result sent via BlockManager)
+17/06/09 18:41:12 INFO BlockManagerInfo: Removed taskresult_36 on 211.71.149.235:45219 in memory (size: 19.8 MB, free: 326.5 MB)
+17/06/09 18:41:12 INFO TaskSetManager: Finished task 0.0 in stage 13.0 (TID 36) in 832 ms on localhost (executor driver) (1/1)
+17/06/09 18:41:12 INFO TaskSchedulerImpl: Removed TaskSet 13.0, whose tasks have all completed, from pool 
+17/06/09 18:41:12 INFO DAGScheduler: ResultStage 13 (treeAggregate at LDAOptimizer.scala:479) finished in 0.833 s
+17/06/09 18:41:12 INFO DAGScheduler: Job 13 finished: treeAggregate at LDAOptimizer.scala:479, took 1.241147 s
+17/06/09 18:41:12 INFO SparkContext: Starting job: collect at LDAOptimizer.scala:482
+17/06/09 18:41:12 INFO DAGScheduler: Got job 14 (collect at LDAOptimizer.scala:482) with 1 output partitions
+17/06/09 18:41:12 INFO DAGScheduler: Final stage: ResultStage 14 (collect at LDAOptimizer.scala:482)
+17/06/09 18:41:12 INFO DAGScheduler: Parents of final stage: List()
+17/06/09 18:41:12 INFO DAGScheduler: Missing parents: List()
+17/06/09 18:41:12 INFO DAGScheduler: Submitting ResultStage 14 (MapPartitionsRDD[34] at flatMap at LDAOptimizer.scala:482), which has no missing parents
+17/06/09 18:41:12 INFO MemoryStore: Block broadcast_20 stored as values in memory (estimated size 35.8 KB, free 266.9 MB)
+17/06/09 18:41:12 INFO MemoryStore: Block broadcast_20_piece0 stored as bytes in memory (estimated size 14.8 KB, free 266.9 MB)
+17/06/09 18:41:12 INFO BlockManagerInfo: Added broadcast_20_piece0 in memory on 211.71.149.235:45219 (size: 14.8 KB, free: 326.5 MB)
+17/06/09 18:41:12 INFO SparkContext: Created broadcast 20 from broadcast at DAGScheduler.scala:996
+17/06/09 18:41:12 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 14 (MapPartitionsRDD[34] at flatMap at LDAOptimizer.scala:482)
+17/06/09 18:41:12 INFO TaskSchedulerImpl: Adding task set 14.0 with 1 tasks
+17/06/09 18:41:12 INFO TaskSetManager: Starting task 0.0 in stage 14.0 (TID 37, localhost, executor driver, partition 0, PROCESS_LOCAL, 6731 bytes)
+17/06/09 18:41:12 INFO Executor: Running task 0.0 in stage 14.0 (TID 37)
+17/06/09 18:41:12 INFO BlockManager: Found block rdd_30_0 locally
+17/06/09 18:41:12 INFO Executor: Finished task 0.0 in stage 14.0 (TID 37). 22209 bytes result sent to driver
+17/06/09 18:41:12 INFO TaskSetManager: Finished task 0.0 in stage 14.0 (TID 37) in 12 ms on localhost (executor driver) (1/1)
+17/06/09 18:41:12 INFO TaskSchedulerImpl: Removed TaskSet 14.0, whose tasks have all completed, from pool 
+17/06/09 18:41:12 INFO DAGScheduler: ResultStage 14 (collect at LDAOptimizer.scala:482) finished in 0.013 s
+17/06/09 18:41:12 INFO DAGScheduler: Job 14 finished: collect at LDAOptimizer.scala:482, took 0.057885 s
+17/06/09 18:41:12 INFO MapPartitionsRDD: Removing RDD 30 from persistence list
+17/06/09 18:41:12 INFO BlockManager: Removing RDD 30
+17/06/09 18:41:12 INFO TorrentBroadcast: Destroying Broadcast(18) (from destroy at LDAOptimizer.scala:484)
+17/06/09 18:41:12 INFO BlockManagerInfo: Removed broadcast_18_piece3 on 211.71.149.235:45219 in memory (size: 4.0 MB, free: 350.3 MB)
+17/06/09 18:41:12 INFO BlockManagerInfo: Removed broadcast_18_piece0 on 211.71.149.235:45219 in memory (size: 4.0 MB, free: 354.3 MB)
+17/06/09 18:41:12 INFO BlockManagerInfo: Removed broadcast_18_piece2 on 211.71.149.235:45219 in memory (size: 4.0 MB, free: 358.3 MB)
+17/06/09 18:41:12 INFO BlockManagerInfo: Removed broadcast_18_piece4 on 211.71.149.235:45219 in memory (size: 3.8 MB, free: 362.0 MB)
+17/06/09 18:41:12 INFO BlockManagerInfo: Removed broadcast_18_piece1 on 211.71.149.235:45219 in memory (size: 4.0 MB, free: 366.0 MB)
+17/06/09 18:41:13 INFO BlockManagerInfo: Removed broadcast_20_piece0 on 211.71.149.235:45219 in memory (size: 14.8 KB, free: 366.1 MB)
+17/06/09 18:41:13 INFO SparkContext: Starting job: isEmpty at LDAOptimizer.scala:448
+17/06/09 18:41:13 INFO DAGScheduler: Got job 15 (isEmpty at LDAOptimizer.scala:448) with 1 output partitions
+17/06/09 18:41:13 INFO DAGScheduler: Final stage: ResultStage 15 (isEmpty at LDAOptimizer.scala:448)
+17/06/09 18:41:13 INFO DAGScheduler: Parents of final stage: List()
+17/06/09 18:41:13 INFO DAGScheduler: Missing parents: List()
+17/06/09 18:41:13 INFO DAGScheduler: Submitting ResultStage 15 (PartitionwiseSampledRDD[35] at sample at LDAOptimizer.scala:446), which has no missing parents
+17/06/09 18:41:13 INFO MemoryStore: Block broadcast_21 stored as values in memory (estimated size 34.6 KB, free 326.2 MB)
+17/06/09 18:41:13 INFO MemoryStore: Block broadcast_21_piece0 stored as bytes in memory (estimated size 14.1 KB, free 326.2 MB)
+17/06/09 18:41:13 INFO BlockManagerInfo: Added broadcast_21_piece0 in memory on 211.71.149.235:45219 (size: 14.1 KB, free: 366.0 MB)
+17/06/09 18:41:13 INFO SparkContext: Created broadcast 21 from broadcast at DAGScheduler.scala:996
+17/06/09 18:41:13 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 15 (PartitionwiseSampledRDD[35] at sample at LDAOptimizer.scala:446)
+17/06/09 18:41:13 INFO TaskSchedulerImpl: Adding task set 15.0 with 1 tasks
+17/06/09 18:41:13 INFO TaskSetManager: Starting task 0.0 in stage 15.0 (TID 38, localhost, executor driver, partition 0, PROCESS_LOCAL, 6731 bytes)
+17/06/09 18:41:13 INFO Executor: Running task 0.0 in stage 15.0 (TID 38)
+17/06/09 18:41:13 INFO FileScanRDD: Reading File path: file:///home/yqk/live-comment-spark-master/data/libsvm_data/20160903TDJX8_Lpq7U55bod_libsvm.dat, range: 0-122962, partition values: [empty row]
+17/06/09 18:41:13 INFO Executor: Finished task 0.0 in stage 15.0 (TID 38). 1793 bytes result sent to driver
+17/06/09 18:41:13 INFO TaskSetManager: Finished task 0.0 in stage 15.0 (TID 38) in 18 ms on localhost (executor driver) (1/1)
+17/06/09 18:41:13 INFO TaskSchedulerImpl: Removed TaskSet 15.0, whose tasks have all completed, from pool 
+17/06/09 18:41:13 INFO DAGScheduler: ResultStage 15 (isEmpty at LDAOptimizer.scala:448) finished in 0.020 s
+17/06/09 18:41:13 INFO DAGScheduler: Job 15 finished: isEmpty at LDAOptimizer.scala:448, took 0.034410 s
+17/06/09 18:41:13 INFO BlockManagerInfo: Removed broadcast_21_piece0 on 211.71.149.235:45219 in memory (size: 14.1 KB, free: 366.1 MB)
+17/06/09 18:41:18 INFO MemoryStore: Block broadcast_22 stored as values in memory (estimated size 19.7 MB, free 306.5 MB)
+17/06/09 18:41:19 INFO MemoryStore: Block broadcast_22_piece0 stored as bytes in memory (estimated size 4.0 MB, free 302.5 MB)
+17/06/09 18:41:19 INFO BlockManagerInfo: Added broadcast_22_piece0 in memory on 211.71.149.235:45219 (size: 4.0 MB, free: 362.1 MB)
+17/06/09 18:41:19 INFO MemoryStore: Block broadcast_22_piece1 stored as bytes in memory (estimated size 4.0 MB, free 298.5 MB)
+17/06/09 18:41:19 INFO BlockManagerInfo: Added broadcast_22_piece1 in memory on 211.71.149.235:45219 (size: 4.0 MB, free: 358.1 MB)
+17/06/09 18:41:19 INFO MemoryStore: Block broadcast_22_piece2 stored as bytes in memory (estimated size 4.0 MB, free 294.5 MB)
+17/06/09 18:41:19 INFO BlockManagerInfo: Added broadcast_22_piece2 in memory on 211.71.149.235:45219 (size: 4.0 MB, free: 354.1 MB)
+17/06/09 18:41:19 INFO MemoryStore: Block broadcast_22_piece3 stored as bytes in memory (estimated size 4.0 MB, free 290.5 MB)
+17/06/09 18:41:19 INFO BlockManagerInfo: Added broadcast_22_piece3 in memory on 211.71.149.235:45219 (size: 4.0 MB, free: 350.1 MB)
+17/06/09 18:41:19 INFO MemoryStore: Block broadcast_22_piece4 stored as bytes in memory (estimated size 3.8 MB, free 286.7 MB)
+17/06/09 18:41:19 INFO BlockManagerInfo: Added broadcast_22_piece4 in memory on 211.71.149.235:45219 (size: 3.8 MB, free: 346.3 MB)
+17/06/09 18:41:19 INFO SparkContext: Created broadcast 22 from broadcast at LDAOptimizer.scala:462
+17/06/09 18:41:19 INFO SparkContext: Starting job: treeAggregate at LDAOptimizer.scala:479
+17/06/09 18:41:19 INFO DAGScheduler: Got job 16 (treeAggregate at LDAOptimizer.scala:479) with 1 output partitions
+17/06/09 18:41:19 INFO DAGScheduler: Final stage: ResultStage 16 (treeAggregate at LDAOptimizer.scala:479)
+17/06/09 18:41:19 INFO DAGScheduler: Parents of final stage: List()
+17/06/09 18:41:19 INFO DAGScheduler: Missing parents: List()
+17/06/09 18:41:19 INFO DAGScheduler: Submitting ResultStage 16 (MapPartitionsRDD[38] at treeAggregate at LDAOptimizer.scala:479), which has no missing parents
+17/06/09 18:41:19 INFO MemoryStore: Block broadcast_23 stored as values in memory (estimated size 19.8 MB, free 267.0 MB)
+17/06/09 18:41:19 INFO MemoryStore: Block broadcast_23_piece0 stored as bytes in memory (estimated size 113.7 KB, free 266.9 MB)
+17/06/09 18:41:19 INFO BlockManagerInfo: Added broadcast_23_piece0 in memory on 211.71.149.235:45219 (size: 113.7 KB, free: 346.2 MB)
+17/06/09 18:41:19 INFO SparkContext: Created broadcast 23 from broadcast at DAGScheduler.scala:996
+17/06/09 18:41:19 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 16 (MapPartitionsRDD[38] at treeAggregate at LDAOptimizer.scala:479)
+17/06/09 18:41:19 INFO TaskSchedulerImpl: Adding task set 16.0 with 1 tasks
+17/06/09 18:41:19 INFO TaskSetManager: Starting task 0.0 in stage 16.0 (TID 39, localhost, executor driver, partition 0, PROCESS_LOCAL, 6738 bytes)
+17/06/09 18:41:19 INFO Executor: Running task 0.0 in stage 16.0 (TID 39)
+17/06/09 18:41:19 INFO FileScanRDD: Reading File path: file:///home/yqk/live-comment-spark-master/data/libsvm_data/20160903TDJX8_Lpq7U55bod_libsvm.dat, range: 0-122962, partition values: [empty row]
+17/06/09 18:41:20 INFO MemoryStore: Block rdd_36_0 stored as values in memory (estimated size 19.8 MB, free 247.1 MB)
+17/06/09 18:41:20 INFO BlockManagerInfo: Added rdd_36_0 in memory on 211.71.149.235:45219 (size: 19.8 MB, free: 326.4 MB)
+17/06/09 18:41:20 INFO MemoryStore: Block taskresult_39 stored as bytes in memory (estimated size 19.8 MB, free 227.3 MB)
+17/06/09 18:41:20 INFO BlockManagerInfo: Added taskresult_39 in memory on 211.71.149.235:45219 (size: 19.8 MB, free: 306.6 MB)
+17/06/09 18:41:20 INFO Executor: Finished task 0.0 in stage 16.0 (TID 39). 20801763 bytes result sent via BlockManager)
+17/06/09 18:41:21 INFO BlockManagerInfo: Removed broadcast_19_piece0 on 211.71.149.235:45219 in memory (size: 113.7 KB, free: 306.7 MB)
+17/06/09 18:41:21 INFO BlockManager: Removing RDD 30
+17/06/09 18:41:21 INFO ContextCleaner: Cleaned RDD 30
+17/06/09 18:41:21 INFO BlockManagerInfo: Removed broadcast_15_piece0 on 211.71.149.235:45219 in memory (size: 113.7 KB, free: 306.8 MB)
+17/06/09 18:41:21 INFO BlockManager: Removing RDD 24
+17/06/09 18:41:21 INFO ContextCleaner: Cleaned RDD 24
+17/06/09 18:41:21 INFO BlockManagerInfo: Removed taskresult_39 on 211.71.149.235:45219 in memory (size: 19.8 MB, free: 326.6 MB)
+17/06/09 18:41:21 INFO DAGScheduler: ResultStage 16 (treeAggregate at LDAOptimizer.scala:479) finished in 1.366 s
+17/06/09 18:41:21 INFO DAGScheduler: Job 16 finished: treeAggregate at LDAOptimizer.scala:479, took 1.646512 s
+17/06/09 18:41:21 INFO TaskSetManager: Finished task 0.0 in stage 16.0 (TID 39) in 1365 ms on localhost (executor driver) (1/1)
+17/06/09 18:41:21 INFO TaskSchedulerImpl: Removed TaskSet 16.0, whose tasks have all completed, from pool 
+17/06/09 18:41:21 INFO SparkContext: Starting job: collect at LDAOptimizer.scala:482
+17/06/09 18:41:21 INFO DAGScheduler: Got job 17 (collect at LDAOptimizer.scala:482) with 1 output partitions
+17/06/09 18:41:21 INFO DAGScheduler: Final stage: ResultStage 17 (collect at LDAOptimizer.scala:482)
+17/06/09 18:41:21 INFO DAGScheduler: Parents of final stage: List()
+17/06/09 18:41:21 INFO DAGScheduler: Missing parents: List()
+17/06/09 18:41:21 INFO DAGScheduler: Submitting ResultStage 17 (MapPartitionsRDD[40] at flatMap at LDAOptimizer.scala:482), which has no missing parents
+17/06/09 18:41:21 INFO MemoryStore: Block broadcast_24 stored as values in memory (estimated size 35.8 KB, free 286.8 MB)
+17/06/09 18:41:21 INFO MemoryStore: Block broadcast_24_piece0 stored as bytes in memory (estimated size 14.8 KB, free 286.8 MB)
+17/06/09 18:41:21 INFO BlockManagerInfo: Added broadcast_24_piece0 in memory on 211.71.149.235:45219 (size: 14.8 KB, free: 326.6 MB)
+17/06/09 18:41:21 INFO SparkContext: Created broadcast 24 from broadcast at DAGScheduler.scala:996
+17/06/09 18:41:21 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 17 (MapPartitionsRDD[40] at flatMap at LDAOptimizer.scala:482)
+17/06/09 18:41:21 INFO TaskSchedulerImpl: Adding task set 17.0 with 1 tasks
+17/06/09 18:41:21 INFO TaskSetManager: Starting task 0.0 in stage 17.0 (TID 40, localhost, executor driver, partition 0, PROCESS_LOCAL, 6732 bytes)
+17/06/09 18:41:21 INFO Executor: Running task 0.0 in stage 17.0 (TID 40)
+17/06/09 18:41:21 INFO BlockManager: Found block rdd_36_0 locally
+17/06/09 18:41:21 INFO Executor: Finished task 0.0 in stage 17.0 (TID 40). 20395 bytes result sent to driver
+17/06/09 18:41:21 INFO TaskSetManager: Finished task 0.0 in stage 17.0 (TID 40) in 27 ms on localhost (executor driver) (1/1)
+17/06/09 18:41:21 INFO TaskSchedulerImpl: Removed TaskSet 17.0, whose tasks have all completed, from pool 
+17/06/09 18:41:21 INFO DAGScheduler: ResultStage 17 (collect at LDAOptimizer.scala:482) finished in 0.010 s
+17/06/09 18:41:21 INFO DAGScheduler: Job 17 finished: collect at LDAOptimizer.scala:482, took 0.037837 s
+17/06/09 18:41:21 INFO MapPartitionsRDD: Removing RDD 36 from persistence list
+17/06/09 18:41:21 INFO BlockManager: Removing RDD 36
+17/06/09 18:41:21 INFO TorrentBroadcast: Destroying Broadcast(22) (from destroy at LDAOptimizer.scala:484)
+17/06/09 18:41:21 INFO BlockManagerInfo: Removed broadcast_22_piece0 on 211.71.149.235:45219 in memory (size: 4.0 MB, free: 350.4 MB)
+17/06/09 18:41:21 INFO BlockManagerInfo: Removed broadcast_22_piece3 on 211.71.149.235:45219 in memory (size: 4.0 MB, free: 354.4 MB)
+17/06/09 18:41:21 INFO BlockManagerInfo: Removed broadcast_22_piece2 on 211.71.149.235:45219 in memory (size: 4.0 MB, free: 358.4 MB)
+17/06/09 18:41:21 INFO BlockManagerInfo: Removed broadcast_22_piece1 on 211.71.149.235:45219 in memory (size: 4.0 MB, free: 362.4 MB)
+17/06/09 18:41:21 INFO BlockManagerInfo: Removed broadcast_22_piece4 on 211.71.149.235:45219 in memory (size: 3.8 MB, free: 366.2 MB)
+17/06/09 18:41:21 INFO BlockManagerInfo: Removed broadcast_24_piece0 on 211.71.149.235:45219 in memory (size: 14.8 KB, free: 366.2 MB)
+17/06/09 18:41:21 INFO SparkContext: Starting job: isEmpty at LDAOptimizer.scala:448
+17/06/09 18:41:21 INFO DAGScheduler: Got job 18 (isEmpty at LDAOptimizer.scala:448) with 1 output partitions
+17/06/09 18:41:21 INFO DAGScheduler: Final stage: ResultStage 18 (isEmpty at LDAOptimizer.scala:448)
+17/06/09 18:41:21 INFO DAGScheduler: Parents of final stage: List()
+17/06/09 18:41:21 INFO DAGScheduler: Missing parents: List()
+17/06/09 18:41:21 INFO DAGScheduler: Submitting ResultStage 18 (PartitionwiseSampledRDD[41] at sample at LDAOptimizer.scala:446), which has no missing parents
+17/06/09 18:41:21 INFO MemoryStore: Block broadcast_25 stored as values in memory (estimated size 34.6 KB, free 346.1 MB)
+17/06/09 18:41:21 INFO MemoryStore: Block broadcast_25_piece0 stored as bytes in memory (estimated size 14.1 KB, free 346.1 MB)
+17/06/09 18:41:21 INFO BlockManagerInfo: Added broadcast_25_piece0 in memory on 211.71.149.235:45219 (size: 14.1 KB, free: 366.2 MB)
+17/06/09 18:41:21 INFO SparkContext: Created broadcast 25 from broadcast at DAGScheduler.scala:996
+17/06/09 18:41:21 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 18 (PartitionwiseSampledRDD[41] at sample at LDAOptimizer.scala:446)
+17/06/09 18:41:21 INFO TaskSchedulerImpl: Adding task set 18.0 with 1 tasks
+17/06/09 18:41:21 INFO TaskSetManager: Starting task 0.0 in stage 18.0 (TID 41, localhost, executor driver, partition 0, PROCESS_LOCAL, 6732 bytes)
+17/06/09 18:41:21 INFO Executor: Running task 0.0 in stage 18.0 (TID 41)
+17/06/09 18:41:21 INFO FileScanRDD: Reading File path: file:///home/yqk/live-comment-spark-master/data/libsvm_data/20160903TDJX8_Lpq7U55bod_libsvm.dat, range: 0-122962, partition values: [empty row]
+17/06/09 18:41:21 INFO Executor: Finished task 0.0 in stage 18.0 (TID 41). 1781 bytes result sent to driver
+17/06/09 18:41:21 INFO TaskSetManager: Finished task 0.0 in stage 18.0 (TID 41) in 77 ms on localhost (executor driver) (1/1)
+17/06/09 18:41:21 INFO TaskSchedulerImpl: Removed TaskSet 18.0, whose tasks have all completed, from pool 
+17/06/09 18:41:21 INFO DAGScheduler: ResultStage 18 (isEmpty at LDAOptimizer.scala:448) finished in 0.079 s
+17/06/09 18:41:21 INFO DAGScheduler: Job 18 finished: isEmpty at LDAOptimizer.scala:448, took 0.094773 s
+17/06/09 18:41:21 INFO BlockManagerInfo: Removed broadcast_25_piece0 on 211.71.149.235:45219 in memory (size: 14.1 KB, free: 366.2 MB)
+17/06/09 18:41:26 INFO MemoryStore: Block broadcast_26 stored as values in memory (estimated size 19.7 MB, free 326.4 MB)
+17/06/09 18:41:26 INFO MemoryStore: Block broadcast_26_piece0 stored as bytes in memory (estimated size 4.0 MB, free 322.4 MB)
+17/06/09 18:41:26 INFO BlockManagerInfo: Added broadcast_26_piece0 in memory on 211.71.149.235:45219 (size: 4.0 MB, free: 362.2 MB)
+17/06/09 18:41:26 INFO MemoryStore: Block broadcast_26_piece1 stored as bytes in memory (estimated size 4.0 MB, free 318.4 MB)
+17/06/09 18:41:26 INFO BlockManagerInfo: Added broadcast_26_piece1 in memory on 211.71.149.235:45219 (size: 4.0 MB, free: 358.2 MB)
+17/06/09 18:41:26 INFO MemoryStore: Block broadcast_26_piece2 stored as bytes in memory (estimated size 4.0 MB, free 314.4 MB)
+17/06/09 18:41:26 INFO BlockManagerInfo: Added broadcast_26_piece2 in memory on 211.71.149.235:45219 (size: 4.0 MB, free: 354.2 MB)
+17/06/09 18:41:26 INFO MemoryStore: Block broadcast_26_piece3 stored as bytes in memory (estimated size 4.0 MB, free 310.4 MB)
+17/06/09 18:41:26 INFO BlockManagerInfo: Added broadcast_26_piece3 in memory on 211.71.149.235:45219 (size: 4.0 MB, free: 350.2 MB)
+17/06/09 18:41:26 INFO MemoryStore: Block broadcast_26_piece4 stored as bytes in memory (estimated size 3.8 MB, free 306.6 MB)
+17/06/09 18:41:26 INFO BlockManagerInfo: Added broadcast_26_piece4 in memory on 211.71.149.235:45219 (size: 3.8 MB, free: 346.4 MB)
+17/06/09 18:41:26 INFO SparkContext: Created broadcast 26 from broadcast at LDAOptimizer.scala:462
+17/06/09 18:41:27 INFO SparkContext: Starting job: treeAggregate at LDAOptimizer.scala:479
+17/06/09 18:41:27 INFO DAGScheduler: Got job 19 (treeAggregate at LDAOptimizer.scala:479) with 1 output partitions
+17/06/09 18:41:27 INFO DAGScheduler: Final stage: ResultStage 19 (treeAggregate at LDAOptimizer.scala:479)
+17/06/09 18:41:27 INFO DAGScheduler: Parents of final stage: List()
+17/06/09 18:41:27 INFO DAGScheduler: Missing parents: List()
+17/06/09 18:41:27 INFO DAGScheduler: Submitting ResultStage 19 (MapPartitionsRDD[44] at treeAggregate at LDAOptimizer.scala:479), which has no missing parents
+17/06/09 18:41:27 INFO MemoryStore: Block broadcast_27 stored as values in memory (estimated size 19.8 MB, free 286.9 MB)
+17/06/09 18:41:27 INFO MemoryStore: Block broadcast_27_piece0 stored as bytes in memory (estimated size 113.7 KB, free 286.7 MB)
+17/06/09 18:41:27 INFO BlockManagerInfo: Added broadcast_27_piece0 in memory on 211.71.149.235:45219 (size: 113.7 KB, free: 346.3 MB)
+17/06/09 18:41:27 INFO SparkContext: Created broadcast 27 from broadcast at DAGScheduler.scala:996
+17/06/09 18:41:27 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 19 (MapPartitionsRDD[44] at treeAggregate at LDAOptimizer.scala:479)
+17/06/09 18:41:27 INFO TaskSchedulerImpl: Adding task set 19.0 with 1 tasks
+17/06/09 18:41:27 INFO TaskSetManager: Starting task 0.0 in stage 19.0 (TID 42, localhost, executor driver, partition 0, PROCESS_LOCAL, 6738 bytes)
+17/06/09 18:41:27 INFO Executor: Running task 0.0 in stage 19.0 (TID 42)
+17/06/09 18:41:27 INFO FileScanRDD: Reading File path: file:///home/yqk/live-comment-spark-master/data/libsvm_data/20160903TDJX8_Lpq7U55bod_libsvm.dat, range: 0-122962, partition values: [empty row]
+17/06/09 18:41:27 INFO MemoryStore: Block rdd_42_0 stored as values in memory (estimated size 19.8 MB, free 267.0 MB)
+17/06/09 18:41:27 INFO BlockManagerInfo: Added rdd_42_0 in memory on 211.71.149.235:45219 (size: 19.8 MB, free: 326.5 MB)
+17/06/09 18:41:28 INFO MemoryStore: Block taskresult_42 stored as bytes in memory (estimated size 19.8 MB, free 247.1 MB)
+17/06/09 18:41:28 INFO BlockManagerInfo: Added taskresult_42 in memory on 211.71.149.235:45219 (size: 19.8 MB, free: 306.7 MB)
+17/06/09 18:41:28 INFO Executor: Finished task 0.0 in stage 19.0 (TID 42). 20801763 bytes result sent via BlockManager)
+17/06/09 18:41:28 INFO BlockManagerInfo: Removed taskresult_42 on 211.71.149.235:45219 in memory (size: 19.8 MB, free: 326.5 MB)
+17/06/09 18:41:28 INFO TaskSetManager: Finished task 0.0 in stage 19.0 (TID 42) in 747 ms on localhost (executor driver) (1/1)
+17/06/09 18:41:28 INFO TaskSchedulerImpl: Removed TaskSet 19.0, whose tasks have all completed, from pool 
+17/06/09 18:41:28 INFO DAGScheduler: ResultStage 19 (treeAggregate at LDAOptimizer.scala:479) finished in 0.749 s
+17/06/09 18:41:28 INFO DAGScheduler: Job 19 finished: treeAggregate at LDAOptimizer.scala:479, took 1.218933 s
+17/06/09 18:41:28 INFO SparkContext: Starting job: collect at LDAOptimizer.scala:482
+17/06/09 18:41:28 INFO DAGScheduler: Got job 20 (collect at LDAOptimizer.scala:482) with 1 output partitions
+17/06/09 18:41:28 INFO DAGScheduler: Final stage: ResultStage 20 (collect at LDAOptimizer.scala:482)
+17/06/09 18:41:28 INFO DAGScheduler: Parents of final stage: List()
+17/06/09 18:41:28 INFO DAGScheduler: Missing parents: List()
+17/06/09 18:41:28 INFO DAGScheduler: Submitting ResultStage 20 (MapPartitionsRDD[46] at flatMap at LDAOptimizer.scala:482), which has no missing parents
+17/06/09 18:41:28 INFO MemoryStore: Block broadcast_28 stored as values in memory (estimated size 35.8 KB, free 266.9 MB)
+17/06/09 18:41:28 INFO MemoryStore: Block broadcast_28_piece0 stored as bytes in memory (estimated size 14.8 KB, free 266.9 MB)
+17/06/09 18:41:28 INFO BlockManagerInfo: Added broadcast_28_piece0 in memory on 211.71.149.235:45219 (size: 14.8 KB, free: 326.5 MB)
+17/06/09 18:41:28 INFO SparkContext: Created broadcast 28 from broadcast at DAGScheduler.scala:996
+17/06/09 18:41:28 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 20 (MapPartitionsRDD[46] at flatMap at LDAOptimizer.scala:482)
+17/06/09 18:41:28 INFO TaskSchedulerImpl: Adding task set 20.0 with 1 tasks
+17/06/09 18:41:28 INFO TaskSetManager: Starting task 0.0 in stage 20.0 (TID 43, localhost, executor driver, partition 0, PROCESS_LOCAL, 6732 bytes)
+17/06/09 18:41:28 INFO Executor: Running task 0.0 in stage 20.0 (TID 43)
+17/06/09 18:41:28 INFO BlockManager: Found block rdd_42_0 locally
+17/06/09 18:41:28 INFO Executor: Finished task 0.0 in stage 20.0 (TID 43). 22881 bytes result sent to driver
+17/06/09 18:41:28 INFO TaskSetManager: Finished task 0.0 in stage 20.0 (TID 43) in 9 ms on localhost (executor driver) (1/1)
+17/06/09 18:41:28 INFO TaskSchedulerImpl: Removed TaskSet 20.0, whose tasks have all completed, from pool 
+17/06/09 18:41:28 INFO DAGScheduler: ResultStage 20 (collect at LDAOptimizer.scala:482) finished in 0.008 s
+17/06/09 18:41:28 INFO DAGScheduler: Job 20 finished: collect at LDAOptimizer.scala:482, took 0.017853 s
+17/06/09 18:41:28 INFO MapPartitionsRDD: Removing RDD 42 from persistence list
+17/06/09 18:41:28 INFO BlockManager: Removing RDD 42
+17/06/09 18:41:28 INFO TorrentBroadcast: Destroying Broadcast(26) (from destroy at LDAOptimizer.scala:484)
+17/06/09 18:41:28 INFO BlockManagerInfo: Removed broadcast_26_piece0 on 211.71.149.235:45219 in memory (size: 4.0 MB, free: 350.3 MB)
+17/06/09 18:41:28 INFO BlockManagerInfo: Removed broadcast_26_piece3 on 211.71.149.235:45219 in memory (size: 4.0 MB, free: 354.3 MB)
+17/06/09 18:41:28 INFO BlockManagerInfo: Removed broadcast_26_piece2 on 211.71.149.235:45219 in memory (size: 4.0 MB, free: 358.3 MB)
+17/06/09 18:41:28 INFO BlockManagerInfo: Removed broadcast_26_piece1 on 211.71.149.235:45219 in memory (size: 4.0 MB, free: 362.3 MB)
+17/06/09 18:41:28 INFO BlockManagerInfo: Removed broadcast_26_piece4 on 211.71.149.235:45219 in memory (size: 3.8 MB, free: 366.0 MB)
+17/06/09 18:41:28 INFO BlockManagerInfo: Removed broadcast_28_piece0 on 211.71.149.235:45219 in memory (size: 14.8 KB, free: 366.1 MB)
+17/06/09 18:41:28 INFO SparkContext: Starting job: isEmpty at LDAOptimizer.scala:448
+17/06/09 18:41:28 INFO DAGScheduler: Got job 21 (isEmpty at LDAOptimizer.scala:448) with 1 output partitions
+17/06/09 18:41:28 INFO DAGScheduler: Final stage: ResultStage 21 (isEmpty at LDAOptimizer.scala:448)
+17/06/09 18:41:28 INFO DAGScheduler: Parents of final stage: List()
+17/06/09 18:41:28 INFO DAGScheduler: Missing parents: List()
+17/06/09 18:41:28 INFO DAGScheduler: Submitting ResultStage 21 (PartitionwiseSampledRDD[47] at sample at LDAOptimizer.scala:446), which has no missing parents
+17/06/09 18:41:28 INFO MemoryStore: Block broadcast_29 stored as values in memory (estimated size 34.6 KB, free 326.2 MB)
+17/06/09 18:41:28 INFO MemoryStore: Block broadcast_29_piece0 stored as bytes in memory (estimated size 14.1 KB, free 326.2 MB)
+17/06/09 18:41:28 INFO BlockManagerInfo: Added broadcast_29_piece0 in memory on 211.71.149.235:45219 (size: 14.1 KB, free: 366.0 MB)
+17/06/09 18:41:28 INFO SparkContext: Created broadcast 29 from broadcast at DAGScheduler.scala:996
+17/06/09 18:41:28 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 21 (PartitionwiseSampledRDD[47] at sample at LDAOptimizer.scala:446)
+17/06/09 18:41:28 INFO TaskSchedulerImpl: Adding task set 21.0 with 1 tasks
+17/06/09 18:41:28 INFO TaskSetManager: Starting task 0.0 in stage 21.0 (TID 44, localhost, executor driver, partition 0, PROCESS_LOCAL, 6732 bytes)
+17/06/09 18:41:28 INFO Executor: Running task 0.0 in stage 21.0 (TID 44)
+17/06/09 18:41:28 INFO FileScanRDD: Reading File path: file:///home/yqk/live-comment-spark-master/data/libsvm_data/20160903TDJX8_Lpq7U55bod_libsvm.dat, range: 0-122962, partition values: [empty row]
+17/06/09 18:41:28 INFO Executor: Finished task 0.0 in stage 21.0 (TID 44). 1781 bytes result sent to driver
+17/06/09 18:41:28 INFO TaskSetManager: Finished task 0.0 in stage 21.0 (TID 44) in 46 ms on localhost (executor driver) (1/1)
+17/06/09 18:41:28 INFO TaskSchedulerImpl: Removed TaskSet 21.0, whose tasks have all completed, from pool 
+17/06/09 18:41:28 INFO DAGScheduler: ResultStage 21 (isEmpty at LDAOptimizer.scala:448) finished in 0.047 s
+17/06/09 18:41:28 INFO DAGScheduler: Job 21 finished: isEmpty at LDAOptimizer.scala:448, took 0.064432 s
+17/06/09 18:41:29 INFO BlockManagerInfo: Removed broadcast_29_piece0 on 211.71.149.235:45219 in memory (size: 14.1 KB, free: 366.1 MB)
+17/06/09 18:41:34 INFO MemoryStore: Block broadcast_30 stored as values in memory (estimated size 19.7 MB, free 306.5 MB)
+17/06/09 18:41:34 INFO MemoryStore: Block broadcast_30_piece0 stored as bytes in memory (estimated size 4.0 MB, free 302.5 MB)
+17/06/09 18:41:34 INFO BlockManagerInfo: Added broadcast_30_piece0 in memory on 211.71.149.235:45219 (size: 4.0 MB, free: 362.1 MB)
+17/06/09 18:41:34 INFO MemoryStore: Block broadcast_30_piece1 stored as bytes in memory (estimated size 4.0 MB, free 298.5 MB)
+17/06/09 18:41:34 INFO BlockManagerInfo: Added broadcast_30_piece1 in memory on 211.71.149.235:45219 (size: 4.0 MB, free: 358.1 MB)
+17/06/09 18:41:34 INFO MemoryStore: Block broadcast_30_piece2 stored as bytes in memory (estimated size 4.0 MB, free 294.5 MB)
+17/06/09 18:41:34 INFO BlockManagerInfo: Added broadcast_30_piece2 in memory on 211.71.149.235:45219 (size: 4.0 MB, free: 354.1 MB)
+17/06/09 18:41:34 INFO MemoryStore: Block broadcast_30_piece3 stored as bytes in memory (estimated size 4.0 MB, free 290.5 MB)
+17/06/09 18:41:35 INFO BlockManagerInfo: Added broadcast_30_piece3 in memory on 211.71.149.235:45219 (size: 4.0 MB, free: 350.1 MB)
+17/06/09 18:41:35 INFO MemoryStore: Block broadcast_30_piece4 stored as bytes in memory (estimated size 3.8 MB, free 286.7 MB)
+17/06/09 18:41:35 INFO BlockManagerInfo: Added broadcast_30_piece4 in memory on 211.71.149.235:45219 (size: 3.8 MB, free: 346.3 MB)
+17/06/09 18:41:35 INFO SparkContext: Created broadcast 30 from broadcast at LDAOptimizer.scala:462
+17/06/09 18:41:35 INFO SparkContext: Starting job: treeAggregate at LDAOptimizer.scala:479
+17/06/09 18:41:35 INFO DAGScheduler: Got job 22 (treeAggregate at LDAOptimizer.scala:479) with 1 output partitions
+17/06/09 18:41:35 INFO DAGScheduler: Final stage: ResultStage 22 (treeAggregate at LDAOptimizer.scala:479)
+17/06/09 18:41:35 INFO DAGScheduler: Parents of final stage: List()
+17/06/09 18:41:35 INFO DAGScheduler: Missing parents: List()
+17/06/09 18:41:35 INFO DAGScheduler: Submitting ResultStage 22 (MapPartitionsRDD[50] at treeAggregate at LDAOptimizer.scala:479), which has no missing parents
+17/06/09 18:41:35 INFO MemoryStore: Block broadcast_31 stored as values in memory (estimated size 19.8 MB, free 267.0 MB)
+17/06/09 18:41:35 INFO MemoryStore: Block broadcast_31_piece0 stored as bytes in memory (estimated size 113.7 KB, free 266.9 MB)
+17/06/09 18:41:35 INFO BlockManagerInfo: Added broadcast_31_piece0 in memory on 211.71.149.235:45219 (size: 113.7 KB, free: 346.2 MB)
+17/06/09 18:41:35 INFO SparkContext: Created broadcast 31 from broadcast at DAGScheduler.scala:996
+17/06/09 18:41:35 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 22 (MapPartitionsRDD[50] at treeAggregate at LDAOptimizer.scala:479)
+17/06/09 18:41:35 INFO TaskSchedulerImpl: Adding task set 22.0 with 1 tasks
+17/06/09 18:41:35 INFO TaskSetManager: Starting task 0.0 in stage 22.0 (TID 45, localhost, executor driver, partition 0, PROCESS_LOCAL, 6738 bytes)
+17/06/09 18:41:35 INFO Executor: Running task 0.0 in stage 22.0 (TID 45)
+17/06/09 18:41:35 INFO FileScanRDD: Reading File path: file:///home/yqk/live-comment-spark-master/data/libsvm_data/20160903TDJX8_Lpq7U55bod_libsvm.dat, range: 0-122962, partition values: [empty row]
+17/06/09 18:41:35 INFO MemoryStore: Block rdd_48_0 stored as values in memory (estimated size 19.8 MB, free 247.1 MB)
+17/06/09 18:41:35 INFO BlockManagerInfo: Added rdd_48_0 in memory on 211.71.149.235:45219 (size: 19.8 MB, free: 326.4 MB)
+17/06/09 18:41:36 INFO MemoryStore: Block taskresult_45 stored as bytes in memory (estimated size 19.8 MB, free 227.3 MB)
+17/06/09 18:41:36 INFO BlockManagerInfo: Added taskresult_45 in memory on 211.71.149.235:45219 (size: 19.8 MB, free: 306.6 MB)
+17/06/09 18:41:36 INFO Executor: Finished task 0.0 in stage 22.0 (TID 45). 20801763 bytes result sent via BlockManager)
+17/06/09 18:41:36 INFO BlockManagerInfo: Removed broadcast_27_piece0 on 211.71.149.235:45219 in memory (size: 113.7 KB, free: 306.7 MB)
+17/06/09 18:41:36 INFO BlockManagerInfo: Removed broadcast_23_piece0 on 211.71.149.235:45219 in memory (size: 113.7 KB, free: 306.8 MB)
+17/06/09 18:41:36 INFO BlockManager: Removing RDD 36
+17/06/09 18:41:36 INFO ContextCleaner: Cleaned RDD 36
+17/06/09 18:41:36 INFO BlockManager: Removing RDD 42
+17/06/09 18:41:36 INFO ContextCleaner: Cleaned RDD 42
+17/06/09 18:41:36 INFO BlockManagerInfo: Removed taskresult_45 on 211.71.149.235:45219 in memory (size: 19.8 MB, free: 326.6 MB)
+17/06/09 18:41:36 INFO DAGScheduler: ResultStage 22 (treeAggregate at LDAOptimizer.scala:479) finished in 1.080 s
+17/06/09 18:41:36 INFO DAGScheduler: Job 22 finished: treeAggregate at LDAOptimizer.scala:479, took 1.444217 s
+17/06/09 18:41:36 INFO TaskSetManager: Finished task 0.0 in stage 22.0 (TID 45) in 1105 ms on localhost (executor driver) (1/1)
+17/06/09 18:41:36 INFO TaskSchedulerImpl: Removed TaskSet 22.0, whose tasks have all completed, from pool 
+17/06/09 18:41:36 INFO SparkContext: Starting job: collect at LDAOptimizer.scala:482
+17/06/09 18:41:36 INFO DAGScheduler: Got job 23 (collect at LDAOptimizer.scala:482) with 1 output partitions
+17/06/09 18:41:36 INFO DAGScheduler: Final stage: ResultStage 23 (collect at LDAOptimizer.scala:482)
+17/06/09 18:41:36 INFO DAGScheduler: Parents of final stage: List()
+17/06/09 18:41:36 INFO DAGScheduler: Missing parents: List()
+17/06/09 18:41:36 INFO DAGScheduler: Submitting ResultStage 23 (MapPartitionsRDD[52] at flatMap at LDAOptimizer.scala:482), which has no missing parents
+17/06/09 18:41:36 INFO MemoryStore: Block broadcast_32 stored as values in memory (estimated size 35.8 KB, free 286.8 MB)
+17/06/09 18:41:36 INFO MemoryStore: Block broadcast_32_piece0 stored as bytes in memory (estimated size 14.8 KB, free 286.8 MB)
+17/06/09 18:41:36 INFO BlockManagerInfo: Added broadcast_32_piece0 in memory on 211.71.149.235:45219 (size: 14.8 KB, free: 326.6 MB)
+17/06/09 18:41:36 INFO SparkContext: Created broadcast 32 from broadcast at DAGScheduler.scala:996
+17/06/09 18:41:36 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 23 (MapPartitionsRDD[52] at flatMap at LDAOptimizer.scala:482)
+17/06/09 18:41:36 INFO TaskSchedulerImpl: Adding task set 23.0 with 1 tasks
+17/06/09 18:41:36 INFO TaskSetManager: Starting task 0.0 in stage 23.0 (TID 46, localhost, executor driver, partition 0, PROCESS_LOCAL, 6732 bytes)
+17/06/09 18:41:36 INFO Executor: Running task 0.0 in stage 23.0 (TID 46)
+17/06/09 18:41:36 INFO BlockManager: Found block rdd_48_0 locally
+17/06/09 18:41:36 INFO Executor: Finished task 0.0 in stage 23.0 (TID 46). 22238 bytes result sent to driver
+17/06/09 18:41:36 INFO TaskSetManager: Finished task 0.0 in stage 23.0 (TID 46) in 13 ms on localhost (executor driver) (1/1)
+17/06/09 18:41:36 INFO TaskSchedulerImpl: Removed TaskSet 23.0, whose tasks have all completed, from pool 
+17/06/09 18:41:36 INFO DAGScheduler: ResultStage 23 (collect at LDAOptimizer.scala:482) finished in 0.013 s
+17/06/09 18:41:36 INFO DAGScheduler: Job 23 finished: collect at LDAOptimizer.scala:482, took 0.034396 s
+17/06/09 18:41:36 INFO MapPartitionsRDD: Removing RDD 48 from persistence list
+17/06/09 18:41:36 INFO BlockManager: Removing RDD 48
+17/06/09 18:41:36 INFO TorrentBroadcast: Destroying Broadcast(30) (from destroy at LDAOptimizer.scala:484)
+17/06/09 18:41:36 INFO BlockManagerInfo: Removed broadcast_30_piece0 on 211.71.149.235:45219 in memory (size: 4.0 MB, free: 350.4 MB)
+17/06/09 18:41:36 INFO BlockManagerInfo: Removed broadcast_30_piece3 on 211.71.149.235:45219 in memory (size: 4.0 MB, free: 354.4 MB)
+17/06/09 18:41:36 INFO BlockManagerInfo: Removed broadcast_30_piece2 on 211.71.149.235:45219 in memory (size: 4.0 MB, free: 358.4 MB)
+17/06/09 18:41:36 INFO BlockManagerInfo: Removed broadcast_30_piece1 on 211.71.149.235:45219 in memory (size: 4.0 MB, free: 362.4 MB)
+17/06/09 18:41:36 INFO BlockManagerInfo: Removed broadcast_30_piece4 on 211.71.149.235:45219 in memory (size: 3.8 MB, free: 366.2 MB)
+17/06/09 18:41:37 INFO BlockManagerInfo: Removed broadcast_32_piece0 on 211.71.149.235:45219 in memory (size: 14.8 KB, free: 366.2 MB)
+17/06/09 18:41:37 INFO SparkContext: Starting job: isEmpty at LDAOptimizer.scala:448
+17/06/09 18:41:37 INFO DAGScheduler: Got job 24 (isEmpty at LDAOptimizer.scala:448) with 1 output partitions
+17/06/09 18:41:37 INFO DAGScheduler: Final stage: ResultStage 24 (isEmpty at LDAOptimizer.scala:448)
+17/06/09 18:41:37 INFO DAGScheduler: Parents of final stage: List()
+17/06/09 18:41:37 INFO DAGScheduler: Missing parents: List()
+17/06/09 18:41:37 INFO DAGScheduler: Submitting ResultStage 24 (PartitionwiseSampledRDD[53] at sample at LDAOptimizer.scala:446), which has no missing parents
+17/06/09 18:41:37 INFO MemoryStore: Block broadcast_33 stored as values in memory (estimated size 34.6 KB, free 346.1 MB)
+17/06/09 18:41:37 INFO MemoryStore: Block broadcast_33_piece0 stored as bytes in memory (estimated size 14.1 KB, free 346.1 MB)
+17/06/09 18:41:37 INFO BlockManagerInfo: Added broadcast_33_piece0 in memory on 211.71.149.235:45219 (size: 14.1 KB, free: 366.2 MB)
+17/06/09 18:41:37 INFO SparkContext: Created broadcast 33 from broadcast at DAGScheduler.scala:996
+17/06/09 18:41:37 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 24 (PartitionwiseSampledRDD[53] at sample at LDAOptimizer.scala:446)
+17/06/09 18:41:37 INFO TaskSchedulerImpl: Adding task set 24.0 with 1 tasks
+17/06/09 18:41:37 INFO TaskSetManager: Starting task 0.0 in stage 24.0 (TID 47, localhost, executor driver, partition 0, PROCESS_LOCAL, 6732 bytes)
+17/06/09 18:41:37 INFO Executor: Running task 0.0 in stage 24.0 (TID 47)
+17/06/09 18:41:37 INFO FileScanRDD: Reading File path: file:///home/yqk/live-comment-spark-master/data/libsvm_data/20160903TDJX8_Lpq7U55bod_libsvm.dat, range: 0-122962, partition values: [empty row]
+17/06/09 18:41:37 INFO Executor: Finished task 0.0 in stage 24.0 (TID 47). 1781 bytes result sent to driver
+17/06/09 18:41:37 INFO TaskSetManager: Finished task 0.0 in stage 24.0 (TID 47) in 21 ms on localhost (executor driver) (1/1)
+17/06/09 18:41:37 INFO TaskSchedulerImpl: Removed TaskSet 24.0, whose tasks have all completed, from pool 
+17/06/09 18:41:37 INFO DAGScheduler: ResultStage 24 (isEmpty at LDAOptimizer.scala:448) finished in 0.019 s
+17/06/09 18:41:37 INFO DAGScheduler: Job 24 finished: isEmpty at LDAOptimizer.scala:448, took 0.029414 s
+17/06/09 18:41:37 INFO BlockManagerInfo: Removed broadcast_33_piece0 on 211.71.149.235:45219 in memory (size: 14.1 KB, free: 366.2 MB)
+17/06/09 18:41:42 INFO MemoryStore: Block broadcast_34 stored as values in memory (estimated size 19.7 MB, free 326.4 MB)
+17/06/09 18:41:42 INFO MemoryStore: Block broadcast_34_piece0 stored as bytes in memory (estimated size 4.0 MB, free 322.4 MB)
+17/06/09 18:41:42 INFO BlockManagerInfo: Added broadcast_34_piece0 in memory on 211.71.149.235:45219 (size: 4.0 MB, free: 362.2 MB)
+17/06/09 18:41:42 INFO MemoryStore: Block broadcast_34_piece1 stored as bytes in memory (estimated size 4.0 MB, free 318.4 MB)
+17/06/09 18:41:42 INFO BlockManagerInfo: Added broadcast_34_piece1 in memory on 211.71.149.235:45219 (size: 4.0 MB, free: 358.2 MB)
+17/06/09 18:41:42 INFO MemoryStore: Block broadcast_34_piece2 stored as bytes in memory (estimated size 4.0 MB, free 314.4 MB)
+17/06/09 18:41:42 INFO BlockManagerInfo: Added broadcast_34_piece2 in memory on 211.71.149.235:45219 (size: 4.0 MB, free: 354.2 MB)
+17/06/09 18:41:42 INFO MemoryStore: Block broadcast_34_piece3 stored as bytes in memory (estimated size 4.0 MB, free 310.4 MB)
+17/06/09 18:41:42 INFO BlockManagerInfo: Added broadcast_34_piece3 in memory on 211.71.149.235:45219 (size: 4.0 MB, free: 350.2 MB)
+17/06/09 18:41:42 INFO MemoryStore: Block broadcast_34_piece4 stored as bytes in memory (estimated size 3.8 MB, free 306.6 MB)
+17/06/09 18:41:42 INFO BlockManagerInfo: Added broadcast_34_piece4 in memory on 211.71.149.235:45219 (size: 3.8 MB, free: 346.4 MB)
+17/06/09 18:41:42 INFO SparkContext: Created broadcast 34 from broadcast at LDAOptimizer.scala:462
+17/06/09 18:41:43 INFO SparkContext: Starting job: treeAggregate at LDAOptimizer.scala:479
+17/06/09 18:41:43 INFO DAGScheduler: Got job 25 (treeAggregate at LDAOptimizer.scala:479) with 1 output partitions
+17/06/09 18:41:43 INFO DAGScheduler: Final stage: ResultStage 25 (treeAggregate at LDAOptimizer.scala:479)
+17/06/09 18:41:43 INFO DAGScheduler: Parents of final stage: List()
+17/06/09 18:41:43 INFO DAGScheduler: Missing parents: List()
+17/06/09 18:41:43 INFO DAGScheduler: Submitting ResultStage 25 (MapPartitionsRDD[56] at treeAggregate at LDAOptimizer.scala:479), which has no missing parents
+17/06/09 18:41:43 INFO MemoryStore: Block broadcast_35 stored as values in memory (estimated size 19.8 MB, free 286.9 MB)
+17/06/09 18:41:43 INFO MemoryStore: Block broadcast_35_piece0 stored as bytes in memory (estimated size 113.7 KB, free 286.7 MB)
+17/06/09 18:41:43 INFO BlockManagerInfo: Added broadcast_35_piece0 in memory on 211.71.149.235:45219 (size: 113.7 KB, free: 346.3 MB)
+17/06/09 18:41:43 INFO SparkContext: Created broadcast 35 from broadcast at DAGScheduler.scala:996
+17/06/09 18:41:43 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 25 (MapPartitionsRDD[56] at treeAggregate at LDAOptimizer.scala:479)
+17/06/09 18:41:43 INFO TaskSchedulerImpl: Adding task set 25.0 with 1 tasks
+17/06/09 18:41:43 INFO TaskSetManager: Starting task 0.0 in stage 25.0 (TID 48, localhost, executor driver, partition 0, PROCESS_LOCAL, 6738 bytes)
+17/06/09 18:41:43 INFO Executor: Running task 0.0 in stage 25.0 (TID 48)
+17/06/09 18:41:43 INFO FileScanRDD: Reading File path: file:///home/yqk/live-comment-spark-master/data/libsvm_data/20160903TDJX8_Lpq7U55bod_libsvm.dat, range: 0-122962, partition values: [empty row]
+17/06/09 18:41:43 INFO MemoryStore: Block rdd_54_0 stored as values in memory (estimated size 19.8 MB, free 267.0 MB)
+17/06/09 18:41:43 INFO BlockManagerInfo: Added rdd_54_0 in memory on 211.71.149.235:45219 (size: 19.8 MB, free: 326.5 MB)
+17/06/09 18:41:44 INFO MemoryStore: Block taskresult_48 stored as bytes in memory (estimated size 19.8 MB, free 247.1 MB)
+17/06/09 18:41:44 INFO BlockManagerInfo: Added taskresult_48 in memory on 211.71.149.235:45219 (size: 19.8 MB, free: 306.7 MB)
+17/06/09 18:41:44 INFO Executor: Finished task 0.0 in stage 25.0 (TID 48). 20801763 bytes result sent via BlockManager)
+17/06/09 18:41:44 INFO TaskSetManager: Finished task 0.0 in stage 25.0 (TID 48) in 1110 ms on localhost (executor driver) (1/1)
+17/06/09 18:41:44 INFO TaskSchedulerImpl: Removed TaskSet 25.0, whose tasks have all completed, from pool 
+17/06/09 18:41:44 INFO BlockManagerInfo: Removed taskresult_48 on 211.71.149.235:45219 in memory (size: 19.8 MB, free: 326.5 MB)
+17/06/09 18:41:44 INFO DAGScheduler: ResultStage 25 (treeAggregate at LDAOptimizer.scala:479) finished in 1.112 s
+17/06/09 18:41:44 INFO DAGScheduler: Job 25 finished: treeAggregate at LDAOptimizer.scala:479, took 1.526960 s
+17/06/09 18:41:44 INFO SparkContext: Starting job: collect at LDAOptimizer.scala:482
+17/06/09 18:41:44 INFO DAGScheduler: Got job 26 (collect at LDAOptimizer.scala:482) with 1 output partitions
+17/06/09 18:41:44 INFO DAGScheduler: Final stage: ResultStage 26 (collect at LDAOptimizer.scala:482)
+17/06/09 18:41:44 INFO DAGScheduler: Parents of final stage: List()
+17/06/09 18:41:44 INFO DAGScheduler: Missing parents: List()
+17/06/09 18:41:44 INFO DAGScheduler: Submitting ResultStage 26 (MapPartitionsRDD[58] at flatMap at LDAOptimizer.scala:482), which has no missing parents
+17/06/09 18:41:44 INFO MemoryStore: Block broadcast_36 stored as values in memory (estimated size 35.8 KB, free 266.9 MB)
+17/06/09 18:41:44 INFO MemoryStore: Block broadcast_36_piece0 stored as bytes in memory (estimated size 14.8 KB, free 266.9 MB)
+17/06/09 18:41:44 INFO BlockManagerInfo: Added broadcast_36_piece0 in memory on 211.71.149.235:45219 (size: 14.8 KB, free: 326.5 MB)
+17/06/09 18:41:44 INFO SparkContext: Created broadcast 36 from broadcast at DAGScheduler.scala:996
+17/06/09 18:41:44 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 26 (MapPartitionsRDD[58] at flatMap at LDAOptimizer.scala:482)
+17/06/09 18:41:44 INFO TaskSchedulerImpl: Adding task set 26.0 with 1 tasks
+17/06/09 18:41:44 INFO TaskSetManager: Starting task 0.0 in stage 26.0 (TID 49, localhost, executor driver, partition 0, PROCESS_LOCAL, 6732 bytes)
+17/06/09 18:41:44 INFO Executor: Running task 0.0 in stage 26.0 (TID 49)
+17/06/09 18:41:44 INFO BlockManager: Found block rdd_54_0 locally
+17/06/09 18:41:44 INFO Executor: Finished task 0.0 in stage 26.0 (TID 49). 21037 bytes result sent to driver
+17/06/09 18:41:44 INFO TaskSetManager: Finished task 0.0 in stage 26.0 (TID 49) in 10 ms on localhost (executor driver) (1/1)
+17/06/09 18:41:44 INFO TaskSchedulerImpl: Removed TaskSet 26.0, whose tasks have all completed, from pool 
+17/06/09 18:41:44 INFO DAGScheduler: ResultStage 26 (collect at LDAOptimizer.scala:482) finished in 0.011 s
+17/06/09 18:41:44 INFO DAGScheduler: Job 26 finished: collect at LDAOptimizer.scala:482, took 0.025742 s
+17/06/09 18:41:44 INFO MapPartitionsRDD: Removing RDD 54 from persistence list
+17/06/09 18:41:44 INFO BlockManager: Removing RDD 54
+17/06/09 18:41:44 INFO TorrentBroadcast: Destroying Broadcast(34) (from destroy at LDAOptimizer.scala:484)
+17/06/09 18:41:44 INFO BlockManagerInfo: Removed broadcast_34_piece0 on 211.71.149.235:45219 in memory (size: 4.0 MB, free: 350.3 MB)
+17/06/09 18:41:44 INFO BlockManagerInfo: Removed broadcast_34_piece3 on 211.71.149.235:45219 in memory (size: 4.0 MB, free: 354.3 MB)
+17/06/09 18:41:44 INFO BlockManagerInfo: Removed broadcast_34_piece2 on 211.71.149.235:45219 in memory (size: 4.0 MB, free: 358.3 MB)
+17/06/09 18:41:44 INFO BlockManagerInfo: Removed broadcast_34_piece1 on 211.71.149.235:45219 in memory (size: 4.0 MB, free: 362.3 MB)
+17/06/09 18:41:44 INFO BlockManagerInfo: Removed broadcast_34_piece4 on 211.71.149.235:45219 in memory (size: 3.8 MB, free: 366.0 MB)
+17/06/09 18:41:44 INFO BlockManagerInfo: Removed broadcast_36_piece0 on 211.71.149.235:45219 in memory (size: 14.8 KB, free: 366.1 MB)
+17/06/09 18:41:45 INFO SparkContext: Starting job: isEmpty at LDAOptimizer.scala:448
+17/06/09 18:41:45 INFO DAGScheduler: Got job 27 (isEmpty at LDAOptimizer.scala:448) with 1 output partitions
+17/06/09 18:41:45 INFO DAGScheduler: Final stage: ResultStage 27 (isEmpty at LDAOptimizer.scala:448)
+17/06/09 18:41:45 INFO DAGScheduler: Parents of final stage: List()
+17/06/09 18:41:45 INFO DAGScheduler: Missing parents: List()
+17/06/09 18:41:45 INFO DAGScheduler: Submitting ResultStage 27 (PartitionwiseSampledRDD[59] at sample at LDAOptimizer.scala:446), which has no missing parents
+17/06/09 18:41:45 INFO MemoryStore: Block broadcast_37 stored as values in memory (estimated size 34.6 KB, free 326.2 MB)
+17/06/09 18:41:45 INFO MemoryStore: Block broadcast_37_piece0 stored as bytes in memory (estimated size 14.1 KB, free 326.2 MB)
+17/06/09 18:41:45 INFO BlockManagerInfo: Added broadcast_37_piece0 in memory on 211.71.149.235:45219 (size: 14.1 KB, free: 366.0 MB)
+17/06/09 18:41:45 INFO SparkContext: Created broadcast 37 from broadcast at DAGScheduler.scala:996
+17/06/09 18:41:45 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 27 (PartitionwiseSampledRDD[59] at sample at LDAOptimizer.scala:446)
+17/06/09 18:41:45 INFO TaskSchedulerImpl: Adding task set 27.0 with 1 tasks
+17/06/09 18:41:45 INFO TaskSetManager: Starting task 0.0 in stage 27.0 (TID 50, localhost, executor driver, partition 0, PROCESS_LOCAL, 6732 bytes)
+17/06/09 18:41:45 INFO Executor: Running task 0.0 in stage 27.0 (TID 50)
+17/06/09 18:41:45 INFO FileScanRDD: Reading File path: file:///home/yqk/live-comment-spark-master/data/libsvm_data/20160903TDJX8_Lpq7U55bod_libsvm.dat, range: 0-122962, partition values: [empty row]
+17/06/09 18:41:45 INFO Executor: Finished task 0.0 in stage 27.0 (TID 50). 1868 bytes result sent to driver
+17/06/09 18:41:45 INFO TaskSetManager: Finished task 0.0 in stage 27.0 (TID 50) in 35 ms on localhost (executor driver) (1/1)
+17/06/09 18:41:45 INFO TaskSchedulerImpl: Removed TaskSet 27.0, whose tasks have all completed, from pool 
+17/06/09 18:41:45 INFO DAGScheduler: ResultStage 27 (isEmpty at LDAOptimizer.scala:448) finished in 0.036 s
+17/06/09 18:41:45 INFO DAGScheduler: Job 27 finished: isEmpty at LDAOptimizer.scala:448, took 0.059751 s
+17/06/09 18:41:45 INFO BlockManagerInfo: Removed broadcast_37_piece0 on 211.71.149.235:45219 in memory (size: 14.1 KB, free: 366.1 MB)
+17/06/09 18:41:49 INFO MemoryStore: Block broadcast_38 stored as values in memory (estimated size 19.7 MB, free 306.5 MB)
+17/06/09 18:41:49 INFO MemoryStore: Block broadcast_38_piece0 stored as bytes in memory (estimated size 4.0 MB, free 302.5 MB)
+17/06/09 18:41:49 INFO BlockManagerInfo: Added broadcast_38_piece0 in memory on 211.71.149.235:45219 (size: 4.0 MB, free: 362.1 MB)
+17/06/09 18:41:49 INFO MemoryStore: Block broadcast_38_piece1 stored as bytes in memory (estimated size 4.0 MB, free 298.5 MB)
+17/06/09 18:41:49 INFO BlockManagerInfo: Added broadcast_38_piece1 in memory on 211.71.149.235:45219 (size: 4.0 MB, free: 358.1 MB)
+17/06/09 18:41:49 INFO MemoryStore: Block broadcast_38_piece2 stored as bytes in memory (estimated size 4.0 MB, free 294.5 MB)
+17/06/09 18:41:49 INFO BlockManagerInfo: Added broadcast_38_piece2 in memory on 211.71.149.235:45219 (size: 4.0 MB, free: 354.1 MB)
+17/06/09 18:41:49 INFO MemoryStore: Block broadcast_38_piece3 stored as bytes in memory (estimated size 4.0 MB, free 290.5 MB)
+17/06/09 18:41:49 INFO BlockManagerInfo: Added broadcast_38_piece3 in memory on 211.71.149.235:45219 (size: 4.0 MB, free: 350.1 MB)
+17/06/09 18:41:49 INFO MemoryStore: Block broadcast_38_piece4 stored as bytes in memory (estimated size 3.8 MB, free 286.7 MB)
+17/06/09 18:41:49 INFO BlockManagerInfo: Added broadcast_38_piece4 in memory on 211.71.149.235:45219 (size: 3.8 MB, free: 346.3 MB)
+17/06/09 18:41:49 INFO SparkContext: Created broadcast 38 from broadcast at LDAOptimizer.scala:462
+17/06/09 18:41:49 INFO SparkContext: Starting job: treeAggregate at LDAOptimizer.scala:479
+17/06/09 18:41:49 INFO DAGScheduler: Got job 28 (treeAggregate at LDAOptimizer.scala:479) with 1 output partitions
+17/06/09 18:41:49 INFO DAGScheduler: Final stage: ResultStage 28 (treeAggregate at LDAOptimizer.scala:479)
+17/06/09 18:41:49 INFO DAGScheduler: Parents of final stage: List()
+17/06/09 18:41:49 INFO DAGScheduler: Missing parents: List()
+17/06/09 18:41:49 INFO DAGScheduler: Submitting ResultStage 28 (MapPartitionsRDD[62] at treeAggregate at LDAOptimizer.scala:479), which has no missing parents
+17/06/09 18:41:50 INFO MemoryStore: Block broadcast_39 stored as values in memory (estimated size 19.8 MB, free 267.0 MB)
+17/06/09 18:41:50 INFO MemoryStore: Block broadcast_39_piece0 stored as bytes in memory (estimated size 113.7 KB, free 266.9 MB)
+17/06/09 18:41:50 INFO BlockManagerInfo: Added broadcast_39_piece0 in memory on 211.71.149.235:45219 (size: 113.7 KB, free: 346.2 MB)
+17/06/09 18:41:50 INFO SparkContext: Created broadcast 39 from broadcast at DAGScheduler.scala:996
+17/06/09 18:41:50 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 28 (MapPartitionsRDD[62] at treeAggregate at LDAOptimizer.scala:479)
+17/06/09 18:41:50 INFO TaskSchedulerImpl: Adding task set 28.0 with 1 tasks
+17/06/09 18:41:50 INFO TaskSetManager: Starting task 0.0 in stage 28.0 (TID 51, localhost, executor driver, partition 0, PROCESS_LOCAL, 6738 bytes)
+17/06/09 18:41:50 INFO Executor: Running task 0.0 in stage 28.0 (TID 51)
+17/06/09 18:41:50 INFO FileScanRDD: Reading File path: file:///home/yqk/live-comment-spark-master/data/libsvm_data/20160903TDJX8_Lpq7U55bod_libsvm.dat, range: 0-122962, partition values: [empty row]
+17/06/09 18:41:50 INFO MemoryStore: Block rdd_60_0 stored as values in memory (estimated size 19.8 MB, free 247.1 MB)
+17/06/09 18:41:50 INFO BlockManagerInfo: Added rdd_60_0 in memory on 211.71.149.235:45219 (size: 19.8 MB, free: 326.4 MB)
+17/06/09 18:41:50 INFO MemoryStore: Block taskresult_51 stored as bytes in memory (estimated size 19.8 MB, free 227.3 MB)
+17/06/09 18:41:50 INFO BlockManagerInfo: Added taskresult_51 in memory on 211.71.149.235:45219 (size: 19.8 MB, free: 306.6 MB)
+17/06/09 18:41:50 INFO Executor: Finished task 0.0 in stage 28.0 (TID 51). 20801763 bytes result sent via BlockManager)
+17/06/09 18:41:51 INFO BlockManagerInfo: Removed broadcast_35_piece0 on 211.71.149.235:45219 in memory (size: 113.7 KB, free: 306.7 MB)
+17/06/09 18:41:51 INFO BlockManager: Removing RDD 54
+17/06/09 18:41:51 INFO ContextCleaner: Cleaned RDD 54
+17/06/09 18:41:51 INFO BlockManagerInfo: Removed broadcast_31_piece0 on 211.71.149.235:45219 in memory (size: 113.7 KB, free: 306.8 MB)
+17/06/09 18:41:51 INFO BlockManager: Removing RDD 48
+17/06/09 18:41:51 INFO ContextCleaner: Cleaned RDD 48
+17/06/09 18:41:51 INFO TaskSetManager: Finished task 0.0 in stage 28.0 (TID 51) in 1329 ms on localhost (executor driver) (1/1)
+17/06/09 18:41:51 INFO TaskSchedulerImpl: Removed TaskSet 28.0, whose tasks have all completed, from pool 
+17/06/09 18:41:51 INFO BlockManagerInfo: Removed taskresult_51 on 211.71.149.235:45219 in memory (size: 19.8 MB, free: 326.6 MB)
+17/06/09 18:41:51 INFO DAGScheduler: ResultStage 28 (treeAggregate at LDAOptimizer.scala:479) finished in 1.331 s
+17/06/09 18:41:51 INFO DAGScheduler: Job 28 finished: treeAggregate at LDAOptimizer.scala:479, took 1.754527 s
+17/06/09 18:41:51 INFO SparkContext: Starting job: collect at LDAOptimizer.scala:482
+17/06/09 18:41:51 INFO DAGScheduler: Got job 29 (collect at LDAOptimizer.scala:482) with 1 output partitions
+17/06/09 18:41:51 INFO DAGScheduler: Final stage: ResultStage 29 (collect at LDAOptimizer.scala:482)
+17/06/09 18:41:51 INFO DAGScheduler: Parents of final stage: List()
+17/06/09 18:41:51 INFO DAGScheduler: Missing parents: List()
+17/06/09 18:41:51 INFO DAGScheduler: Submitting ResultStage 29 (MapPartitionsRDD[64] at flatMap at LDAOptimizer.scala:482), which has no missing parents
+17/06/09 18:41:51 INFO MemoryStore: Block broadcast_40 stored as values in memory (estimated size 35.8 KB, free 286.8 MB)
+17/06/09 18:41:51 INFO MemoryStore: Block broadcast_40_piece0 stored as bytes in memory (estimated size 14.8 KB, free 286.8 MB)
+17/06/09 18:41:51 INFO BlockManagerInfo: Added broadcast_40_piece0 in memory on 211.71.149.235:45219 (size: 14.8 KB, free: 326.6 MB)
+17/06/09 18:41:51 INFO SparkContext: Created broadcast 40 from broadcast at DAGScheduler.scala:996
+17/06/09 18:41:51 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 29 (MapPartitionsRDD[64] at flatMap at LDAOptimizer.scala:482)
+17/06/09 18:41:51 INFO TaskSchedulerImpl: Adding task set 29.0 with 1 tasks
+17/06/09 18:41:51 INFO TaskSetManager: Starting task 0.0 in stage 29.0 (TID 52, localhost, executor driver, partition 0, PROCESS_LOCAL, 6732 bytes)
+17/06/09 18:41:51 INFO Executor: Running task 0.0 in stage 29.0 (TID 52)
+17/06/09 18:41:51 INFO BlockManager: Found block rdd_60_0 locally
+17/06/09 18:41:51 INFO Executor: Finished task 0.0 in stage 29.0 (TID 52). 21343 bytes result sent to driver
+17/06/09 18:41:51 INFO TaskSetManager: Finished task 0.0 in stage 29.0 (TID 52) in 15 ms on localhost (executor driver) (1/1)
+17/06/09 18:41:51 INFO TaskSchedulerImpl: Removed TaskSet 29.0, whose tasks have all completed, from pool 
+17/06/09 18:41:51 INFO DAGScheduler: ResultStage 29 (collect at LDAOptimizer.scala:482) finished in 0.018 s
+17/06/09 18:41:51 INFO DAGScheduler: Job 29 finished: collect at LDAOptimizer.scala:482, took 0.037404 s
+17/06/09 18:41:51 INFO MapPartitionsRDD: Removing RDD 60 from persistence list
+17/06/09 18:41:51 INFO BlockManager: Removing RDD 60
+17/06/09 18:41:51 INFO TorrentBroadcast: Destroying Broadcast(38) (from destroy at LDAOptimizer.scala:484)
+17/06/09 18:41:51 INFO BlockManagerInfo: Removed broadcast_38_piece4 on 211.71.149.235:45219 in memory (size: 3.8 MB, free: 350.2 MB)
+17/06/09 18:41:51 INFO BlockManagerInfo: Removed broadcast_38_piece0 on 211.71.149.235:45219 in memory (size: 4.0 MB, free: 354.2 MB)
+17/06/09 18:41:51 INFO BlockManagerInfo: Removed broadcast_38_piece3 on 211.71.149.235:45219 in memory (size: 4.0 MB, free: 358.2 MB)
+17/06/09 18:41:51 INFO BlockManagerInfo: Removed broadcast_38_piece2 on 211.71.149.235:45219 in memory (size: 4.0 MB, free: 362.2 MB)
+17/06/09 18:41:51 INFO BlockManagerInfo: Removed broadcast_38_piece1 on 211.71.149.235:45219 in memory (size: 4.0 MB, free: 366.2 MB)
+17/06/09 18:41:51 INFO BlockManagerInfo: Removed broadcast_40_piece0 on 211.71.149.235:45219 in memory (size: 14.8 KB, free: 366.2 MB)
+17/06/09 18:41:51 INFO SparkContext: Starting job: isEmpty at LDAOptimizer.scala:448
+17/06/09 18:41:51 INFO DAGScheduler: Got job 30 (isEmpty at LDAOptimizer.scala:448) with 1 output partitions
+17/06/09 18:41:51 INFO DAGScheduler: Final stage: ResultStage 30 (isEmpty at LDAOptimizer.scala:448)
+17/06/09 18:41:51 INFO DAGScheduler: Parents of final stage: List()
+17/06/09 18:41:51 INFO DAGScheduler: Missing parents: List()
+17/06/09 18:41:51 INFO DAGScheduler: Submitting ResultStage 30 (PartitionwiseSampledRDD[65] at sample at LDAOptimizer.scala:446), which has no missing parents
+17/06/09 18:41:51 INFO MemoryStore: Block broadcast_41 stored as values in memory (estimated size 34.6 KB, free 346.1 MB)
+17/06/09 18:41:51 INFO MemoryStore: Block broadcast_41_piece0 stored as bytes in memory (estimated size 14.1 KB, free 346.1 MB)
+17/06/09 18:41:51 INFO BlockManagerInfo: Added broadcast_41_piece0 in memory on 211.71.149.235:45219 (size: 14.1 KB, free: 366.2 MB)
+17/06/09 18:41:51 INFO SparkContext: Created broadcast 41 from broadcast at DAGScheduler.scala:996
+17/06/09 18:41:51 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 30 (PartitionwiseSampledRDD[65] at sample at LDAOptimizer.scala:446)
+17/06/09 18:41:51 INFO TaskSchedulerImpl: Adding task set 30.0 with 1 tasks
+17/06/09 18:41:51 INFO TaskSetManager: Starting task 0.0 in stage 30.0 (TID 53, localhost, executor driver, partition 0, PROCESS_LOCAL, 6732 bytes)
+17/06/09 18:41:51 INFO Executor: Running task 0.0 in stage 30.0 (TID 53)
+17/06/09 18:41:51 INFO FileScanRDD: Reading File path: file:///home/yqk/live-comment-spark-master/data/libsvm_data/20160903TDJX8_Lpq7U55bod_libsvm.dat, range: 0-122962, partition values: [empty row]
+17/06/09 18:41:51 INFO Executor: Finished task 0.0 in stage 30.0 (TID 53). 1793 bytes result sent to driver
+17/06/09 18:41:51 INFO TaskSetManager: Finished task 0.0 in stage 30.0 (TID 53) in 53 ms on localhost (executor driver) (1/1)
+17/06/09 18:41:51 INFO TaskSchedulerImpl: Removed TaskSet 30.0, whose tasks have all completed, from pool 
+17/06/09 18:41:51 INFO DAGScheduler: ResultStage 30 (isEmpty at LDAOptimizer.scala:448) finished in 0.042 s
+17/06/09 18:41:51 INFO DAGScheduler: Job 30 finished: isEmpty at LDAOptimizer.scala:448, took 0.077963 s
+17/06/09 18:41:52 INFO BlockManagerInfo: Removed broadcast_41_piece0 on 211.71.149.235:45219 in memory (size: 14.1 KB, free: 366.2 MB)
+17/06/09 18:41:58 INFO MemoryStore: Block broadcast_42 stored as values in memory (estimated size 19.7 MB, free 326.4 MB)
+17/06/09 18:41:58 INFO MemoryStore: Block broadcast_42_piece0 stored as bytes in memory (estimated size 4.0 MB, free 322.4 MB)
+17/06/09 18:41:58 INFO BlockManagerInfo: Added broadcast_42_piece0 in memory on 211.71.149.235:45219 (size: 4.0 MB, free: 362.2 MB)
+17/06/09 18:41:58 INFO MemoryStore: Block broadcast_42_piece1 stored as bytes in memory (estimated size 4.0 MB, free 318.4 MB)
+17/06/09 18:41:58 INFO BlockManagerInfo: Added broadcast_42_piece1 in memory on 211.71.149.235:45219 (size: 4.0 MB, free: 358.2 MB)
+17/06/09 18:41:58 INFO MemoryStore: Block broadcast_42_piece2 stored as bytes in memory (estimated size 4.0 MB, free 314.4 MB)
+17/06/09 18:41:58 INFO BlockManagerInfo: Added broadcast_42_piece2 in memory on 211.71.149.235:45219 (size: 4.0 MB, free: 354.2 MB)
+17/06/09 18:41:58 INFO MemoryStore: Block broadcast_42_piece3 stored as bytes in memory (estimated size 4.0 MB, free 310.4 MB)
+17/06/09 18:41:58 INFO BlockManagerInfo: Added broadcast_42_piece3 in memory on 211.71.149.235:45219 (size: 4.0 MB, free: 350.2 MB)
+17/06/09 18:41:58 INFO MemoryStore: Block broadcast_42_piece4 stored as bytes in memory (estimated size 3.8 MB, free 306.6 MB)
+17/06/09 18:41:58 INFO BlockManagerInfo: Added broadcast_42_piece4 in memory on 211.71.149.235:45219 (size: 3.8 MB, free: 346.4 MB)
+17/06/09 18:41:58 INFO SparkContext: Created broadcast 42 from broadcast at LDAOptimizer.scala:462
+17/06/09 18:41:58 INFO SparkContext: Starting job: treeAggregate at LDAOptimizer.scala:479
+17/06/09 18:41:58 INFO DAGScheduler: Got job 31 (treeAggregate at LDAOptimizer.scala:479) with 1 output partitions
+17/06/09 18:41:58 INFO DAGScheduler: Final stage: ResultStage 31 (treeAggregate at LDAOptimizer.scala:479)
+17/06/09 18:41:58 INFO DAGScheduler: Parents of final stage: List()
+17/06/09 18:41:58 INFO DAGScheduler: Missing parents: List()
+17/06/09 18:41:58 INFO DAGScheduler: Submitting ResultStage 31 (MapPartitionsRDD[68] at treeAggregate at LDAOptimizer.scala:479), which has no missing parents
+17/06/09 18:41:59 INFO MemoryStore: Block broadcast_43 stored as values in memory (estimated size 19.8 MB, free 286.9 MB)
+17/06/09 18:41:59 INFO MemoryStore: Block broadcast_43_piece0 stored as bytes in memory (estimated size 113.7 KB, free 286.7 MB)
+17/06/09 18:41:59 INFO BlockManagerInfo: Added broadcast_43_piece0 in memory on 211.71.149.235:45219 (size: 113.7 KB, free: 346.3 MB)
+17/06/09 18:41:59 INFO SparkContext: Created broadcast 43 from broadcast at DAGScheduler.scala:996
+17/06/09 18:41:59 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 31 (MapPartitionsRDD[68] at treeAggregate at LDAOptimizer.scala:479)
+17/06/09 18:41:59 INFO TaskSchedulerImpl: Adding task set 31.0 with 1 tasks
+17/06/09 18:41:59 INFO TaskSetManager: Starting task 0.0 in stage 31.0 (TID 54, localhost, executor driver, partition 0, PROCESS_LOCAL, 6738 bytes)
+17/06/09 18:41:59 INFO Executor: Running task 0.0 in stage 31.0 (TID 54)
+17/06/09 18:41:59 INFO FileScanRDD: Reading File path: file:///home/yqk/live-comment-spark-master/data/libsvm_data/20160903TDJX8_Lpq7U55bod_libsvm.dat, range: 0-122962, partition values: [empty row]
+17/06/09 18:41:59 INFO MemoryStore: Block rdd_66_0 stored as values in memory (estimated size 19.8 MB, free 267.0 MB)
+17/06/09 18:41:59 INFO BlockManagerInfo: Added rdd_66_0 in memory on 211.71.149.235:45219 (size: 19.8 MB, free: 326.5 MB)
+17/06/09 18:41:59 INFO MemoryStore: Block taskresult_54 stored as bytes in memory (estimated size 19.8 MB, free 247.1 MB)
+17/06/09 18:41:59 INFO BlockManagerInfo: Added taskresult_54 in memory on 211.71.149.235:45219 (size: 19.8 MB, free: 306.7 MB)
+17/06/09 18:41:59 INFO Executor: Finished task 0.0 in stage 31.0 (TID 54). 20801763 bytes result sent via BlockManager)
+17/06/09 18:41:59 INFO BlockManagerInfo: Removed taskresult_54 on 211.71.149.235:45219 in memory (size: 19.8 MB, free: 326.5 MB)
+17/06/09 18:41:59 INFO DAGScheduler: ResultStage 31 (treeAggregate at LDAOptimizer.scala:479) finished in 0.794 s
+17/06/09 18:41:59 INFO DAGScheduler: Job 31 finished: treeAggregate at LDAOptimizer.scala:479, took 1.220235 s
+17/06/09 18:41:59 INFO TaskSetManager: Finished task 0.0 in stage 31.0 (TID 54) in 810 ms on localhost (executor driver) (1/1)
+17/06/09 18:41:59 INFO TaskSchedulerImpl: Removed TaskSet 31.0, whose tasks have all completed, from pool 
+17/06/09 18:41:59 INFO SparkContext: Starting job: collect at LDAOptimizer.scala:482
+17/06/09 18:41:59 INFO DAGScheduler: Got job 32 (collect at LDAOptimizer.scala:482) with 1 output partitions
+17/06/09 18:41:59 INFO DAGScheduler: Final stage: ResultStage 32 (collect at LDAOptimizer.scala:482)
+17/06/09 18:41:59 INFO DAGScheduler: Parents of final stage: List()
+17/06/09 18:41:59 INFO DAGScheduler: Missing parents: List()
+17/06/09 18:41:59 INFO DAGScheduler: Submitting ResultStage 32 (MapPartitionsRDD[70] at flatMap at LDAOptimizer.scala:482), which has no missing parents
+17/06/09 18:41:59 INFO MemoryStore: Block broadcast_44 stored as values in memory (estimated size 35.8 KB, free 266.9 MB)
+17/06/09 18:41:59 INFO MemoryStore: Block broadcast_44_piece0 stored as bytes in memory (estimated size 14.8 KB, free 266.9 MB)
+17/06/09 18:42:00 INFO BlockManagerInfo: Added broadcast_44_piece0 in memory on 211.71.149.235:45219 (size: 14.8 KB, free: 326.5 MB)
+17/06/09 18:42:00 INFO SparkContext: Created broadcast 44 from broadcast at DAGScheduler.scala:996
+17/06/09 18:42:00 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 32 (MapPartitionsRDD[70] at flatMap at LDAOptimizer.scala:482)
+17/06/09 18:42:00 INFO TaskSchedulerImpl: Adding task set 32.0 with 1 tasks
+17/06/09 18:42:00 INFO TaskSetManager: Starting task 0.0 in stage 32.0 (TID 55, localhost, executor driver, partition 0, PROCESS_LOCAL, 6732 bytes)
+17/06/09 18:42:00 INFO Executor: Running task 0.0 in stage 32.0 (TID 55)
+17/06/09 18:42:00 INFO BlockManager: Found block rdd_66_0 locally
+17/06/09 18:42:00 INFO Executor: Finished task 0.0 in stage 32.0 (TID 55). 19605 bytes result sent to driver
+17/06/09 18:42:00 INFO TaskSetManager: Finished task 0.0 in stage 32.0 (TID 55) in 12 ms on localhost (executor driver) (1/1)
+17/06/09 18:42:00 INFO TaskSchedulerImpl: Removed TaskSet 32.0, whose tasks have all completed, from pool 
+17/06/09 18:42:00 INFO DAGScheduler: ResultStage 32 (collect at LDAOptimizer.scala:482) finished in 0.011 s
+17/06/09 18:42:00 INFO DAGScheduler: Job 32 finished: collect at LDAOptimizer.scala:482, took 0.040044 s
+17/06/09 18:42:00 INFO MapPartitionsRDD: Removing RDD 66 from persistence list
+17/06/09 18:42:00 INFO BlockManager: Removing RDD 66
+17/06/09 18:42:00 INFO TorrentBroadcast: Destroying Broadcast(42) (from destroy at LDAOptimizer.scala:484)
+17/06/09 18:42:00 INFO BlockManagerInfo: Removed broadcast_42_piece4 on 211.71.149.235:45219 in memory (size: 3.8 MB, free: 350.0 MB)
+17/06/09 18:42:00 INFO BlockManagerInfo: Removed broadcast_42_piece1 on 211.71.149.235:45219 in memory (size: 4.0 MB, free: 354.0 MB)
+17/06/09 18:42:00 INFO BlockManagerInfo: Removed broadcast_42_piece0 on 211.71.149.235:45219 in memory (size: 4.0 MB, free: 358.0 MB)
+17/06/09 18:42:00 INFO BlockManagerInfo: Removed broadcast_42_piece3 on 211.71.149.235:45219 in memory (size: 4.0 MB, free: 362.0 MB)
+17/06/09 18:42:00 INFO BlockManagerInfo: Removed broadcast_42_piece2 on 211.71.149.235:45219 in memory (size: 4.0 MB, free: 366.0 MB)
+17/06/09 18:42:00 INFO BlockManagerInfo: Removed broadcast_44_piece0 on 211.71.149.235:45219 in memory (size: 14.8 KB, free: 366.1 MB)
+17/06/09 18:42:00 INFO FileSourceStrategy: Pruning directories with: 
+17/06/09 18:42:00 INFO FileSourceStrategy: Post-Scan Filters: 
+17/06/09 18:42:00 INFO FileSourceStrategy: Output Data Schema: struct<label: double, features: vector>
+17/06/09 18:42:00 INFO FileSourceStrategy: Pushed Filters: 
+17/06/09 18:42:00 INFO MemoryStore: Block broadcast_45 stored as values in memory (estimated size 277.4 KB, free 326.0 MB)
+17/06/09 18:42:00 INFO MemoryStore: Block broadcast_45_piece0 stored as bytes in memory (estimated size 23.3 KB, free 325.9 MB)
+17/06/09 18:42:00 INFO BlockManagerInfo: Added broadcast_45_piece0 in memory on 211.71.149.235:45219 (size: 23.3 KB, free: 366.0 MB)
+17/06/09 18:42:00 INFO SparkContext: Created broadcast 45 from broadcast at LibSVMRelation.scala:159
+17/06/09 18:42:00 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+17/06/09 18:42:05 INFO MemoryStore: Block broadcast_46 stored as values in memory (estimated size 19.7 MB, free 306.2 MB)
+17/06/09 18:42:06 INFO MemoryStore: Block broadcast_46_piece0 stored as bytes in memory (estimated size 4.0 MB, free 302.2 MB)
+17/06/09 18:42:06 INFO BlockManagerInfo: Added broadcast_46_piece0 in memory on 211.71.149.235:45219 (size: 4.0 MB, free: 362.0 MB)
+17/06/09 18:42:06 INFO MemoryStore: Block broadcast_46_piece1 stored as bytes in memory (estimated size 4.0 MB, free 298.2 MB)
+17/06/09 18:42:06 INFO BlockManagerInfo: Added broadcast_46_piece1 in memory on 211.71.149.235:45219 (size: 4.0 MB, free: 358.0 MB)
+17/06/09 18:42:06 INFO MemoryStore: Block broadcast_46_piece2 stored as bytes in memory (estimated size 4.0 MB, free 294.2 MB)
+17/06/09 18:42:06 INFO BlockManagerInfo: Added broadcast_46_piece2 in memory on 211.71.149.235:45219 (size: 4.0 MB, free: 354.0 MB)
+17/06/09 18:42:06 INFO MemoryStore: Block broadcast_46_piece3 stored as bytes in memory (estimated size 4.0 MB, free 290.2 MB)
+17/06/09 18:42:06 INFO BlockManagerInfo: Added broadcast_46_piece3 in memory on 211.71.149.235:45219 (size: 4.0 MB, free: 350.0 MB)
+17/06/09 18:42:06 INFO MemoryStore: Block broadcast_46_piece4 stored as bytes in memory (estimated size 3.8 MB, free 286.5 MB)
+17/06/09 18:42:06 INFO BlockManagerInfo: Added broadcast_46_piece4 in memory on 211.71.149.235:45219 (size: 3.8 MB, free: 346.3 MB)
+17/06/09 18:42:06 INFO SparkContext: Created broadcast 46 from broadcast at LDAModel.scala:298
+17/06/09 18:42:06 INFO SparkContext: Starting job: sum at LDAModel.scala:320
+17/06/09 18:42:06 INFO DAGScheduler: Got job 33 (sum at LDAModel.scala:320) with 1 output partitions
+17/06/09 18:42:06 INFO DAGScheduler: Final stage: ResultStage 33 (sum at LDAModel.scala:320)
+17/06/09 18:42:06 INFO DAGScheduler: Parents of final stage: List()
+17/06/09 18:42:06 INFO DAGScheduler: Missing parents: List()
+17/06/09 18:42:06 INFO DAGScheduler: Submitting ResultStage 33 (MapPartitionsRDD[77] at map at LDAModel.scala:303), which has no missing parents
+17/06/09 18:42:06 INFO MemoryStore: Block broadcast_47 stored as values in memory (estimated size 18.8 KB, free 286.4 MB)
+17/06/09 18:42:06 INFO MemoryStore: Block broadcast_47_piece0 stored as bytes in memory (estimated size 8.4 KB, free 286.4 MB)
+17/06/09 18:42:06 INFO BlockManagerInfo: Added broadcast_47_piece0 in memory on 211.71.149.235:45219 (size: 8.4 KB, free: 346.3 MB)
+17/06/09 18:42:06 INFO SparkContext: Created broadcast 47 from broadcast at DAGScheduler.scala:996
+17/06/09 18:42:06 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 33 (MapPartitionsRDD[77] at map at LDAModel.scala:303)
+17/06/09 18:42:06 INFO TaskSchedulerImpl: Adding task set 33.0 with 1 tasks
+17/06/09 18:42:06 INFO TaskSetManager: Starting task 0.0 in stage 33.0 (TID 56, localhost, executor driver, partition 0, PROCESS_LOCAL, 6619 bytes)
+17/06/09 18:42:06 INFO Executor: Running task 0.0 in stage 33.0 (TID 56)
+17/06/09 18:42:06 INFO FileScanRDD: Reading File path: file:///home/yqk/live-comment-spark-master/data/libsvm_data/20160903TDJX8_Lpq7U55bod_libsvm.dat, range: 0-122962, partition values: [empty row]
+17/06/09 19:10:18 INFO BlockManagerInfo: Removed broadcast_2_piece0 on 211.71.149.235:45219 in memory (size: 23.3 KB, free: 346.3 MB)
+17/06/09 19:10:18 INFO ContextCleaner: Cleaned accumulator 603
+17/06/09 19:10:18 INFO ContextCleaner: Cleaned accumulator 602
+17/06/09 19:10:18 INFO ContextCleaner: Cleaned accumulator 601
+17/06/09 19:10:18 INFO BlockManagerInfo: Removed broadcast_43_piece0 on 211.71.149.235:45219 in memory (size: 113.7 KB, free: 346.4 MB)
+17/06/09 19:10:18 INFO BlockManager: Removing RDD 60
+17/06/09 19:10:18 INFO ContextCleaner: Cleaned RDD 60
+17/06/09 19:10:18 INFO BlockManager: Removing RDD 66
+17/06/09 19:10:18 INFO ContextCleaner: Cleaned RDD 66
+17/06/09 19:10:18 INFO BlockManagerInfo: Removed broadcast_39_piece0 on 211.71.149.235:45219 in memory (size: 113.7 KB, free: 346.5 MB)
+17/06/09 19:23:30 INFO Executor: Finished task 0.0 in stage 33.0 (TID 56). 1682 bytes result sent to driver
+17/06/09 19:23:30 INFO TaskSetManager: Finished task 0.0 in stage 33.0 (TID 56) in 2484170 ms on localhost (executor driver) (1/1)
+17/06/09 19:23:30 INFO TaskSchedulerImpl: Removed TaskSet 33.0, whose tasks have all completed, from pool 
+17/06/09 19:23:30 INFO DAGScheduler: ResultStage 33 (sum at LDAModel.scala:320) finished in 2484.172 s
+17/06/09 19:23:30 INFO DAGScheduler: Job 33 finished: sum at LDAModel.scala:320, took 2484.181024 s
+17/06/09 19:23:32 INFO FileSourceStrategy: Pruning directories with: 
+17/06/09 19:23:32 INFO FileSourceStrategy: Post-Scan Filters: 
+17/06/09 19:23:32 INFO FileSourceStrategy: Output Data Schema: struct<label: double, features: vector>
+17/06/09 19:23:32 INFO FileSourceStrategy: Pushed Filters: 
+17/06/09 19:23:32 INFO MemoryStore: Block broadcast_48 stored as values in memory (estimated size 277.4 KB, free 326.2 MB)
+17/06/09 19:23:33 INFO MemoryStore: Block broadcast_48_piece0 stored as bytes in memory (estimated size 23.3 KB, free 326.2 MB)
+17/06/09 19:23:33 INFO BlockManagerInfo: Added broadcast_48_piece0 in memory on 211.71.149.235:45219 (size: 23.3 KB, free: 346.5 MB)
+17/06/09 19:23:33 INFO SparkContext: Created broadcast 48 from broadcast at LibSVMRelation.scala:159
+17/06/09 19:23:33 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+17/06/09 19:23:33 INFO SparkContext: Starting job: sum at LDAModel.scala:258
+17/06/09 19:23:33 INFO DAGScheduler: Got job 34 (sum at LDAModel.scala:258) with 1 output partitions
+17/06/09 19:23:33 INFO DAGScheduler: Final stage: ResultStage 34 (sum at LDAModel.scala:258)
+17/06/09 19:23:33 INFO DAGScheduler: Parents of final stage: List()
+17/06/09 19:23:33 INFO DAGScheduler: Missing parents: List()
+17/06/09 19:23:33 INFO DAGScheduler: Submitting ResultStage 34 (MapPartitionsRDD[83] at map at LDAModel.scala:257), which has no missing parents
+17/06/09 19:23:33 INFO MemoryStore: Block broadcast_49 stored as values in memory (estimated size 18.1 KB, free 326.2 MB)
+17/06/09 19:23:33 INFO MemoryStore: Block broadcast_49_piece0 stored as bytes in memory (estimated size 7.9 KB, free 326.2 MB)
+17/06/09 19:23:33 INFO BlockManagerInfo: Added broadcast_49_piece0 in memory on 211.71.149.235:45219 (size: 7.9 KB, free: 346.5 MB)
+17/06/09 19:23:33 INFO SparkContext: Created broadcast 49 from broadcast at DAGScheduler.scala:996
+17/06/09 19:23:33 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 34 (MapPartitionsRDD[83] at map at LDAModel.scala:257)
+17/06/09 19:23:33 INFO TaskSchedulerImpl: Adding task set 34.0 with 1 tasks
+17/06/09 19:23:33 INFO TaskSetManager: Starting task 0.0 in stage 34.0 (TID 57, localhost, executor driver, partition 0, PROCESS_LOCAL, 6619 bytes)
+17/06/09 19:23:33 INFO Executor: Running task 0.0 in stage 34.0 (TID 57)
+17/06/09 19:23:33 INFO FileScanRDD: Reading File path: file:///home/yqk/live-comment-spark-master/data/libsvm_data/20160903TDJX8_Lpq7U55bod_libsvm.dat, range: 0-122962, partition values: [empty row]
+17/06/09 19:25:12 INFO Executor: Finished task 0.0 in stage 34.0 (TID 57). 1595 bytes result sent to driver
+17/06/09 19:25:12 INFO TaskSetManager: Finished task 0.0 in stage 34.0 (TID 57) in 99447 ms on localhost (executor driver) (1/1)
+17/06/09 19:25:12 INFO TaskSchedulerImpl: Removed TaskSet 34.0, whose tasks have all completed, from pool 
+17/06/09 19:25:12 INFO DAGScheduler: ResultStage 34 (sum at LDAModel.scala:258) finished in 99.439 s
+17/06/09 19:25:12 INFO DAGScheduler: Job 34 finished: sum at LDAModel.scala:258, took 99.466628 s
+17/06/09 19:25:20 INFO MemoryStore: Block broadcast_50 stored as values in memory (estimated size 19.7 MB, free 306.4 MB)
+17/06/09 19:25:20 INFO MemoryStore: Block broadcast_50_piece0 stored as bytes in memory (estimated size 4.0 MB, free 302.4 MB)
+17/06/09 19:25:20 INFO BlockManagerInfo: Added broadcast_50_piece0 in memory on 211.71.149.235:45219 (size: 4.0 MB, free: 342.5 MB)
+17/06/09 19:25:20 INFO MemoryStore: Block broadcast_50_piece1 stored as bytes in memory (estimated size 4.0 MB, free 298.4 MB)
+17/06/09 19:25:20 INFO BlockManagerInfo: Added broadcast_50_piece1 in memory on 211.71.149.235:45219 (size: 4.0 MB, free: 338.5 MB)
+17/06/09 19:25:20 INFO MemoryStore: Block broadcast_50_piece2 stored as bytes in memory (estimated size 4.0 MB, free 294.4 MB)
+17/06/09 19:25:20 INFO BlockManagerInfo: Added broadcast_50_piece2 in memory on 211.71.149.235:45219 (size: 4.0 MB, free: 334.5 MB)
+17/06/09 19:25:20 INFO MemoryStore: Block broadcast_50_piece3 stored as bytes in memory (estimated size 4.0 MB, free 290.4 MB)
+17/06/09 19:25:20 INFO BlockManagerInfo: Added broadcast_50_piece3 in memory on 211.71.149.235:45219 (size: 4.0 MB, free: 330.5 MB)
+17/06/09 19:25:20 INFO MemoryStore: Block broadcast_50_piece4 stored as bytes in memory (estimated size 3.8 MB, free 286.7 MB)
+17/06/09 19:25:20 INFO BlockManagerInfo: Added broadcast_50_piece4 in memory on 211.71.149.235:45219 (size: 3.8 MB, free: 326.7 MB)
+17/06/09 19:25:20 INFO SparkContext: Created broadcast 50 from broadcast at LDAModel.scala:298
+17/06/09 19:25:20 INFO SparkContext: Starting job: sum at LDAModel.scala:320
+17/06/09 19:25:20 INFO DAGScheduler: Got job 35 (sum at LDAModel.scala:320) with 1 output partitions
+17/06/09 19:25:20 INFO DAGScheduler: Final stage: ResultStage 35 (sum at LDAModel.scala:320)
+17/06/09 19:25:20 INFO DAGScheduler: Parents of final stage: List()
+17/06/09 19:25:20 INFO DAGScheduler: Missing parents: List()
+17/06/09 19:25:20 INFO DAGScheduler: Submitting ResultStage 35 (MapPartitionsRDD[85] at map at LDAModel.scala:303), which has no missing parents
+17/06/09 19:25:20 INFO MemoryStore: Block broadcast_51 stored as values in memory (estimated size 18.8 KB, free 286.7 MB)
+17/06/09 19:25:20 INFO MemoryStore: Block broadcast_51_piece0 stored as bytes in memory (estimated size 8.4 KB, free 286.7 MB)
+17/06/09 19:25:20 INFO BlockManagerInfo: Added broadcast_51_piece0 in memory on 211.71.149.235:45219 (size: 8.4 KB, free: 326.7 MB)
+17/06/09 19:25:20 INFO SparkContext: Created broadcast 51 from broadcast at DAGScheduler.scala:996
+17/06/09 19:25:20 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 35 (MapPartitionsRDD[85] at map at LDAModel.scala:303)
+17/06/09 19:25:20 INFO TaskSchedulerImpl: Adding task set 35.0 with 1 tasks
+17/06/09 19:25:20 INFO TaskSetManager: Starting task 0.0 in stage 35.0 (TID 58, localhost, executor driver, partition 0, PROCESS_LOCAL, 6619 bytes)
+17/06/09 19:25:20 INFO Executor: Running task 0.0 in stage 35.0 (TID 58)
+17/06/09 19:25:21 INFO FileScanRDD: Reading File path: file:///home/yqk/live-comment-spark-master/data/libsvm_data/20160903TDJX8_Lpq7U55bod_libsvm.dat, range: 0-122962, partition values: [empty row]
+17/06/09 19:26:16 INFO BlockManagerInfo: Removed broadcast_46_piece4 on 211.71.149.235:45219 in memory (size: 3.8 MB, free: 330.5 MB)
+17/06/09 19:26:16 INFO BlockManagerInfo: Removed broadcast_46_piece1 on 211.71.149.235:45219 in memory (size: 4.0 MB, free: 334.5 MB)
+17/06/09 19:26:16 INFO BlockManagerInfo: Removed broadcast_46_piece0 on 211.71.149.235:45219 in memory (size: 4.0 MB, free: 338.5 MB)
+17/06/09 19:26:16 INFO BlockManagerInfo: Removed broadcast_46_piece3 on 211.71.149.235:45219 in memory (size: 4.0 MB, free: 342.5 MB)
+17/06/09 19:26:16 INFO BlockManagerInfo: Removed broadcast_46_piece2 on 211.71.149.235:45219 in memory (size: 4.0 MB, free: 346.5 MB)
+17/06/09 19:26:16 INFO BlockManagerInfo: Removed broadcast_45_piece0 on 211.71.149.235:45219 in memory (size: 23.3 KB, free: 346.5 MB)
+17/06/09 19:26:16 INFO ContextCleaner: Cleaned accumulator 2142
+17/06/09 19:26:16 INFO ContextCleaner: Cleaned accumulator 2141
+17/06/09 19:26:16 INFO ContextCleaner: Cleaned accumulator 2140
+17/06/09 19:26:16 INFO BlockManagerInfo: Removed broadcast_49_piece0 on 211.71.149.235:45219 in memory (size: 7.9 KB, free: 346.5 MB)
+17/06/09 19:26:16 INFO BlockManagerInfo: Removed broadcast_47_piece0 on 211.71.149.235:45219 in memory (size: 8.4 KB, free: 346.5 MB)
+17/06/09 20:11:48 INFO Executor: Finished task 0.0 in stage 35.0 (TID 58). 1682 bytes result sent to driver
+17/06/09 20:11:48 INFO TaskSetManager: Finished task 0.0 in stage 35.0 (TID 58) in 2787619 ms on localhost (executor driver) (1/1)
+17/06/09 20:11:48 INFO TaskSchedulerImpl: Removed TaskSet 35.0, whose tasks have all completed, from pool 
+17/06/09 20:11:48 INFO DAGScheduler: ResultStage 35 (sum at LDAModel.scala:320) finished in 2787.621 s
+17/06/09 20:11:48 INFO DAGScheduler: Job 35 finished: sum at LDAModel.scala:320, took 2787.658204 s
+The lower bound on the log likelihood of the entire corpus: -2435355.67577
+The upper bound on perplexity: 354.028375283
+The topics described by their top-weighted terms:
+17/06/09 20:12:07 INFO CodeGenerator: Code generated in 128.991816 ms
+17/06/09 20:12:07 INFO CodeGenerator: Code generated in 82.809938 ms
++-----+------------------------+--------------------------------------------------------------------+
+|topic|termIndices             |termWeights                                                         |
++-----+------------------------+--------------------------------------------------------------------+
+|0    |[118989, 180080, 165938]|[1.2191465815929082E-4, 7.911786977399696E-5, 6.43910907307724E-5]  |
+|1    |[149048, 227313, 247282]|[9.91059322688594E-5, 5.7869950944319773E-5, 5.3008636475015336E-5] |
+|2    |[221413, 231224, 234466]|[1.1066384918048534E-4, 3.454940298758951E-5, 2.514795217675424E-5] |
+|3    |[207604, 68078, 131848] |[4.6732132688822175E-5, 3.22890386996189E-5, 2.633044791848584E-5]  |
+|4    |[60908, 232573, 234466] |[7.621748342404735E-4, 1.6896913138086567E-4, 1.2202040218965825E-4]|
+|5    |[38236, 150246, 38894]  |[2.2030059409139784E-4, 3.597868139736344E-5, 3.388139094540307E-5] |
+|6    |[37979, 209188, 102734] |[2.3868141647220763E-4, 4.479192422218264E-5, 2.9815629834217954E-5]|
+|7    |[37979, 149048, 4908]   |[4.605715358867712E-5, 2.5440744975177993E-5, 2.473997312230019E-5] |
+|8    |[13945, 249897, 248578] |[2.075849540464762E-4, 8.97025505308059E-5, 4.277303472965181E-5]   |
+|9    |[192029, 150644, 102717]|[7.469881410303586E-5, 6.137656492625113E-5, 3.0396385086667874E-5] |
++-----+------------------------+--------------------------------------------------------------------+
+
+17/06/09 20:12:08 INFO ContextCleaner: Cleaned accumulator 2290
+17/06/09 20:12:12 INFO MemoryStore: Block broadcast_52 stored as values in memory (estimated size 19.7 MB, free 306.7 MB)
+17/06/09 20:12:13 INFO MemoryStore: Block broadcast_52_piece0 stored as bytes in memory (estimated size 4.0 MB, free 302.7 MB)
+17/06/09 20:12:13 INFO BlockManagerInfo: Added broadcast_52_piece0 in memory on 211.71.149.235:45219 (size: 4.0 MB, free: 342.5 MB)
+17/06/09 20:12:13 INFO MemoryStore: Block broadcast_52_piece1 stored as bytes in memory (estimated size 4.0 MB, free 298.7 MB)
+17/06/09 20:12:13 INFO BlockManagerInfo: Added broadcast_52_piece1 in memory on 211.71.149.235:45219 (size: 4.0 MB, free: 338.5 MB)
+17/06/09 20:12:13 INFO MemoryStore: Block broadcast_52_piece2 stored as bytes in memory (estimated size 4.0 MB, free 294.7 MB)
+17/06/09 20:12:13 INFO BlockManagerInfo: Added broadcast_52_piece2 in memory on 211.71.149.235:45219 (size: 4.0 MB, free: 334.5 MB)
+17/06/09 20:12:13 INFO MemoryStore: Block broadcast_52_piece3 stored as bytes in memory (estimated size 4.0 MB, free 290.7 MB)
+17/06/09 20:12:13 INFO BlockManagerInfo: Added broadcast_52_piece3 in memory on 211.71.149.235:45219 (size: 4.0 MB, free: 330.5 MB)
+17/06/09 20:12:13 INFO MemoryStore: Block broadcast_52_piece4 stored as bytes in memory (estimated size 3.8 MB, free 287.0 MB)
+17/06/09 20:12:13 INFO BlockManagerInfo: Added broadcast_52_piece4 in memory on 211.71.149.235:45219 (size: 3.8 MB, free: 326.8 MB)
+17/06/09 20:12:13 INFO SparkContext: Created broadcast 52 from broadcast at LDAModel.scala:371
+17/06/09 20:12:13 INFO FileSourceStrategy: Pruning directories with: 
+17/06/09 20:12:13 INFO FileSourceStrategy: Post-Scan Filters: 
+17/06/09 20:12:13 INFO FileSourceStrategy: Output Data Schema: struct<label: double, features: vector>
+17/06/09 20:12:13 INFO FileSourceStrategy: Pushed Filters: 
+17/06/09 20:12:13 INFO CodeGenerator: Code generated in 193.949206 ms
+17/06/09 20:12:13 INFO MemoryStore: Block broadcast_53 stored as values in memory (estimated size 277.4 KB, free 286.7 MB)
+17/06/09 20:12:14 INFO MemoryStore: Block broadcast_53_piece0 stored as bytes in memory (estimated size 23.3 KB, free 286.7 MB)
+17/06/09 20:12:14 INFO BlockManagerInfo: Added broadcast_53_piece0 in memory on 211.71.149.235:45219 (size: 23.3 KB, free: 326.7 MB)
+17/06/09 20:12:14 INFO SparkContext: Created broadcast 53 from broadcast at LibSVMRelation.scala:159
+17/06/09 20:12:14 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+17/06/09 20:12:14 INFO SparkContext: Starting job: showString at NativeMethodAccessorImpl.java:0
+17/06/09 20:12:14 INFO DAGScheduler: Got job 36 (showString at NativeMethodAccessorImpl.java:0) with 1 output partitions
+17/06/09 20:12:14 INFO DAGScheduler: Final stage: ResultStage 36 (showString at NativeMethodAccessorImpl.java:0)
+17/06/09 20:12:14 INFO DAGScheduler: Parents of final stage: List()
+17/06/09 20:12:14 INFO DAGScheduler: Missing parents: List()
+17/06/09 20:12:14 INFO DAGScheduler: Submitting ResultStage 36 (MapPartitionsRDD[88] at showString at NativeMethodAccessorImpl.java:0), which has no missing parents
+17/06/09 20:12:14 INFO MemoryStore: Block broadcast_54 stored as values in memory (estimated size 19.8 KB, free 286.7 MB)
+17/06/09 20:12:14 INFO MemoryStore: Block broadcast_54_piece0 stored as bytes in memory (estimated size 7.7 KB, free 286.7 MB)
+17/06/09 20:12:14 INFO BlockManagerInfo: Added broadcast_54_piece0 in memory on 211.71.149.235:45219 (size: 7.7 KB, free: 326.7 MB)
+17/06/09 20:12:14 INFO SparkContext: Created broadcast 54 from broadcast at DAGScheduler.scala:996
+17/06/09 20:12:14 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 36 (MapPartitionsRDD[88] at showString at NativeMethodAccessorImpl.java:0)
+17/06/09 20:12:14 INFO TaskSchedulerImpl: Adding task set 36.0 with 1 tasks
+17/06/09 20:12:14 INFO TaskSetManager: Starting task 0.0 in stage 36.0 (TID 59, localhost, executor driver, partition 0, PROCESS_LOCAL, 6566 bytes)
+17/06/09 20:12:14 INFO Executor: Running task 0.0 in stage 36.0 (TID 59)
+17/06/09 20:12:14 INFO FileScanRDD: Reading File path: file:///home/yqk/live-comment-spark-master/data/libsvm_data/20160903TDJX8_Lpq7U55bod_libsvm.dat, range: 0-122962, partition values: [empty row]
+17/06/09 20:12:14 INFO Executor: Finished task 0.0 in stage 36.0 (TID 59). 3629 bytes result sent to driver
+17/06/09 20:12:14 INFO TaskSetManager: Finished task 0.0 in stage 36.0 (TID 59) in 96 ms on localhost (executor driver) (1/1)
+17/06/09 20:12:14 INFO TaskSchedulerImpl: Removed TaskSet 36.0, whose tasks have all completed, from pool 
+17/06/09 20:12:14 INFO DAGScheduler: ResultStage 36 (showString at NativeMethodAccessorImpl.java:0) finished in 0.092 s
+17/06/09 20:12:14 INFO DAGScheduler: Job 36 finished: showString at NativeMethodAccessorImpl.java:0, took 0.230126 s
+17/06/09 20:12:14 INFO CodeGenerator: Code generated in 44.029799 ms
++-----+------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|label|features                                              |topicDistribution                                                                                                                                                                                              |
++-----+------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|1.0  |(258726,[2309,166740],[1.0,1.0])                      |[0.03341915228696163,0.0330474008453049,0.0329457095190848,0.43017418702671273,0.03478070116929164,0.032934395853919635,0.3041494777788967,0.03266973826353076,0.03295667738947158,0.032922559866825636]       |
+|2.0  |(258726,[2309],[1.0])                                 |[0.05019302324880344,0.04963475992101238,0.04948027041518472,0.04915116131183976,0.05223687973145024,0.04946489672956162,0.5518260379433657,0.049067602520677094,0.049498504140182,0.04944686403792301]        |
+|3.0  |(258726,[2309],[1.0])                                 |[0.05019302335559587,0.049634759994798695,0.04948028331840709,0.049151161272394515,0.05223687986304764,0.04946489680161604,0.5518260244257652,0.049067602572093694,0.04949850420277221,0.049446864193509]      |
+|4.0  |(258726,[166740],[1.0])                               |[0.05019186468752559,0.04963374980321325,0.04947914677848353,0.5510886371310165,0.05223459915457559,0.04946426300789397,0.049896222740634336,0.04906728715505537,0.0494981613332397,0.049446068208362316]      |
+|5.0  |(258726,[165938],[1.0])                               |[0.5521422094691115,0.0496330016104916,0.0494749869323547,0.049148371298088814,0.05223301510299034,0.04946341281507949,0.04989539050282978,0.04906662871562536,0.049498276370382954,0.04944470718304538]       |
+|6.0  |(258726,[165938],[1.0])                               |[0.552142244370439,0.04963300112959219,0.049474986635061585,0.04914837106909026,0.05223301354941255,0.049463412879942575,0.04989538954650769,0.04906662853178096,0.04949824537250968,0.04944470691566341]      |
+|7.0  |(258726,[165938],[3.0])                               |[0.7765094848299648,0.024767941544914865,0.02468910055175772,0.024526119395143407,0.026065321010936796,0.02468329780846907,0.02489886000543363,0.02448530501183362,0.024700580983490077,0.024673988858056183]  |
+|8.0  |(258726,[37963,49767,169674,230165],[1.0,1.0,1.0,1.0])|[0.020031610591177706,0.019807805110513815,0.8209779282074808,0.01961453677482064,0.02084659791518789,0.019740465263942252,0.019912603445387093,0.019582050519058328,0.019753721442888936,0.019732680729542363]|
+|9.0  |(258726,[56775],[1.0])                                |[0.05021747994349133,0.049653946825525305,0.04949022626979578,0.049162262680124,0.05226315918385996,0.049484016313704415,0.04990822707463904,0.04907947984703646,0.04951554474255951,0.5512256571192642]       |
+|10.0 |(258726,[186953],[1.0])                               |[0.05019736943661832,0.049640935904487704,0.04947974165588081,0.04915488160515723,0.05224693621524548,0.04947202536947823,0.5517787310277935,0.04907318612127548,0.049503703975606855,0.04945248868845624]     |
+|11.0 |(258726,[130024],[1.0])                               |[0.0501940080702785,0.04963498088935973,0.5514034405060895,0.04915015644510479,0.05223773767684633,0.049465941542187725,0.04989747884023386,0.04906902206684115,0.04949983319741734,0.04944740076564112]       |
+|12.0 |(258726,[29300],[1.0])                                |[0.05019160115394237,0.5515802151041603,0.049475893354349876,0.04914861096094755,0.05223384448394024,0.04946383591305302,0.049896230005468056,0.04906697859445076,0.04949759391662525,0.04944519651306247]     |
+|13.0 |(258726,[118758],[1.0])                               |[0.05019365355366643,0.049634553553445857,0.0494763440836673,0.5510815025355432,0.05223688720780656,0.04946533814151363,0.049897978673982525,0.04906823399370275,0.04949908783436417,0.0494464204223074]       |
+|14.0 |(258726,[162402],[1.0])                               |[0.5519764869224082,0.049656125726703415,0.049494161065251056,0.04915885745667785,0.05226403366113942,0.049481191191094696,0.049913118170129514,0.04908300618497242,0.04951353515349654,0.049459484468126896]  |
+|15.0 |(258726,[23624],[1.0])                                |[0.5521013042572217,0.04963768216373668,0.04948021791153513,0.0491526516620455,0.05223906787810004,0.04946582480486281,0.04990127152499589,0.04907159382857525,0.0495017401179499,0.04944864585097707]         |
+|16.0 |(258726,[180080],[1.0])                               |[0.5521054858383052,0.04963289975213575,0.04947504301242275,0.04914836441810354,0.052268683796052616,0.04946388782829663,0.04989534865840624,0.04906646157029036,0.04949910254149747,0.04944472258448935]      |
+|17.0 |(258726,[60908,180080],[1.0,1.0])                     |[0.03342525477763164,0.03304535328575535,0.03294026271215177,0.03272276733692284,0.7031696412988596,0.03293266450591301,0.033220022552933916,0.0326682550671467,0.03295572858430068,0.03292004987838445]       |
+|18.0 |(258726,[60908],[1.0])                                |[0.050190839900237934,0.04963253437023055,0.04947472284300569,0.04914805287843609,0.554188608201053,0.04946301112017254,0.049894755346653656,0.04906622150654716,0.049496950045614815,0.04944430378804872]     |
+|19.0 |(258726,[60908],[1.0])                                |[0.050190839890261664,0.04963253437021706,0.049474722842863736,0.049148052878315945,0.5541886082217022,0.049463011112889976,0.04989475534655003,0.04906622150452194,0.049496950044670446,0.04944430378800697]  |
+|20.0 |(258726,[60908,78442],[1.0,1.0])                      |[0.03342030569107695,0.0330472627129934,0.03294204936028642,0.03272477709157667,0.703159619338285,0.03293476467459337,0.033221776104442796,0.03267036564186958,0.03295720790461449,0.03292187148026123]        |
++-----+------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+only showing top 20 rows
+
+17/06/09 20:12:14 INFO SparkUI: Stopped Spark web UI at http://211.71.149.235:4040
+17/06/09 20:12:14 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+17/06/09 20:12:14 INFO MemoryStore: MemoryStore cleared
+17/06/09 20:12:14 INFO BlockManager: BlockManager stopped
+17/06/09 20:12:14 INFO BlockManagerMaster: BlockManagerMaster stopped
+17/06/09 20:12:14 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+17/06/09 20:12:14 INFO SparkContext: Successfully stopped SparkContext
+17/06/09 20:12:15 INFO ShutdownHookManager: Shutdown hook called
+17/06/09 20:12:15 INFO ShutdownHookManager: Deleting directory /tmp/spark-49d7d8b3-7390-4233-9ddb-510d1e65bc60
+17/06/09 20:12:15 INFO ShutdownHookManager: Deleting directory /tmp/spark-49d7d8b3-7390-4233-9ddb-510d1e65bc60/pyspark-ca15c423-95a1-4736-bb3c-0417c04d2eb2
