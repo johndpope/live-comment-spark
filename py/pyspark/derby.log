@@ -1,13 +1,13 @@
 ----------------------------------------------------------------
-Fri May 05 18:13:09 CST 2017:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.12.1.1 - (1704137): instance a816c00e-015b-d819-5170-0000372b6e68 
-on database directory /home/yqk/live_comment_new/py/pyspark/metastore_db with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@54c86abe 
-Loaded from file:/home/yqk/spark/jars/derby-10.12.1.1.jar
+Wed Jun 14 16:43:06 CST 2017:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.12.1.1 - (1704137): instance a816c00e-015c-a5c5-4043-00002bbe6358 
+on database directory /home/yqk/live-comment-spark-master/py/pyspark/metastore_db with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@5b47a66d 
+Loaded from file:/bin/spark-2.1.0/jars/derby-10.12.1.1.jar
 java.vendor=Oracle Corporation
-java.runtime.version=1.8.0_112-b15
-user.dir=/home/yqk/live_comment_new/py/pyspark
+java.runtime.version=1.7.0_111-b01
+user.dir=/home/yqk/live-comment-spark-master/py/pyspark
 os.name=Linux
 os.arch=amd64
-os.version=4.4.0-75-generic
+os.version=3.5.0-47-generic
 derby.system.home=null
 Database Class Loader started - derby.database.classpath=''

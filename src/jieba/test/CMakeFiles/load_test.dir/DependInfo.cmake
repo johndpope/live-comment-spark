@@ -1,22 +1,13 @@
 # The set of languages for which implicit dependencies are needed:
-set(CMAKE_DEPENDS_LANGUAGES
+SET(CMAKE_DEPENDS_LANGUAGES
   "CXX"
   )
 # The set of files for implicit dependencies of each language:
-set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/kovean/WORK/live-comment-spark/src/cppjieba-master/test/load_test.cpp" "/home/kovean/WORK/live-comment-spark/src/jieba/test/CMakeFiles/load_test.dir/load_test.cpp.o"
+SET(CMAKE_DEPENDS_CHECK_CXX
+  "/home/yqk/live-comment-spark-master/src/cppjieba-master/test/load_test.cpp" "/home/yqk/live-comment-spark-master/src/jieba/test/CMakeFiles/load_test.dir/load_test.cpp.o"
   )
-set(CMAKE_CXX_COMPILER_ID "GNU")
-
-# The include file search paths:
-set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/kovean/WORK/live-comment-spark/src/cppjieba-master/deps"
-  "/home/kovean/WORK/live-comment-spark/src/cppjieba-master/include"
-  )
+SET(CMAKE_CXX_COMPILER_ID "GNU")
 
 # Targets to which this target links.
-set(CMAKE_TARGET_LINKED_INFO_FILES
+SET(CMAKE_TARGET_LINKED_INFO_FILES
   )
-
-# Fortran module output directory.
-set(CMAKE_Fortran_TARGET_MODULE_DIR "")

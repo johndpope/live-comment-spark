@@ -1,4 +1,4 @@
-file(REMOVE_RECURSE
+FILE(REMOVE_RECURSE
   "CMakeFiles/test.run.dir/gtest_main.cpp.o"
   "CMakeFiles/test.run.dir/keyword_extractor_test.cpp.o"
   "CMakeFiles/test.run.dir/trie_test.cpp.o"
@@ -13,6 +13,6 @@ file(REMOVE_RECURSE
 )
 
 # Per-language clean rules from dependency scanning.
-foreach(lang CXX)
-  include(CMakeFiles/test.run.dir/cmake_clean_${lang}.cmake OPTIONAL)
-endforeach()
+FOREACH(lang CXX)
+  INCLUDE(CMakeFiles/test.run.dir/cmake_clean_${lang}.cmake OPTIONAL)
+ENDFOREACH(lang)

@@ -50,7 +50,7 @@ def getComments(scid):
 #    if 'error_code' in res_uid:
 
 if len(sys.argv)==1:
-  print "need argv: [in_url_file]"
+  print "need argv: [scid]"
 #scid = sys.argv[1]             # 返回一个文件对象
 '''
 f = open(sys.argv[1])             # 返回一个文件对象
@@ -61,7 +61,8 @@ for scid in lines:
     global f2
     f2 = open('./tmp/' + scid + '.dat','w')             #评论内容文件
 '''
-scid = 'TDJX8_Lpq7U55bod'
+#scid = 'd6gaLg6owanCDMiP'
+scid = sys.argv[1]
 getComments(scid)
 ###    f2.close()
 

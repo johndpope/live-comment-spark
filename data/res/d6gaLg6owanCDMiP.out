@@ -1,0 +1,163 @@
+Ivy Default Cache set to: /root/.ivy2/cache
+The jars for the packages stored in: /root/.ivy2/jars
+:: loading settings :: url = jar:file:/bin/spark-2.1.0/jars/ivy-2.4.0.jar!/org/apache/ivy/core/settings/ivysettings.xml
+com.github.fommil.netlib#all added as a dependency
+mysql#mysql-connector-java added as a dependency
+:: resolving dependencies :: org.apache.spark#spark-submit-parent;1.0
+	confs: [default]
+	found com.github.fommil.netlib#all;1.1.2 in central
+	found net.sourceforge.f2j#arpack_combined_all;0.1 in central
+	found com.github.fommil.netlib#core;1.1.2 in central
+	found com.github.fommil.netlib#netlib-native_ref-osx-x86_64;1.1 in central
+	found com.github.fommil.netlib#native_ref-java;1.1 in central
+	found com.github.fommil#jniloader;1.1 in central
+	found com.github.fommil.netlib#netlib-native_ref-linux-x86_64;1.1 in central
+	found com.github.fommil.netlib#netlib-native_ref-linux-i686;1.1 in central
+	found com.github.fommil.netlib#netlib-native_ref-win-x86_64;1.1 in central
+	found com.github.fommil.netlib#netlib-native_ref-win-i686;1.1 in central
+	found com.github.fommil.netlib#netlib-native_ref-linux-armhf;1.1 in central
+	found com.github.fommil.netlib#netlib-native_system-osx-x86_64;1.1 in central
+	found com.github.fommil.netlib#native_system-java;1.1 in central
+	found com.github.fommil.netlib#netlib-native_system-linux-x86_64;1.1 in central
+	found com.github.fommil.netlib#netlib-native_system-linux-i686;1.1 in central
+	found com.github.fommil.netlib#netlib-native_system-linux-armhf;1.1 in central
+	found com.github.fommil.netlib#netlib-native_system-win-x86_64;1.1 in central
+	found com.github.fommil.netlib#netlib-native_system-win-i686;1.1 in central
+	found mysql#mysql-connector-java;5.1.41 in central
+:: resolution report :: resolve 870ms :: artifacts dl 19ms
+	:: modules in use:
+	com.github.fommil#jniloader;1.1 from central in [default]
+	com.github.fommil.netlib#all;1.1.2 from central in [default]
+	com.github.fommil.netlib#core;1.1.2 from central in [default]
+	com.github.fommil.netlib#native_ref-java;1.1 from central in [default]
+	com.github.fommil.netlib#native_system-java;1.1 from central in [default]
+	com.github.fommil.netlib#netlib-native_ref-linux-armhf;1.1 from central in [default]
+	com.github.fommil.netlib#netlib-native_ref-linux-i686;1.1 from central in [default]
+	com.github.fommil.netlib#netlib-native_ref-linux-x86_64;1.1 from central in [default]
+	com.github.fommil.netlib#netlib-native_ref-osx-x86_64;1.1 from central in [default]
+	com.github.fommil.netlib#netlib-native_ref-win-i686;1.1 from central in [default]
+	com.github.fommil.netlib#netlib-native_ref-win-x86_64;1.1 from central in [default]
+	com.github.fommil.netlib#netlib-native_system-linux-armhf;1.1 from central in [default]
+	com.github.fommil.netlib#netlib-native_system-linux-i686;1.1 from central in [default]
+	com.github.fommil.netlib#netlib-native_system-linux-x86_64;1.1 from central in [default]
+	com.github.fommil.netlib#netlib-native_system-osx-x86_64;1.1 from central in [default]
+	com.github.fommil.netlib#netlib-native_system-win-i686;1.1 from central in [default]
+	com.github.fommil.netlib#netlib-native_system-win-x86_64;1.1 from central in [default]
+	mysql#mysql-connector-java;5.1.41 from central in [default]
+	net.sourceforge.f2j#arpack_combined_all;0.1 from central in [default]
+	:: evicted modules:
+	com.github.fommil.netlib#core;1.1 by [com.github.fommil.netlib#core;1.1.2] in [default]
+	---------------------------------------------------------------------
+	|                  |            modules            ||   artifacts   |
+	|       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+	---------------------------------------------------------------------
+	|      default     |   20  |   0   |   0   |   1   ||   18  |   0   |
+	---------------------------------------------------------------------
+:: retrieving :: org.apache.spark#spark-submit-parent
+	confs: [default]
+	0 artifacts copied, 18 already retrieved (0kB/17ms)
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+17/06/15 12:15:42 WARN Utils: Your hostname, bjfulab-0A resolves to a loopback address: 127.0.0.1; using 202.204.121.4 instead (on interface eth0)
+17/06/15 12:15:42 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+17/06/15 12:15:42 INFO SparkContext: Running Spark version 2.1.0
+17/06/15 12:15:42 WARN SparkContext: Support for Java 7 is deprecated as of Spark 2.0.0
+17/06/15 12:15:42 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+17/06/15 12:15:42 INFO SecurityManager: Changing view acls to: root
+17/06/15 12:15:42 INFO SecurityManager: Changing modify acls to: root
+17/06/15 12:15:42 INFO SecurityManager: Changing view acls groups to: 
+17/06/15 12:15:42 INFO SecurityManager: Changing modify acls groups to: 
+17/06/15 12:15:42 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(root); groups with view permissions: Set(); users  with modify permissions: Set(root); groups with modify permissions: Set()
+17/06/15 12:15:42 INFO Utils: Successfully started service 'sparkDriver' on port 40760.
+17/06/15 12:15:43 INFO SparkEnv: Registering MapOutputTracker
+17/06/15 12:15:43 INFO SparkEnv: Registering BlockManagerMaster
+17/06/15 12:15:43 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+17/06/15 12:15:43 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+17/06/15 12:15:43 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-7df1b022-2a67-4abe-b666-1fd6c2860d6b
+17/06/15 12:15:43 INFO MemoryStore: MemoryStore started with capacity 2004.6 MB
+17/06/15 12:15:43 INFO SparkEnv: Registering OutputCommitCoordinator
+17/06/15 12:15:43 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+17/06/15 12:15:43 INFO SparkUI: Bound SparkUI to 0.0.0.0, and started at http://202.204.121.4:4040
+17/06/15 12:15:43 INFO SparkContext: Added JAR file:/root/.ivy2/jars/mysql_mysql-connector-java-5.1.41.jar at spark://202.204.121.4:40760/jars/mysql_mysql-connector-java-5.1.41.jar with timestamp 1497500143360
+17/06/15 12:15:43 INFO SparkContext: Added JAR file:/root/.ivy2/jars/net.sourceforge.f2j_arpack_combined_all-0.1.jar at spark://202.204.121.4:40760/jars/net.sourceforge.f2j_arpack_combined_all-0.1.jar with timestamp 1497500143361
+17/06/15 12:15:43 INFO SparkContext: Added JAR file:/root/.ivy2/jars/com.github.fommil.netlib_core-1.1.2.jar at spark://202.204.121.4:40760/jars/com.github.fommil.netlib_core-1.1.2.jar with timestamp 1497500143361
+17/06/15 12:15:43 INFO SparkContext: Added JAR file:/root/.ivy2/jars/com.github.fommil.netlib_netlib-native_ref-osx-x86_64-1.1.jar at spark://202.204.121.4:40760/jars/com.github.fommil.netlib_netlib-native_ref-osx-x86_64-1.1.jar with timestamp 1497500143361
+17/06/15 12:15:43 INFO SparkContext: Added JAR file:/root/.ivy2/jars/com.github.fommil.netlib_netlib-native_ref-linux-x86_64-1.1.jar at spark://202.204.121.4:40760/jars/com.github.fommil.netlib_netlib-native_ref-linux-x86_64-1.1.jar with timestamp 1497500143361
+17/06/15 12:15:43 INFO SparkContext: Added JAR file:/root/.ivy2/jars/com.github.fommil.netlib_netlib-native_ref-linux-i686-1.1.jar at spark://202.204.121.4:40760/jars/com.github.fommil.netlib_netlib-native_ref-linux-i686-1.1.jar with timestamp 1497500143362
+17/06/15 12:15:43 INFO SparkContext: Added JAR file:/root/.ivy2/jars/com.github.fommil.netlib_netlib-native_ref-win-x86_64-1.1.jar at spark://202.204.121.4:40760/jars/com.github.fommil.netlib_netlib-native_ref-win-x86_64-1.1.jar with timestamp 1497500143362
+17/06/15 12:15:43 INFO SparkContext: Added JAR file:/root/.ivy2/jars/com.github.fommil.netlib_netlib-native_ref-win-i686-1.1.jar at spark://202.204.121.4:40760/jars/com.github.fommil.netlib_netlib-native_ref-win-i686-1.1.jar with timestamp 1497500143362
+17/06/15 12:15:43 INFO SparkContext: Added JAR file:/root/.ivy2/jars/com.github.fommil.netlib_netlib-native_ref-linux-armhf-1.1.jar at spark://202.204.121.4:40760/jars/com.github.fommil.netlib_netlib-native_ref-linux-armhf-1.1.jar with timestamp 1497500143362
+17/06/15 12:15:43 INFO SparkContext: Added JAR file:/root/.ivy2/jars/com.github.fommil.netlib_netlib-native_system-osx-x86_64-1.1.jar at spark://202.204.121.4:40760/jars/com.github.fommil.netlib_netlib-native_system-osx-x86_64-1.1.jar with timestamp 1497500143362
+17/06/15 12:15:43 INFO SparkContext: Added JAR file:/root/.ivy2/jars/com.github.fommil.netlib_netlib-native_system-linux-x86_64-1.1.jar at spark://202.204.121.4:40760/jars/com.github.fommil.netlib_netlib-native_system-linux-x86_64-1.1.jar with timestamp 1497500143362
+17/06/15 12:15:43 INFO SparkContext: Added JAR file:/root/.ivy2/jars/com.github.fommil.netlib_netlib-native_system-linux-i686-1.1.jar at spark://202.204.121.4:40760/jars/com.github.fommil.netlib_netlib-native_system-linux-i686-1.1.jar with timestamp 1497500143363
+17/06/15 12:15:43 INFO SparkContext: Added JAR file:/root/.ivy2/jars/com.github.fommil.netlib_netlib-native_system-linux-armhf-1.1.jar at spark://202.204.121.4:40760/jars/com.github.fommil.netlib_netlib-native_system-linux-armhf-1.1.jar with timestamp 1497500143363
+17/06/15 12:15:43 INFO SparkContext: Added JAR file:/root/.ivy2/jars/com.github.fommil.netlib_netlib-native_system-win-x86_64-1.1.jar at spark://202.204.121.4:40760/jars/com.github.fommil.netlib_netlib-native_system-win-x86_64-1.1.jar with timestamp 1497500143363
+17/06/15 12:15:43 INFO SparkContext: Added JAR file:/root/.ivy2/jars/com.github.fommil.netlib_netlib-native_system-win-i686-1.1.jar at spark://202.204.121.4:40760/jars/com.github.fommil.netlib_netlib-native_system-win-i686-1.1.jar with timestamp 1497500143363
+17/06/15 12:15:43 INFO SparkContext: Added JAR file:/root/.ivy2/jars/com.github.fommil.netlib_native_ref-java-1.1.jar at spark://202.204.121.4:40760/jars/com.github.fommil.netlib_native_ref-java-1.1.jar with timestamp 1497500143363
+17/06/15 12:15:43 INFO SparkContext: Added JAR file:/root/.ivy2/jars/com.github.fommil_jniloader-1.1.jar at spark://202.204.121.4:40760/jars/com.github.fommil_jniloader-1.1.jar with timestamp 1497500143363
+17/06/15 12:15:43 INFO SparkContext: Added JAR file:/root/.ivy2/jars/com.github.fommil.netlib_native_system-java-1.1.jar at spark://202.204.121.4:40760/jars/com.github.fommil.netlib_native_system-java-1.1.jar with timestamp 1497500143363
+17/06/15 12:15:43 INFO SparkContext: Added file file:/home/yqk/live-comment-spark-master/py/pyspark/PySparkMl_3.py at file:/home/yqk/live-comment-spark-master/py/pyspark/PySparkMl_3.py with timestamp 1497500143542
+17/06/15 12:15:43 INFO Utils: Copying /home/yqk/live-comment-spark-master/py/pyspark/PySparkMl_3.py to /tmp/spark-ac31ba9b-b5b4-49b7-8d80-c9445e18b1e8/userFiles-549d80e6-6ced-4fd0-b45a-5eb1ebf2ada1/PySparkMl_3.py
+17/06/15 12:15:43 INFO SparkContext: Added file file:/root/.ivy2/jars/mysql_mysql-connector-java-5.1.41.jar at file:/root/.ivy2/jars/mysql_mysql-connector-java-5.1.41.jar with timestamp 1497500143549
+17/06/15 12:15:43 INFO Utils: Copying /root/.ivy2/jars/mysql_mysql-connector-java-5.1.41.jar to /tmp/spark-ac31ba9b-b5b4-49b7-8d80-c9445e18b1e8/userFiles-549d80e6-6ced-4fd0-b45a-5eb1ebf2ada1/mysql_mysql-connector-java-5.1.41.jar
+17/06/15 12:15:43 INFO SparkContext: Added file file:/root/.ivy2/jars/net.sourceforge.f2j_arpack_combined_all-0.1.jar at file:/root/.ivy2/jars/net.sourceforge.f2j_arpack_combined_all-0.1.jar with timestamp 1497500143551
+17/06/15 12:15:43 INFO Utils: Copying /root/.ivy2/jars/net.sourceforge.f2j_arpack_combined_all-0.1.jar to /tmp/spark-ac31ba9b-b5b4-49b7-8d80-c9445e18b1e8/userFiles-549d80e6-6ced-4fd0-b45a-5eb1ebf2ada1/net.sourceforge.f2j_arpack_combined_all-0.1.jar
+17/06/15 12:15:43 INFO SparkContext: Added file file:/root/.ivy2/jars/com.github.fommil.netlib_core-1.1.2.jar at file:/root/.ivy2/jars/com.github.fommil.netlib_core-1.1.2.jar with timestamp 1497500143557
+17/06/15 12:15:43 INFO Utils: Copying /root/.ivy2/jars/com.github.fommil.netlib_core-1.1.2.jar to /tmp/spark-ac31ba9b-b5b4-49b7-8d80-c9445e18b1e8/userFiles-549d80e6-6ced-4fd0-b45a-5eb1ebf2ada1/com.github.fommil.netlib_core-1.1.2.jar
+17/06/15 12:15:43 INFO SparkContext: Added file file:/root/.ivy2/jars/com.github.fommil.netlib_netlib-native_ref-osx-x86_64-1.1.jar at file:/root/.ivy2/jars/com.github.fommil.netlib_netlib-native_ref-osx-x86_64-1.1.jar with timestamp 1497500143559
+17/06/15 12:15:43 INFO Utils: Copying /root/.ivy2/jars/com.github.fommil.netlib_netlib-native_ref-osx-x86_64-1.1.jar to /tmp/spark-ac31ba9b-b5b4-49b7-8d80-c9445e18b1e8/userFiles-549d80e6-6ced-4fd0-b45a-5eb1ebf2ada1/com.github.fommil.netlib_netlib-native_ref-osx-x86_64-1.1.jar
+17/06/15 12:15:43 INFO SparkContext: Added file file:/root/.ivy2/jars/com.github.fommil.netlib_netlib-native_ref-linux-x86_64-1.1.jar at file:/root/.ivy2/jars/com.github.fommil.netlib_netlib-native_ref-linux-x86_64-1.1.jar with timestamp 1497500143562
+17/06/15 12:15:43 INFO Utils: Copying /root/.ivy2/jars/com.github.fommil.netlib_netlib-native_ref-linux-x86_64-1.1.jar to /tmp/spark-ac31ba9b-b5b4-49b7-8d80-c9445e18b1e8/userFiles-549d80e6-6ced-4fd0-b45a-5eb1ebf2ada1/com.github.fommil.netlib_netlib-native_ref-linux-x86_64-1.1.jar
+17/06/15 12:15:43 INFO SparkContext: Added file file:/root/.ivy2/jars/com.github.fommil.netlib_netlib-native_ref-linux-i686-1.1.jar at file:/root/.ivy2/jars/com.github.fommil.netlib_netlib-native_ref-linux-i686-1.1.jar with timestamp 1497500143565
+17/06/15 12:15:43 INFO Utils: Copying /root/.ivy2/jars/com.github.fommil.netlib_netlib-native_ref-linux-i686-1.1.jar to /tmp/spark-ac31ba9b-b5b4-49b7-8d80-c9445e18b1e8/userFiles-549d80e6-6ced-4fd0-b45a-5eb1ebf2ada1/com.github.fommil.netlib_netlib-native_ref-linux-i686-1.1.jar
+17/06/15 12:15:43 INFO SparkContext: Added file file:/root/.ivy2/jars/com.github.fommil.netlib_netlib-native_ref-win-x86_64-1.1.jar at file:/root/.ivy2/jars/com.github.fommil.netlib_netlib-native_ref-win-x86_64-1.1.jar with timestamp 1497500143568
+17/06/15 12:15:43 INFO Utils: Copying /root/.ivy2/jars/com.github.fommil.netlib_netlib-native_ref-win-x86_64-1.1.jar to /tmp/spark-ac31ba9b-b5b4-49b7-8d80-c9445e18b1e8/userFiles-549d80e6-6ced-4fd0-b45a-5eb1ebf2ada1/com.github.fommil.netlib_netlib-native_ref-win-x86_64-1.1.jar
+17/06/15 12:15:43 INFO SparkContext: Added file file:/root/.ivy2/jars/com.github.fommil.netlib_netlib-native_ref-win-i686-1.1.jar at file:/root/.ivy2/jars/com.github.fommil.netlib_netlib-native_ref-win-i686-1.1.jar with timestamp 1497500143571
+17/06/15 12:15:43 INFO Utils: Copying /root/.ivy2/jars/com.github.fommil.netlib_netlib-native_ref-win-i686-1.1.jar to /tmp/spark-ac31ba9b-b5b4-49b7-8d80-c9445e18b1e8/userFiles-549d80e6-6ced-4fd0-b45a-5eb1ebf2ada1/com.github.fommil.netlib_netlib-native_ref-win-i686-1.1.jar
+17/06/15 12:15:43 INFO SparkContext: Added file file:/root/.ivy2/jars/com.github.fommil.netlib_netlib-native_ref-linux-armhf-1.1.jar at file:/root/.ivy2/jars/com.github.fommil.netlib_netlib-native_ref-linux-armhf-1.1.jar with timestamp 1497500143574
+17/06/15 12:15:43 INFO Utils: Copying /root/.ivy2/jars/com.github.fommil.netlib_netlib-native_ref-linux-armhf-1.1.jar to /tmp/spark-ac31ba9b-b5b4-49b7-8d80-c9445e18b1e8/userFiles-549d80e6-6ced-4fd0-b45a-5eb1ebf2ada1/com.github.fommil.netlib_netlib-native_ref-linux-armhf-1.1.jar
+17/06/15 12:15:43 INFO SparkContext: Added file file:/root/.ivy2/jars/com.github.fommil.netlib_netlib-native_system-osx-x86_64-1.1.jar at file:/root/.ivy2/jars/com.github.fommil.netlib_netlib-native_system-osx-x86_64-1.1.jar with timestamp 1497500143577
+17/06/15 12:15:43 INFO Utils: Copying /root/.ivy2/jars/com.github.fommil.netlib_netlib-native_system-osx-x86_64-1.1.jar to /tmp/spark-ac31ba9b-b5b4-49b7-8d80-c9445e18b1e8/userFiles-549d80e6-6ced-4fd0-b45a-5eb1ebf2ada1/com.github.fommil.netlib_netlib-native_system-osx-x86_64-1.1.jar
+17/06/15 12:15:43 INFO SparkContext: Added file file:/root/.ivy2/jars/com.github.fommil.netlib_netlib-native_system-linux-x86_64-1.1.jar at file:/root/.ivy2/jars/com.github.fommil.netlib_netlib-native_system-linux-x86_64-1.1.jar with timestamp 1497500143579
+17/06/15 12:15:43 INFO Utils: Copying /root/.ivy2/jars/com.github.fommil.netlib_netlib-native_system-linux-x86_64-1.1.jar to /tmp/spark-ac31ba9b-b5b4-49b7-8d80-c9445e18b1e8/userFiles-549d80e6-6ced-4fd0-b45a-5eb1ebf2ada1/com.github.fommil.netlib_netlib-native_system-linux-x86_64-1.1.jar
+17/06/15 12:15:43 INFO SparkContext: Added file file:/root/.ivy2/jars/com.github.fommil.netlib_netlib-native_system-linux-i686-1.1.jar at file:/root/.ivy2/jars/com.github.fommil.netlib_netlib-native_system-linux-i686-1.1.jar with timestamp 1497500143581
+17/06/15 12:15:43 INFO Utils: Copying /root/.ivy2/jars/com.github.fommil.netlib_netlib-native_system-linux-i686-1.1.jar to /tmp/spark-ac31ba9b-b5b4-49b7-8d80-c9445e18b1e8/userFiles-549d80e6-6ced-4fd0-b45a-5eb1ebf2ada1/com.github.fommil.netlib_netlib-native_system-linux-i686-1.1.jar
+17/06/15 12:15:43 INFO SparkContext: Added file file:/root/.ivy2/jars/com.github.fommil.netlib_netlib-native_system-linux-armhf-1.1.jar at file:/root/.ivy2/jars/com.github.fommil.netlib_netlib-native_system-linux-armhf-1.1.jar with timestamp 1497500143583
+17/06/15 12:15:43 INFO Utils: Copying /root/.ivy2/jars/com.github.fommil.netlib_netlib-native_system-linux-armhf-1.1.jar to /tmp/spark-ac31ba9b-b5b4-49b7-8d80-c9445e18b1e8/userFiles-549d80e6-6ced-4fd0-b45a-5eb1ebf2ada1/com.github.fommil.netlib_netlib-native_system-linux-armhf-1.1.jar
+17/06/15 12:15:43 INFO SparkContext: Added file file:/root/.ivy2/jars/com.github.fommil.netlib_netlib-native_system-win-x86_64-1.1.jar at file:/root/.ivy2/jars/com.github.fommil.netlib_netlib-native_system-win-x86_64-1.1.jar with timestamp 1497500143584
+17/06/15 12:15:43 INFO Utils: Copying /root/.ivy2/jars/com.github.fommil.netlib_netlib-native_system-win-x86_64-1.1.jar to /tmp/spark-ac31ba9b-b5b4-49b7-8d80-c9445e18b1e8/userFiles-549d80e6-6ced-4fd0-b45a-5eb1ebf2ada1/com.github.fommil.netlib_netlib-native_system-win-x86_64-1.1.jar
+17/06/15 12:15:43 INFO SparkContext: Added file file:/root/.ivy2/jars/com.github.fommil.netlib_netlib-native_system-win-i686-1.1.jar at file:/root/.ivy2/jars/com.github.fommil.netlib_netlib-native_system-win-i686-1.1.jar with timestamp 1497500143586
+17/06/15 12:15:43 INFO Utils: Copying /root/.ivy2/jars/com.github.fommil.netlib_netlib-native_system-win-i686-1.1.jar to /tmp/spark-ac31ba9b-b5b4-49b7-8d80-c9445e18b1e8/userFiles-549d80e6-6ced-4fd0-b45a-5eb1ebf2ada1/com.github.fommil.netlib_netlib-native_system-win-i686-1.1.jar
+17/06/15 12:15:43 INFO SparkContext: Added file file:/root/.ivy2/jars/com.github.fommil.netlib_native_ref-java-1.1.jar at file:/root/.ivy2/jars/com.github.fommil.netlib_native_ref-java-1.1.jar with timestamp 1497500143588
+17/06/15 12:15:43 INFO Utils: Copying /root/.ivy2/jars/com.github.fommil.netlib_native_ref-java-1.1.jar to /tmp/spark-ac31ba9b-b5b4-49b7-8d80-c9445e18b1e8/userFiles-549d80e6-6ced-4fd0-b45a-5eb1ebf2ada1/com.github.fommil.netlib_native_ref-java-1.1.jar
+17/06/15 12:15:43 INFO SparkContext: Added file file:/root/.ivy2/jars/com.github.fommil_jniloader-1.1.jar at file:/root/.ivy2/jars/com.github.fommil_jniloader-1.1.jar with timestamp 1497500143590
+17/06/15 12:15:43 INFO Utils: Copying /root/.ivy2/jars/com.github.fommil_jniloader-1.1.jar to /tmp/spark-ac31ba9b-b5b4-49b7-8d80-c9445e18b1e8/userFiles-549d80e6-6ced-4fd0-b45a-5eb1ebf2ada1/com.github.fommil_jniloader-1.1.jar
+17/06/15 12:15:43 INFO SparkContext: Added file file:/root/.ivy2/jars/com.github.fommil.netlib_native_system-java-1.1.jar at file:/root/.ivy2/jars/com.github.fommil.netlib_native_system-java-1.1.jar with timestamp 1497500143591
+17/06/15 12:15:43 INFO Utils: Copying /root/.ivy2/jars/com.github.fommil.netlib_native_system-java-1.1.jar to /tmp/spark-ac31ba9b-b5b4-49b7-8d80-c9445e18b1e8/userFiles-549d80e6-6ced-4fd0-b45a-5eb1ebf2ada1/com.github.fommil.netlib_native_system-java-1.1.jar
+17/06/15 12:15:43 INFO Executor: Starting executor ID driver on host localhost
+17/06/15 12:15:43 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 50008.
+17/06/15 12:15:43 INFO NettyBlockTransferService: Server created on 202.204.121.4:50008
+17/06/15 12:15:43 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+17/06/15 12:15:43 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 202.204.121.4, 50008, None)
+17/06/15 12:15:43 INFO BlockManagerMasterEndpoint: Registering block manager 202.204.121.4:50008 with 2004.6 MB RAM, BlockManagerId(driver, 202.204.121.4, 50008, None)
+17/06/15 12:15:43 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 202.204.121.4, 50008, None)
+17/06/15 12:15:43 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 202.204.121.4, 50008, None)
+17/06/15 12:15:43 INFO SharedState: Warehouse path is 'file:/home/yqk/live-comment-spark-master/py/pyspark/spark-warehouse/'.
+../../data/libsvm/d6gaLg6owanCDMiP_libsvm.data
+Traceback (most recent call last):
+  File "/home/yqk/live-comment-spark-master/py/pyspark/PySparkMl_3.py", line 96, in <module>
+    dataset = spark.read.format("libsvm").load(corpus_filename_libsvm)
+  File "/bin/spark-2.1.0/python/lib/pyspark.zip/pyspark/sql/readwriter.py", line 149, in load
+  File "/bin/spark-2.1.0/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1133, in __call__
+  File "/bin/spark-2.1.0/python/lib/pyspark.zip/pyspark/sql/utils.py", line 69, in deco
+pyspark.sql.utils.AnalysisException: u'Path does not exist: file:/home/yqk/live-comment-spark-master/data/libsvm/d6gaLg6owanCDMiP_libsvm.data;'
+17/06/15 12:15:44 INFO SparkContext: Invoking stop() from shutdown hook
+17/06/15 12:15:44 INFO SparkUI: Stopped Spark web UI at http://202.204.121.4:4040
+17/06/15 12:15:44 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+17/06/15 12:15:44 INFO MemoryStore: MemoryStore cleared
+17/06/15 12:15:44 INFO BlockManager: BlockManager stopped
+17/06/15 12:15:44 INFO BlockManagerMaster: BlockManagerMaster stopped
+17/06/15 12:15:44 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+17/06/15 12:15:44 INFO SparkContext: Successfully stopped SparkContext
+17/06/15 12:15:44 INFO ShutdownHookManager: Shutdown hook called
+17/06/15 12:15:44 INFO ShutdownHookManager: Deleting directory /tmp/spark-ac31ba9b-b5b4-49b7-8d80-c9445e18b1e8/pyspark-cd0ef391-3ab6-4a3e-b018-b51bb930165f
+17/06/15 12:15:44 INFO ShutdownHookManager: Deleting directory /tmp/spark-ac31ba9b-b5b4-49b7-8d80-c9445e18b1e8

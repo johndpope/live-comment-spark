@@ -289,6 +289,7 @@ int main(int argc, char** argv) {
     for(map<long, double >::iterator iter_word_svm=word_svm.begin();iter_word_svm!=word_svm.end();iter_word_svm++){
       //fout_svm<<iter_word_svm->first<<":"<<std::fixed<<iter_word_svm->second<<" ";
       fout_svm<<iter_word_svm->first<<":"<<std::fixed<<iter_word_svm->second<<" ";
+      cout<<iter_word_svm->first<<":"<<std::fixed<<iter_word_svm->second<<endl;
     }
     fout_svm<<endl;
   }
